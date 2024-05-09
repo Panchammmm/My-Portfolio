@@ -1,0 +1,53 @@
+/* image section starts */
+
+.images img {
+    position: relative;
+    border-radius: 5px;
+}
+
+.images::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 160px);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+@media (max-width: 640px) {
+    .images::before {
+        height: calc(100% - 85px);
+    }
+}
+
+.images::before {
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+
+.images {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: -1;
+}
+
+.images {
+    opacity: 0;
+    animation: imageAni 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes imageAni {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

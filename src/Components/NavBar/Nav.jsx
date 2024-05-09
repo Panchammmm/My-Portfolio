@@ -41,8 +41,8 @@ export default function Nav() {
     }
 
     return (
-        <div className="relative w-[70%] bg-black rounded-[30px] mx-auto my-6">
-            <div className="mx-auto flex max-w-7xl items-center justify-around px-4 py-3 sm:px-6 lg:px-8">
+        <div className="relative shadow-2xl sm:w-[55%] w-[85%] bg-black rounded-[30px] mx-auto sm:mt-12 mt-9">
+            <div className="mx-auto flex max-w-7xl items-center justify-between px-7 py-3 sm:px-6 lg:px-8">
 
                 <div className="inline-flex items-center space-x-2">
                     <span>
@@ -66,13 +66,13 @@ export default function Nav() {
                 </div>
 
                 {/* navbar */}
-                <div className="hidden lg:block">
+                <div className="hidden xl:block">
                     <ul className="inline-flex space-x-10">
                         {menuItems.map((item) => (
                             <li key={item.name}>
                                 <a
                                     href={item.href}
-                                    className="text-[15px] font-semibold text-white hover:text-pink-300"
+                                    className="text-[15px] text-base text-white hover:text-pink-300"
                                 >
                                     {item.name}
                                 </a>
@@ -81,7 +81,7 @@ export default function Nav() {
                     </ul>
                 </div>
 
-                <div className="hidden lg:flex items-center justify-center">
+                <div className="hidden xl:flex items-center justify-center">
                     <button className="cursor-pointer text-white px-4" onClick={toggleMode}>
                         {isLightMode ? (
                             <SunDim className="text-white" />
@@ -100,7 +100,7 @@ export default function Nav() {
                 </div>
 
                 {/* navMenu */}
-                <div className="lg:hidden">
+                <div className="xl:hidden">
                     <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer text-white" />
                 </div>
                 {isMenuOpen && (
@@ -148,7 +148,7 @@ export default function Nav() {
                                             <a
                                                 key={item.name}
                                                 href={item.href}
-                                                className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold"
+                                                className="-m-3 flex items-center rounded-md p-3 text-sm font-base"
                                             >
                                                 <span className="ml-3 text-base font-medium text-white">
                                                     {item.name}
