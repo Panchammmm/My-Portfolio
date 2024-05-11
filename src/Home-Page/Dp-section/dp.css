@@ -29,7 +29,7 @@
 
 .images {
     width: 80%;
-    margin: auto;
+    margin-left: auto;
     position: relative;
     z-index: -1;
 }

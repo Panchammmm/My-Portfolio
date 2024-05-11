@@ -7,9 +7,22 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background: #ad5389;
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
-    background: linear-gradient(to right, #3c1053, #ad5389);
+
+    /* BG style 1 */
+    /* background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432); */
+
+    /* BG style 2 */
+    /* background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+    background: linear-gradient(to right, #89253e, #3a6186); */
+
+    /* BG style 3 */
+    /* background: -webkit-linear-gradient(to left, #cc5333, #23074d);
+    background: linear-gradient(to left, #cc5333, #23074d); */
+
+    /* BG style 4 */
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+    background: linear-gradient(to right, #4b134f, #c94b4b);
 }
 
 /* Scrollbar Styles */

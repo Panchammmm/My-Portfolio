@@ -41,7 +41,7 @@ export default function Nav() {
     }
 
     return (
-        <div className="relative shadow-2xl sm:w-[55%] w-[85%] bg-black rounded-[30px] mx-auto sm:mt-12 mt-9">
+        <div className="relative shadow-2xl sm:w-[55%] w-[85%] bg-black rounded-[30px] mx-auto sm:mt-14 mt-9">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-7 py-3 sm:px-6 lg:px-8">
 
                 <div className="inline-flex items-center space-x-2">
@@ -93,9 +93,9 @@ export default function Nav() {
                     <button
                         type="button"
                         onClick={toggleLanguage}
-                        className="rounded-[30px] px-4 py-2 text-sm font-medium tracking-wider text-rose-50 transition duration-500 ease-in-out bg-gradient-to-r from-orange-500 to-purple-800 hover:opacity-75"
+                        className="shadow-lg shadow-orange-500/40 rounded-[30px] px-4 py-2 text-sm font-medium tracking-wider text-rose-50 transition duration-500 ease-in-out bg-gradient-to-r from-orange-500 to-purple-800 hover:opacity-75"
                     >
-                        {isJapanese ? '日本語' : 'Eng'}
+                        {isJapanese ? '日本語' : 'ENG'}
                     </button>
                 </div>
 
