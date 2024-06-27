@@ -1,12 +1,12 @@
 import React from "react";
 import Nav from "../Components/NavBar/Nav";
-import HeroSection from "./HeroSection";
+import Dp from "./Hero-Section/Dp";
 
 export default function Home () {
   return (
     <>
       <Nav />
-      <HeroSection />
+      <Dp />
     </>
   )
 }

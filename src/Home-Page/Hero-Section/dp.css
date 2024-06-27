@@ -9,7 +9,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: calc(100% - 160px);
+    height: calc(100% - 140px);
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
@@ -28,7 +28,7 @@
 }
 
 .images {
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     position: relative;
     z-index: -1;
@@ -37,7 +37,6 @@
 .images {
     opacity: 0;
     animation: imageAni 1s ease forwards;
-    animation-delay: 1.5s;
 }
 
 @keyframes imageAni {

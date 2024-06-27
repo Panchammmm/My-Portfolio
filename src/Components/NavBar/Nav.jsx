@@ -12,11 +12,11 @@ const menuItems = [
         href: '#',
     },
     {
-        name: 'Project',
+        name: 'Projects',
         href: '#',
     },
     {
-        name: 'Contact',
+        name: 'Blogs',
         href: '#',
     },
 ]
@@ -41,27 +41,22 @@ export default function Nav() {
     }
 
     return (
-        <div className="relative shadow-2xl sm:w-[55%] w-[85%] bg-black rounded-[30px] mx-auto sm:mt-14 mt-9">
-            <div className="mx-auto flex max-w-7xl items-center justify-between px-7 py-3 sm:px-6 lg:px-8">
+        <div className="sm:w-[85%] w-[85%] mx-auto sm:mt-6 mt-9">
+            <div className="mx-auto flex items-center justify-between py-3">
 
                 <div className="inline-flex items-center space-x-2">
-                    <span>
-                        <>
-                            {/* any icon */}
-                        </>
-                    </span>
 
-                    <div className="flex items-center cursor-pointer text-white text-2xl ">
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">P</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">o</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">r</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">t</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">f</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">o</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">l</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">i</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">o</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">.</span>
+                    <div className="flex tracking-wider items-center cursor-pointer text-[#9b8dff] text-3xl font-[500]">
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">P</span>
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">r</span>
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">t</span>
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">f</span>
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">l</span>
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">i</span>
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
+                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">.</span>
                     </div>
                 </div>
 
@@ -72,7 +67,7 @@ export default function Nav() {
                             <li key={item.name}>
                                 <a
                                     href={item.href}
-                                    className="text-[15px] text-base text-white hover:text-pink-300"
+                                    className="navItem tracking-wider relative text-gray-300 focus:outline-none font-[500] text-[15px]"
                                 >
                                     {item.name}
                                 </a>
@@ -82,7 +77,7 @@ export default function Nav() {
                 </div>
 
                 <div className="hidden xl:flex items-center justify-center">
-                    <button className="cursor-pointer text-white px-4" onClick={toggleMode}>
+                    <button className="animate-rightSideAni delay-75 cursor-pointer text-white px-4" onClick={toggleMode}>
                         {isLightMode ? (
                             <SunDim className="text-white" />
                         ) : (
@@ -93,7 +88,7 @@ export default function Nav() {
                     <button
                         type="button"
                         onClick={toggleLanguage}
-                        className="shadow-lg shadow-orange-500/40 rounded-[30px] px-4 py-2 text-sm font-medium tracking-wider text-rose-50 transition duration-500 ease-in-out bg-gradient-to-r from-orange-500 to-purple-800 hover:opacity-75"
+                        className="language-btn"
                     >
                         {isJapanese ? '日本語' : 'ENG'}
                     </button>
@@ -110,23 +105,18 @@ export default function Nav() {
                                 <div className="flex items-center justify-between">
 
                                     <div className="inline-flex items-center space-x-2">
-                                        <span>
-                                            <>
-                                                {/* any icon */}
-                                            </>
-                                        </span>
 
-                                        <div className="flex items-center cursor-pointer text-white text-2xl">
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">P</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">o</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">r</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">t</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">f</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">o</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">l</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">i</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">o</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-pink-500 hover:-translate-y-2">.</span>
+                                        <div className="flex tracking-wider items-center cursor-pointer text-[#9b8dff] text-3xl ">
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">P</span>
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">r</span>
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">t</span>
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">f</span>
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">l</span>
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">i</span>
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
+                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">.</span>
                                         </div>
                                     </div>
 
@@ -163,7 +153,7 @@ export default function Nav() {
                                         {isLightMode ? (
                                             <SunDim className="text-white" />
                                         ) : (
-                                            <MoonStar className="text-white h-[1.3rem] w-[1.3rem]" />
+                                            <MoonStar className="text-white" />
                                         )}
                                     </button>
 
@@ -172,7 +162,7 @@ export default function Nav() {
                                         onClick={toggleLanguage}
                                         className="rounded-[30px] ml-2 px-4 py-2 text-sm font-medium tracking-wider text-rose-50 transition duration-500 ease-in-out bg-gradient-to-r from-orange-500 to-purple-800 hover:opacity-75"
                                     >
-                                        {isJapanese ? '日本語' : 'Eng'}
+                                        {isJapanese ? '日本語' : 'English'}
                                     </button>
                                 </div>
                             </div>
