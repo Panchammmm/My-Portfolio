@@ -52,26 +52,80 @@ body {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  background: linear-gradient(to right, #8750f7 0%, #2a1454 45%, #8750f7 100%) no-repeat;
-  background-size: 300%;
-  background-position: left center;
-  transition: all 1s ease;
+  background: linear-gradient(to right, #8750f7 0%, #2a1454 90%);
+  /* background-size: 300%; */
+  /* background-position: left center; */
+  transition: background 1s ease-in-out;
   color: #fff;
 }
 
 .language-btn:hover {
-  background-size: 320%;
-  background-position: right center;
+  /* background-size: 160%; */
+  /* background-position: right center; */
+  transform: rotateX('180deg');
 }
 
-/* Hero section */
+/* back to top button */
 
-.gradient-text {
-  background: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* back to top button */
+
+.button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 1000;
 }
 
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: #7a5eaf;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #8750f7 0%, #2a1454 100%);
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.button:hover .svgIcon {
+  transform: translateY(-200%);
+  transition-duration: 0.3s;
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  font-size: 0;
+  opacity: 0;
+  transition: opacity 0.3s, font-size 0.3s, bottom 0.3s;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: 10px;
+}
 
 /* Animations starts here --> */
 

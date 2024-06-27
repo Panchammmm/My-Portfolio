@@ -12,6 +12,10 @@ const menuItems = [
         href: '#',
     },
     {
+        name: 'Skills',
+        href: '#',
+    },
+    {
         name: 'Projects',
         href: '#',
     },
@@ -41,7 +45,7 @@ export default function Nav() {
     }
 
     return (
-        <div className="sm:w-[85%] w-[85%] mx-auto sm:mt-6 mt-9">
+        <div className="sm:w-[85%] w-[80%] mx-auto sm:mt-6 mt-9">
             <div className="mx-auto flex items-center justify-between py-3">
 
                 <div className="inline-flex items-center space-x-2">

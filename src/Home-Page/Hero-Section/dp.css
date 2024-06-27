@@ -1,19 +1,28 @@
-/* image section starts */
+/* Hero section */
+
+.gradient-text {
+    background: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* profile section */
 
 .images img {
     position: relative;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .images::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: calc(100% - 140px);
+    height: calc(100% - 170px);
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    border-radius: 5px;
+    border-radius: 50px 50px 20px 20px;
+    pointer-events: none;
 }
 
 @media (max-width: 640px) {
@@ -23,15 +32,14 @@
 }
 
 .images::before {
-    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    background: linear-gradient(to right, #1e0f38 0%, #8850f7 65%, #22133e 100%);
+    box-shadow: 5px 5px 15px rgba(209, 217, 230, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.4);
 }
 
 .images {
     width: 60%;
-    margin-left: auto;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .images {
@@ -39,10 +47,23 @@
     animation: imageAni 1s ease forwards;
 }
 
+.dp-img {
+    transition: all 0.8s ease;
+}
+
+.dp-img:hover {
+    transform: scale(1.03);
+}
+
 @keyframes imageAni {
     0% {
         opacity: 0;
         transform: scale(0);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(0.5);
     }
 
     100% {
