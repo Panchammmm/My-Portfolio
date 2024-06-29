@@ -14,8 +14,8 @@ export default function Dp() {
 
                     <div>
                         <div>
-                            <h3 className="text-[36px] text-white font-[700] mb-2">I am Pancham</h3>
-                            <h1 className="text-[65px] font-[700] gradient-text leading-[1.2] mb-3">Web Developer</h1>
+                            <h3 className="text-[36px] text-white font-[700] mb-2 mt-14">I am Pancham</h3>
+                            <h1 className="text-[65px] font-[700] gradient-text leading-[1.2] mb-3">Web Developer + <br></br> UI Designer</h1>
                         </div>
 
                         <p className="text-white text-[20px] leading-7 tracking-[1px] max-w-[550px] font-[300]">
@@ -31,7 +31,7 @@ export default function Dp() {
                                     viewBox="0 0 24 24"
                                     stroke-width="2"
                                     stroke="currentColor"
-                                    class="w-5 h-5 animate-bounce ml-1 mt-1 text-[#a080df]"
+                                    class="w-5 h-5 animate-bounce ml-1 mt-1"
                                 >
                                     <path
                                         stroke-linecap="round"

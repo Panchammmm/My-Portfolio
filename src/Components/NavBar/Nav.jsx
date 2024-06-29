@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { MoonStar, SunDim } from 'lucide-react';
 
 const menuItems = [
     {
@@ -38,11 +37,11 @@ export default function Nav() {
         setIsJapanese(!isJapanese);
     }
 
-    const [isLightMode, setIsLightMode] = useState(true);
+    // const [isLightMode, setIsLightMode] = useState(true);
 
-    const toggleMode = () => {
-        setIsLightMode(!isLightMode);
-    }
+    // const toggleMode = () => {
+    //     setIsLightMode(!isLightMode);
+    // }
 
     return (
         <div className="sm:w-[85%] w-[80%] mx-auto sm:mt-6 mt-9">
@@ -81,12 +80,35 @@ export default function Nav() {
                 </div>
 
                 <div className="hidden xl:flex items-center justify-center">
-                    <button className="animate-rightSideAni delay-75 cursor-pointer text-white px-4" onClick={toggleMode}>
-                        {isLightMode ? (
-                            <SunDim className="text-white" />
-                        ) : (
-                            <MoonStar className="text-white h-[1.3rem] w-[1.3rem]" />
-                        )}
+                    <button className="mx-4">
+                        <label
+                            htmlFor="themeToggle"
+                            className="themeToggle st-sunMoonThemeToggleBtn"
+                            type="checkbox"
+                        >
+                            <input type="checkbox" id="themeToggle" className="themeToggleInput" />
+                            <svg viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                                <mask id="moon-mask">
+                                    <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                                    <circle cx="11" cy="3" r="8" fill="black"></circle>
+                                </mask>
+                                <circle
+                                    className="sunMoon"
+                                    cx="10"
+                                    cy="10"
+                                    r="8"
+                                    mask="url(#moon-mask)"
+                                ></circle>
+                                <g>
+                                    <circle className="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                                    <circle className="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                                    <circle className="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                                    <circle className="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                                    <circle className="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                                    <circle className="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                                </g>
+                            </svg>
+                        </label>
                     </button>
 
                     <button
@@ -104,7 +126,7 @@ export default function Nav() {
                 </div>
                 {isMenuOpen && (
                     <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
-                        <div className="divide-y-2 divide-gray-50 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div className="divide-y-2 divide-gray-50 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5 border border-[#383169]">
                             <div className="px-5 pb-6 pt-5">
                                 <div className="flex items-center justify-between">
 
@@ -153,20 +175,43 @@ export default function Nav() {
                                 </div>
 
                                 <div className="grid items-center justify-start gap-4 mt-7">
-                                    <button className="cursor-pointer px-4" onClick={toggleMode}>
-                                        {isLightMode ? (
-                                            <SunDim className="text-white" />
-                                        ) : (
-                                            <MoonStar className="text-white" />
-                                        )}
+                                    <button className="mx-4">
+                                        <label
+                                            htmlFor="themeToggle"
+                                            className="themeToggle st-sunMoonThemeToggleBtn"
+                                            type="checkbox"
+                                        >
+                                            <input type="checkbox" id="themeToggle" className="themeToggleInput" />
+                                            <svg viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                                                <mask id="moon-mask">
+                                                    <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                                                    <circle cx="11" cy="3" r="8" fill="black"></circle>
+                                                </mask>
+                                                <circle
+                                                    className="sunMoon"
+                                                    cx="10"
+                                                    cy="10"
+                                                    r="8"
+                                                    mask="url(#moon-mask)"
+                                                ></circle>
+                                                <g>
+                                                    <circle className="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                                                    <circle className="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                                                    <circle className="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                                                    <circle className="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                                                    <circle className="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                                                    <circle className="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                                                </g>
+                                            </svg>
+                                        </label>
                                     </button>
-
+                                    
                                     <button
                                         type="button"
                                         onClick={toggleLanguage}
-                                        className="rounded-[30px] ml-2 px-4 py-2 text-sm font-medium tracking-wider text-rose-50 transition duration-500 ease-in-out bg-gradient-to-r from-orange-500 to-purple-800 hover:opacity-75"
+                                        className="language-btn"
                                     >
-                                        {isJapanese ? '日本語' : 'English'}
+                                        {isJapanese ? '日本語' : 'ENG'}
                                     </button>
                                 </div>
                             </div>

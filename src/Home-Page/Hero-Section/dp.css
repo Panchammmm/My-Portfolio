@@ -6,9 +6,9 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* profile section */
+/* profile picture section */
 
-.images img {
+.images .dp-img {
     position: relative;
     border-radius: 20px;
 }
@@ -16,13 +16,15 @@
 .images::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: calc(100% - 170px);
     left: 50%;
     bottom: 0;
+    width: 100%;
+    height: calc(100% - 125px);
     transform: translateX(-50%);
     border-radius: 50px 50px 20px 20px;
     pointer-events: none;
+    background: linear-gradient(to right, #211339 0%, #8f59fc 65%, #1a0f2e 100%);
+    box-shadow: 5px 5px 15px rgba(209, 217, 230, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.4);
 }
 
 @media (max-width: 640px) {
@@ -31,18 +33,9 @@
     }
 }
 
-.images::before {
-    background: linear-gradient(to right, #1e0f38 0%, #8850f7 65%, #22133e 100%);
-    box-shadow: 5px 5px 15px rgba(209, 217, 230, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.4);
-}
-
 .images {
     width: 60%;
     position: relative;
-    /* z-index: -1; */
-}
-
-.images {
     opacity: 0;
     animation: imageAni 1s ease forwards;
 }
@@ -51,8 +44,30 @@
     transition: all 0.8s ease;
 }
 
-.dp-img:hover {
-    transform: scale(1.03);
+.images::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 125px);
+    border-radius: 50px;
+    background: white;
+    transition: 0.8s ease;
+    z-index: -2;
+}
+
+.images:hover::after {
+    animation: rotation_dp 4000ms infinite linear;
+}
+
+@keyframes rotation_dp {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes imageAni {
