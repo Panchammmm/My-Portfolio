@@ -14,14 +14,8 @@
 body {
   scroll-behavior: smooth;
   font-family: "Sora", sans-serif;
-
-  /* BG style */
-  /* background: -webkit-linear-gradient(to left, #cc5333, #23074d);
-  background: linear-gradient(to left, #cc5333, #23074d); */
-
   background-color: #050709;
 }
-
 
 /* Navbar item hover styling */
 
@@ -33,7 +27,7 @@ body {
   position: absolute;
   width: 0%;
   height: 2.5px;
-  background-color: #792df3;
+  background: linear-gradient(to right, #792df3, #050709);
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
@@ -45,7 +39,7 @@ body {
   left: 0%;
 }
 
-/* Night mode button styling */
+/* Night mode - Light mode */
 
 .themeToggle {
   color: #bbb;
@@ -72,23 +66,27 @@ body {
   width: 22px;
   height: 22px;
   transition: transform 0.4s ease;
-  transform: rotate(40deg);
+  transform: rotate(0deg);
+  /* Initial rotation for the sun */
 }
 
 .st-sunMoonThemeToggleBtn svg .sunMoon {
   transform-origin: center center;
   transition: inherit;
-  transform: scale(1);
+  transform: scale(0.55);
+  /* Initial scale for the sun */
 }
 
 .st-sunMoonThemeToggleBtn svg .sunRay {
   transform-origin: center center;
-  transform: scale(0);
+  transform: scale(1);
+  /* Sun rays visible initially */
 }
 
 .st-sunMoonThemeToggleBtn svg mask>circle {
   transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
-  transform: translate(0px, 0px);
+  transform: translate(16px, -3px);
+  /* Initial position for the moon mask */
 }
 
 .st-sunMoonThemeToggleBtn svg .sunRay2 {
@@ -112,19 +110,23 @@ body {
 }
 
 .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg {
-  transform: rotate(90deg);
+  transform: rotate(60deg);
+  /* Rotating to show the moon */
 }
 
 .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg mask>circle {
-  transform: translate(16px, -3px);
+  transform: translate(0px, 0px);
+  /* Moving the mask to show the moon */
 }
 
 .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunMoon {
-  transform: scale(0.55);
+  transform: scale(1);
+  /* Scaling for the moon */
 }
 
 .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunRay {
-  animation: showRay1832 0.4s ease 0s 1 forwards;
+  animation: hideRay1832 0.4s ease 0s 1 forwards;
+  /* Hiding the rays for the moon */
 }
 
 @keyframes showRay1832 {
@@ -134,6 +136,16 @@ body {
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes hideRay1832 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
   }
 }
 
@@ -218,6 +230,33 @@ body {
   font-size: 13px;
   opacity: 1;
   bottom: 10px;
+}
+
+/* My service text */
+
+.my-service {
+  background: linear-gradient(to right, #8750f7, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: Ani-fadeInUp 1s ease;
+}
+
+@keyframes Ani-fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-fadeInUp {
+    animation: Ani-fadeInUp 1s ease forwards;
+  }
 }
 
 /* Animations starts here --> */

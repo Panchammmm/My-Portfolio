@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import 'boxicons/css/boxicons.min.css';
 
 const menuItems = [
     {
-        name: 'Home',
+        name: 'About',
         href: '#',
     },
     {
-        name: 'About',
+        name: 'Services',
         href: '#',
     },
     {
@@ -15,11 +15,15 @@ const menuItems = [
         href: '#',
     },
     {
-        name: 'Projects',
+        name: 'Works',
         href: '#',
     },
     {
         name: 'Blogs',
+        href: '#',
+    },
+    {
+        name: 'Contact',
         href: '#',
     },
 ]
@@ -49,7 +53,7 @@ export default function Nav() {
 
                 <div className="inline-flex items-center space-x-2">
 
-                    <div className="flex tracking-wider items-center cursor-pointer text-[#9b8dff] text-3xl font-[500]">
+                    <div className="flex tracking-wider items-center cursor-pointer text-[#5f53ac] text-3xl font-[500]">
                         <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">P</span>
                         <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
                         <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">r</span>
@@ -80,7 +84,7 @@ export default function Nav() {
                 </div>
 
                 <div className="hidden xl:flex items-center justify-center">
-                    <button className="mx-4">
+                    <button className="mx-5">
                         <label
                             htmlFor="themeToggle"
                             className="themeToggle st-sunMoonThemeToggleBtn"
@@ -122,7 +126,7 @@ export default function Nav() {
 
                 {/* navMenu */}
                 <div className="xl:hidden">
-                    <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer text-white" />
+                    <i className="bx bx-menu h-6 w-6 cursor-pointer text-white" onClick={toggleMenu} />
                 </div>
                 {isMenuOpen && (
                     <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
@@ -153,7 +157,7 @@ export default function Nav() {
                                             className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                                         >
                                             <span className="sr-only">Close menu</span>
-                                            <X className="h-6 w-6" aria-hidden="true" />
+                                            <i className="bx bx-x h-6 w-6" aria-hidden="true" />
                                         </button>
                                     </div>
                                 </div>
@@ -175,7 +179,7 @@ export default function Nav() {
                                 </div>
 
                                 <div className="grid items-center justify-start gap-4 mt-7">
-                                    <button className="mx-4">
+                                    <button className="mx-5">
                                         <label
                                             htmlFor="themeToggle"
                                             className="themeToggle st-sunMoonThemeToggleBtn"
@@ -205,7 +209,7 @@ export default function Nav() {
                                             </svg>
                                         </label>
                                     </button>
-                                    
+
                                     <button
                                         type="button"
                                         onClick={toggleLanguage}

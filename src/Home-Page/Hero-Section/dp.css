@@ -10,7 +10,7 @@
 
 .images .dp-img {
     position: relative;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .images::before {
@@ -21,10 +21,10 @@
     width: 100%;
     height: calc(100% - 125px);
     transform: translateX(-50%);
-    border-radius: 50px 50px 20px 20px;
+    border-radius: 50px 50px 30px 30px;
     pointer-events: none;
-    background: linear-gradient(to right, #211339 0%, #8f59fc 65%, #1a0f2e 100%);
-    box-shadow: 5px 5px 15px rgba(209, 217, 230, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.4);
+    background: linear-gradient(to right, #1a0f2e, #8750f7);
+    box-shadow: 5px 3px 15px rgba(209, 217, 230, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.4);
 }
 
 @media (max-width: 640px) {
@@ -51,13 +51,25 @@
     width: 100%;
     height: calc(100% - 125px);
     border-radius: 50px;
-    background: white;
     transition: 0.8s ease;
     z-index: -2;
 }
 
 .images:hover::after {
-    animation: rotation_dp 4000ms infinite linear;
+    background-image: linear-gradient(163deg, #ff00ff 0%, #3700ff 100%);
+    box-shadow: 0px 0px 30px 1px #8750f7;
+    transform: scale(1.02);
+}
+
+.dp-img:hover {
+    transform: scale(1.02);
+    transition-duration: 0.8s;
+}
+
+.images:hover::before {
+    box-shadow: none;
+    background: #1a0f2e;
+    transition-duration: 1s;
 }
 
 @keyframes rotation_dp {
@@ -72,17 +84,37 @@
 
 @keyframes imageAni {
     0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    50% {
         opacity: 0.5;
-        transform: scale(0.5);
+        transform: scale(0.6);
     }
 
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+/* greetings style */
+
+.icon_say-hi {
+    width: 5rem;
+    opacity: 0.3;
+    transform-origin: 60% 90%;
+    animation: say-hi 0.9s linear infinite alternate;
+}
+
+@keyframes say-hi {
+    to {
+        transform: rotate(28deg);
+    }
+}
+
+@keyframes hi-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.3;
     }
 }
