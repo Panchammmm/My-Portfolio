@@ -97,8 +97,8 @@
 /* greetings style */
 
 .icon_say-hi {
-    width: 5rem;
-    opacity: 0.3;
+    width: 7rem;
+    opacity: 0.2;
     transform-origin: 60% 90%;
     animation: say-hi 0.9s linear infinite alternate;
 }
@@ -106,15 +106,5 @@
 @keyframes say-hi {
     to {
         transform: rotate(28deg);
-    }
-}
-
-@keyframes hi-fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.3;
     }
 }

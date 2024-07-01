@@ -74,7 +74,7 @@ export default function Nav() {
                             <li key={item.name}>
                                 <a
                                     href={item.href}
-                                    className="navItem tracking-wider relative text-gray-300 focus:outline-none font-[500] text-[15px]"
+                                    className="navItem tracking-[1px] relative text-gray-300 focus:outline-none font-[500] text-[15px]"
                                 >
                                     {item.name}
                                 </a>

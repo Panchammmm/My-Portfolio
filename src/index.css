@@ -17,6 +17,26 @@ body {
   background-color: #050709;
 }
 
+/* Scrollbar Styles */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2a1454;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8750f7;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* Navbar item hover styling */
 
 .navItem::after {
@@ -204,7 +224,7 @@ body {
 }
 
 .button:hover {
-  width: 140px;
+  width: 120px;
   border-radius: 50px;
   background: linear-gradient(to right, #8750f7 0%, #2a1454 100%);
   align-items: center;
@@ -232,32 +252,6 @@ body {
   bottom: 10px;
 }
 
-/* My service text */
-
-.my-service {
-  background: linear-gradient(to right, #8750f7, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: Ani-fadeInUp 1s ease;
-}
-
-@keyframes Ani-fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@layer utilities {
-  .animate-fadeInUp {
-    animation: Ani-fadeInUp 1s ease forwards;
-  }
-}
 
 /* Animations starts here --> */
 
