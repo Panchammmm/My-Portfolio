@@ -41,69 +41,50 @@ export default function Work() {
                 <div className="mt-10">
                     <div className={`content ${activeTab === 0 ? 'active' : ''}`}>
                         <div className="flex flex-wrap justify-around gap-10">
+
                             <div className="image-box">
                                 <img src={Project1} alt="project" className="project-image"></img>
+
                                 <div className="project-about">
-                                    project about
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="2"
-                                        stroke="currentColor"
-                                        class="w-5 h-5 ml-1 mt-1"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-                                        ></path>
+                                    <div className="pl-5 my-auto">
+                                        <h1 className="text-white font-[600] text-2xl tracking-[0.2px] mb-2">Project Name</h1>
+                                        <p className="text-[#ffffffc5] tracking-[0.3px]">A tiny VS Code extension ma ipsum text into a text file</p>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" className="project-icon size-7">
+                                        <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
                                     </svg>
                                 </div>
                             </div>
+                            
                             <div className="image-box">
                                 <img src={Project1} alt="project" className="project-image"></img>
+
+                                <div className="project-about">
+                                    <div className="pl-5 my-auto">
+                                        <h1 className="text-white font-[600] text-2xl tracking-[0.2px] mb-2">Project Name</h1>
+                                        <p className="text-[#ffffffc5] tracking-[0.3px]">A tiny VS Code extension ma ipsum text into a text file</p>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" className="project-icon size-7">
+                                        <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
+                                    </svg>
+                                </div>
                             </div>
-                            <div className="image-box">
-                                <img src={Project1} alt="project" className="project-image"></img>
-                            </div>
-                            <div className="image-box">
-                                <img src={Project1} alt="project" className="project-image"></img>
-                            </div>
+
                         </div>
                     </div>
 
                     <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
-                        <div className="flex flex-wrap justify-around gap-10">
-                            <div className="image-box">
-                                <img src={Project1} alt="project" className="project-image"></img>
-                            </div>
-                            <div className="image-box">
-                                <img src={Project1} alt="project" className="project-image"></img>
-                            </div>
-                            <div className="image-box">
-                                <img src={Project1} alt="project" className="project-image"></img>
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <div className={`content ${activeTab === 2 ? 'active' : ''}`}>
-                        <div className="flex flex-wrap justify-around gap-10">
-                            <div className="image-box">
-                                <img src={Project1} alt="project" className="project-image"></img>
-                            </div>
-                            <div className="image-box">
-                                <img src={Project1} alt="project" className="project-image"></img>
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
-                        <div className="flex flex-wrap justify-around gap-10">
-                            <div className="image-box">
-                                <img src={Project1} alt="project" className="project-image"></img>
-                            </div>
-                        </div>
+                        
                     </div>
 
                 </div>

@@ -68,11 +68,35 @@
 }
 
 .project-about {
-    background: linear-gradient(to right, #8750f7, #1a122a);
-    display: flex;
+    transform: translateX(-50%);
+    margin-right: 10%;
+    width: 92%;
+    height: 120px;
+    bottom: 5px;
+    left: 50%;
     position: absolute;
-    justify-content: center;
+    display: flex;
+    background: linear-gradient(to right, #8750f7, #1a122a);
     border-radius: 10px;
     z-index: 9;
-    width: 80%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.project-icon {
+    margin: auto;
+    margin-right: 40px;
+    rotate: 140deg;
+    transition: all 0.5s ease;
+}
+
+.image-box:hover {
+    .project-icon {
+        rotate: 505deg;
+    }
+
+    .project-about {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-20px);
+    }
 }
