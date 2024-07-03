@@ -8,7 +8,7 @@ import HiImage from "../../assets/hi.svg";
 export default function Dp() {
     return (
         <>
-            <section className="w-[85%] mx-auto mt-10 mb-20 sm:mt-10">
+            <section className="w-[85%] mx-auto pt-8 pb-20 mb-14">
 
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-20">
                     <img className="icon_say-hi" src={HiImage} alt="hi"></img>
