@@ -37,7 +37,7 @@ body {
   background: #555;
 }
 
-/* Navbar item hover styling */
+/* Navbar item styling */
 
 .navItem::after {
   content: "";

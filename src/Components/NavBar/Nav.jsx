@@ -53,18 +53,14 @@ export default function Nav() {
 
                 <div className="inline-flex items-center space-x-2">
 
-                    <div className="flex tracking-wider items-center cursor-pointer text-[#5f53ac] text-3xl font-[500]">
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">P</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">r</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">t</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">f</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">l</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">i</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
-                        <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">.</span>
+                    <div className="text-[#8359c6] flex tracking-wider items-center cursor-pointer text-3xl font-[500]">
+                        {"Portfolio.".split("").map((char, index) => (
+                            <span key={index} className="transition-all duration-100 ease-in-out transform hover:text-white hover:-translate-y-2">
+                                {char}
+                            </span>
+                        ))}
                     </div>
+
                 </div>
 
                 {/* navbar */}

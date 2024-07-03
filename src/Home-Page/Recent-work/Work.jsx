@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import './work.css';
 
+import Project1 from "../../assets/image1.jpg";
+
 export default function Work() {
 
     const [activeTab, setActiveTab] = useState(0);
@@ -36,18 +38,72 @@ export default function Work() {
                     <div className="now-tab" style={lineStyle}></div>
                 </div>
 
-                <div className="content_box bg-white mt-10">
-
+                <div className="mt-10">
                     <div className={`content ${activeTab === 0 ? 'active' : ''}`}>
+                        <div className="flex flex-wrap justify-around gap-10">
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                                <div className="project-about">
+                                    project about
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="w-5 h-5 ml-1 mt-1"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                            </div>
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                            </div>
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                            </div>
+                        </div>
                     </div>
 
                     <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
+                        <div className="flex flex-wrap justify-around gap-10">
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                            </div>
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                            </div>
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                            </div>
+                        </div>
                     </div>
 
                     <div className={`content ${activeTab === 2 ? 'active' : ''}`}>
+                        <div className="flex flex-wrap justify-around gap-10">
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                            </div>
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                            </div>
+                        </div>
                     </div>
 
                     <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
+                        <div className="flex flex-wrap justify-around gap-10">
+                            <div className="image-box">
+                                <img src={Project1} alt="project" className="project-image"></img>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
