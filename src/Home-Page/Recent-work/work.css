@@ -5,20 +5,21 @@
 }
 
 .tab_box {
-    width: 400px;
+    width: 520px;
     border-radius: 30px;
     background: black;
     margin: auto;
     display: flex;
     justify-content: space-around;
     position: relative;
+    margin-bottom: 3.5rem;
 }
 
 .tab_btn {
     font-size: 16px;
     color: white;
     line-height: 1.2;
-    padding: 15px 30px;
+    padding: 17px 30px;
     border-radius: 50px;
     z-index: 10;
     position: relative;
@@ -53,6 +54,13 @@
     display: block;
 }
 
+.content-box {
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
 .image-box {
     position: relative;
     background: #1b0f26;
@@ -60,8 +68,8 @@
 }
 
 .project-image {
-    width: 600px;
-    height: 450px;
+    width: 610px;
+    height: 400px;
     object-fit: cover;
     padding: 40px 40px 4px 40px;
     filter: brightness(0.7);
@@ -71,8 +79,8 @@
     transform: translateX(-50%);
     margin-right: 10%;
     width: 92%;
-    height: 120px;
-    bottom: 5px;
+    height: 110px;
+    bottom: 0px;
     left: 50%;
     position: absolute;
     display: flex;
@@ -81,6 +89,7 @@
     z-index: 9;
     opacity: 0;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .project-icon {
@@ -97,6 +106,6 @@
 
     .project-about {
         opacity: 1;
-        transform: translateX(-50%) translateY(-20px);
+        transform: translateX(-50%) translateY(-15px);
     }
 }

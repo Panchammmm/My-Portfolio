@@ -13,13 +13,13 @@ export default function Service() {
             <p className="tracking-[0.8px] text-white text-center mt-[15px]">Offering expert web design and development services, specializing in both frontend and backend solutions.</p>
 
             <div className="service-container mt-20">
-                <div data-text="Web App" style={{ "--r": -15 }} className="glass">
-                    <img src={Web} alt="Web App" className="w-full h-auto" />
+                <div data-text="UI Design" style={{ "--r": -15 }} className="glass">
+                    <img src={Ui} alt="Web App" className="w-full h-auto" />
                 </div>
-                <div data-text="UI Design" style={{ "--r": 5 }} className="glass">
-                    <img src={Ui} alt="UI" className="w-full h-auto" />
+                <div data-text="Web App" style={{ "--r": 5 }} className="glass">
+                    <img src={Web} alt="UI" className="w-full h-auto" />
                 </div>
-                <div data-text="Backend" style={{ "--r": 25 }} className="glass">
+                <div data-text="Backend" style={{ "--r": 20 }} className="glass">
                     <img src={Backend} alt="Backend" className="w-full h-auto" />
                 </div>
             </div>
