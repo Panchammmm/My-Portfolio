@@ -53,7 +53,7 @@ export default function Nav() {
 
                 <div className="inline-flex items-center space-x-2">
 
-                    <div className="text-[#8359c6] flex tracking-wider items-center cursor-pointer text-3xl font-[500]">
+                    <div className="text-[#be62ff] flex tracking-wider items-center cursor-pointer text-3xl font-[500]">
                         {"Portfolio.".split("").map((char, index) => (
                             <span key={index} className="transition-all duration-100 ease-in-out transform hover:text-white hover:-translate-y-2">
                                 {char}

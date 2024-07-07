@@ -1,5 +1,5 @@
 .my-service {
-    background: linear-gradient(to right, #8750f7 30%, #ffffff 70%);
+    background: linear-gradient(to right, #bb5dfed7 30%, #ffffff 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -57,5 +57,5 @@
 }
 
 .glass:hover::before {
-    background: #8750f7;
+    background: #bb5dfed7;
 }

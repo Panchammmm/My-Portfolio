@@ -28,7 +28,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #8750f7;
+  background: #bb5dfed7;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.75);
 }
@@ -47,7 +47,7 @@ body {
   position: absolute;
   width: 0%;
   height: 2.5px;
-  background: linear-gradient(to right, #792df3, #050709);
+  background: linear-gradient(to right, #b751ffd7, #26073bd7);
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
@@ -177,10 +177,7 @@ body {
   font-size: 15px;
   color: #ffffff;
   background-size: 200%;
-  background-image: linear-gradient(to right,
-      #8750f7 0%,
-      #251344 51%,
-      #8750f7 100%);
+  background-image: linear-gradient(to right, #b751ffd7 0%, #000000d9 51%, #bb5dfed7 100%);
   border-radius: 30px;
   padding: 8px 20px;
   transition: 0.5s;
@@ -226,7 +223,7 @@ body {
 .button:hover {
   width: 120px;
   border-radius: 50px;
-  background: linear-gradient(to right, #8750f7 0%, #2a1454 100%);
+  background-image: linear-gradient(to right, #bb5dfed7, #3f106d 50%, #1a122a);
   align-items: center;
   transition-duration: 0.3s;
 }

@@ -27,7 +27,7 @@ export default function Dp() {
                         </p>
 
                         <div className="flex flex-wrap my-auto mt-10">
-                            <button class="flex tracking-[0.8px] border border-[#8750f7] hover:bg-[#8750f7] text-[#8750f7] font-bold mr-8 py-3 px-7 rounded-full hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce gradient-border">
+                            <button class="flex tracking-[0.8px] border border-[#bb5dfed7] hover:bg-[#bb5dfed7] text-[#bb5dfed7] font-bold mr-8 py-3 px-7 rounded-full hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce gradient-border">
                                 Resume
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ export default function Dp() {
                                     href="https://www.linkedin.com/in/pancham-sardar-6a466227b/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white hover:text-[#8750f7] border border-[#8750f7] size-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#8750f7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
+                                    className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] size-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
                                 >
                                     <i className="bx bxl-linkedin"></i>
                                 </a>
@@ -59,7 +59,7 @@ export default function Dp() {
                                     href="https://github.com/Panchammmm"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white hover:text-[#8750f7] border border-[#8750f7] size-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#8750f7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
+                                    className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] size-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
                                 >
                                     <i className="bx bxl-github"></i>
                                 </a>
@@ -68,7 +68,7 @@ export default function Dp() {
                                     href="https://www.instagram.com/pinaki_x_pancham/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white hover:text-[#8750f7] border border-[#8750f7] size-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#8750f7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
+                                    className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] size-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
                                 >
                                     <i className="bx bxl-instagram"></i>
                                 </a>

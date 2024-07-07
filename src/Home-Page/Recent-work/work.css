@@ -1,5 +1,5 @@
 .my-work {
-    background: linear-gradient(to right, #8750f7 30%, #ffffff 70%);
+    background: linear-gradient(to right, #bb5dfed7 30%, #ffffff 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -30,7 +30,7 @@
     position: absolute;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
-    background: linear-gradient(to right, #8750f7 0%, #1a122a 100%);
+    background-image: linear-gradient(144deg,#af40ffd7, #3f106d 50%,#1a122a);
 }
 
 .content {
@@ -68,23 +68,23 @@
 }
 
 .project-image {
-    width: 610px;
-    height: 400px;
+    width: 620px;
+    height: 410px;
     object-fit: cover;
     padding: 40px 40px 4px 40px;
-    filter: brightness(0.7);
+    filter: brightness(0.9);
 }
 
 .project-about {
     transform: translateX(-50%);
     margin-right: 10%;
     width: 92%;
-    height: 110px;
+    height: 120px;
     bottom: 0px;
     left: 50%;
     position: absolute;
     display: flex;
-    background: linear-gradient(to right, #8750f7, #1a122a);
+    background-image: linear-gradient(130deg,#ac3dfbea, #3e106d 50%,#1a122aec);
     border-radius: 10px;
     z-index: 9;
     opacity: 0;

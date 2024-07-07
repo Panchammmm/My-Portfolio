@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './work.css';
+import RevealBtn from "./Button/RevealBtn";
 
-import Project1 from "../../assets/image1.jpg";
 import Client from "../../assets/project-images/client.png";
 import Calculator from "../../assets/project-images/calculator.png";
 import Game from "../../assets/project-images/game.png";
@@ -48,6 +48,8 @@ const projectsData = {
 const Work = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [lineStyle, setLineStyle] = useState({});
+    const [visibleProjects, setVisibleProjects] = useState(4); // Initialize to 4
+    const [showAllProjects, setShowAllProjects] = useState(false); // State to toggle between see more and see less
 
     useEffect(() => {
         const activeButton = document.querySelector('.tab_btn.active');
@@ -62,12 +64,36 @@ const Work = () => {
 
     const handleTabClick = (index) => {
         setActiveTab(index);
+        // setVisibleProjects(4); // Reset visible projects to 4 when tab changes
+        // setShowAllProjects(false); // Reset to 'See More' state when tab changes
+    };
+
+    const handleSeeMoreClick = () => {
+        if (showAllProjects) {
+            setVisibleProjects(4); // Show only the first 4 projects
+        } else {
+            setVisibleProjects(projectsData[getCurrentTab()].length); // Reveal all projects
+        }
+        setShowAllProjects(!showAllProjects); // Toggle state
     };
 
     const getProjects = (type) => {
-        return projectsData[type].map((project, index) => (
+        const projects = projectsData[type];
+        const visible = projects.slice(0, visibleProjects);
+        return visible.map((project, index) => (
             <Project key={index} {...project} />
         ));
+    };
+
+    const getCurrentTab = () => {
+        switch (activeTab) {
+            case 0: return 'all';
+            case 1: return 'ui';
+            case 2: return 'webApp';
+            case 3: return 'client';
+            case 4: return 'backend';
+            default: return 'all';
+        }
     };
 
     return (
@@ -90,26 +116,31 @@ const Work = () => {
                         <div className="content-box">
                             {getProjects('all')}
                         </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick}/>
                     </div>
                     <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('ui')}
                         </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
                     </div>
                     <div className={`content ${activeTab === 2 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('webApp')}
                         </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
                     </div>
                     <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('client')}
                         </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
                     </div>
                     <div className={`content ${activeTab === 4 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('backend')}
                         </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
                     </div>
                 </div>
             </div>
@@ -127,7 +158,7 @@ const Project = ({ Imagesrc, Name, Description, URL }) => {
             <img src={Imagesrc} alt="project" className="project-image" />
             <div className="project-about">
                 <div className="pl-5 my-auto">
-                    <h1 className="text-white font-[600] text-2xl tracking-[0.2px] mb-1">{Name}</h1>
+                    <h1 className="text-white font-[600] text-2xl tracking-[0.2px] mb-2">{Name}</h1>
                     <p className="text-[#ffffffc5] tracking-[0.3px]">{Description}</p>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="project-icon size-8">
