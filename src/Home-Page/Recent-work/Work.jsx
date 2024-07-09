@@ -158,7 +158,7 @@ const Project = ({ Imagesrc, Name, Description, URL }) => {
             <img src={Imagesrc} alt="project" className="project-image" />
             <div className="project-about">
                 <div className="pl-5 my-auto">
-                    <h1 className="text-white font-[600] text-2xl tracking-[0.2px] mb-2">{Name}</h1>
+                    <h1 className="text-white font-[600] text-2xl tracking-[0.2px] mb-[0.4rem]">{Name}</h1>
                     <p className="text-[#ffffffc5] tracking-[0.3px]">{Description}</p>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="project-icon size-8">

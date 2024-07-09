@@ -71,7 +71,7 @@
     width: 620px;
     height: 410px;
     object-fit: cover;
-    padding: 40px 40px 4px 40px;
+    padding: 35px 35px 3px 35px;
     filter: brightness(0.9);
 }
 
@@ -85,7 +85,7 @@
     position: absolute;
     display: flex;
     background-image: linear-gradient(130deg,#ac3dfbea, #3e106d 50%,#1a122aec);
-    border-radius: 10px;
+    border-radius: 15px;
     z-index: 9;
     opacity: 0;
     transition: all 0.3s ease;

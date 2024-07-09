@@ -1,0 +1,47 @@
+.my-edu {
+    background: linear-gradient(to right, #bb5dfed7 30%, #ffffff 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Educard {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    border-radius: 20px;
+    padding: 30px;
+    color: #f0f0f0;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.Educard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edu-hover-card {
+  background-image: linear-gradient(to right, #522b6e, #3f106d 50%, #1a122a);
+}
+
+.border-style {
+    align-items: center;
+    background: linear-gradient(to right, #572e7f, #3f106d);
+    display: flex;
+    margin: 1px 0;
+    min-height: 1px;
+}
+
+.arrow-icon {
+    margin: auto;
+    margin-right: 40px;
+    rotate: 140deg;
+    transition: all 0.5s ease;
+}
+
+.edu-main:hover {
+    .arrow-icon {
+        rotate: 220deg;
+    }
+}

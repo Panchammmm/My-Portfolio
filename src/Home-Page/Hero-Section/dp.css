@@ -1,7 +1,7 @@
 /* Hero section */
 
 .gradient-text {
-    background: linear-gradient(to right, #bb5dfed7 0%, #ffffff 100%);
+    background: linear-gradient(to right, #bc62fdd7 0%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -23,7 +23,7 @@
     transform: translateX(-50%);
     border-radius: 50px 50px 30px 30px;
     pointer-events: none;
-    background: linear-gradient(to right, #1a0f2e, #bb5dfed7);
+    background: linear-gradient(to right, #1a0f2e, #c16dfdd7);
     box-shadow: 5px 3px 15px rgba(209, 217, 230, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.4);
 }
 
@@ -56,7 +56,7 @@
 }
 
 .images:hover::after {
-    background: linear-gradient(to left, #1a0f2e, #bb5dfed7);
+    background: linear-gradient(to left, #1a0f2e, #c16dfdd7);
     box-shadow: 0px 0px 30px 1px #8750f7;
     transform: scale(1.02);
 }

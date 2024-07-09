@@ -28,7 +28,7 @@ const StarSVG = () => (
 );
 
 const RevealBtn = ({ btnName, onClick }) => (
-    <div className="flex justify-center mt-14">
+    <div className="flex justify-center mt-16">
         <button className="R-btn" onClick={onClick}>
             {btnName}
             {[...Array(5)].map((_, index) => (
