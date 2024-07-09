@@ -34,14 +34,14 @@ const CHover = ({ items = [], className }) => {
                                 />
                             )}
                         </AnimatePresence>
-                        <div className={cn("edu-main rounded-2xl h-full w-full p-4 overflow-hidden bg-tranparent relative z-20 flex")}>
+                        <div className={cn("rounded-2xl h-full w-full p-4 overflow-hidden bg-tranparent relative z-20 flex group")}>
                             <div className="relative z-50">
                                 <h3 className="text-lg font-bold text-[#a95bf8]">{item.year}</h3>
                                 <h2 className="text-white font-[700] text-[1.5rem] mt-2 mb-2">{item.title}</h2>
-                                <p className="text-base font-semibold tracking-[0.6px] text-[#ffffff8e]">{item.description}</p>
+                                <p className="text-base font-semibold tracking-[0.6px] text-zinc-400">{item.description}</p>
                             </div>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="" className="arrow-icon size-8 fill-[#ffffffa7]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="" className="arrow-icon size-8 fill-[#ffffffa7] group-hover:rotate-[70deg]">
                                 <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z" />
                             </svg>
                         </div>

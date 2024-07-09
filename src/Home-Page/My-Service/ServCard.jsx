@@ -14,18 +14,18 @@ const CHover = ({ items = [], className }) => {
 
     return (
         <div className={cn("max-w-5xl mx-auto px-8", className)}>
-            <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10")}>
+            <div className={cn("flex flex-row justify-between py-10")}>
                 {items.map((item, idx) => (
                     <div
                         key={idx}
-                        className={cn("relative group block p-2 h-full w-full cursor-pointer")}
+                        className={cn("relative flex justify-between p-2")}
                         onMouseEnter={() => setHoveredIndex(idx)}
                         onMouseLeave={() => setHoveredIndex(null)}
                     >
                         <AnimatePresence>
                             {hoveredIndex === idx && (
                                 <motion.span
-                                    className={cn("absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl")}
+                                    className={cn("absolute inset-0 h-full w-full bg-gradient-to-r from-[#522b6e] to-[#3f106d] block rounded-2xl")}
                                     layoutId="hoverBackground"
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -33,11 +33,10 @@ const CHover = ({ items = [], className }) => {
                                 />
                             )}
                         </AnimatePresence>
-                        <div className={cn("rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20")}>
+                        <div className={cn("rounded-2xl p-5 overflow-hidden bg-black border border-[#371551] relative z-20")}>
                             <div className="relative z-50">
-                                <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4")}>{item.title}</h4>
-                                <p className={cn("mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm")}>{item.description}</p>
-                                {/* Additional children content can be added here */}
+                                <h4 className={cn("text-zinc-100 font-bold tracking-[0.6px] mt-4")}>{item.title}</h4>
+                                <p className={cn("mt-8 text-zinc-400 tracking-[0.6px] leading-relaxed text-sm")}>{item.description}</p>
                             </div>
                         </div>
                     </div>
@@ -50,16 +49,16 @@ const CHover = ({ items = [], className }) => {
 // Sample data for projects
 const projects = [
     {
-        title: "Stripe",
-        description: "A technology company that builds economic infrastructure for the internet.",
+        title: "UI Design",
+        description: "Expert web design and development, focusing on intuitive user interfaces.",
     },
     {
-        title: "Netflix",
-        description: "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+        title: "Web App",
+        description: "Streaming service with a wide range of content for internet-connected devices.",
     },
     {
-        title: "Google",
-        description: "A multinational technology company that specializes in Internet-related services and products.",
+        title: "Backend",
+        description: "Specializes in scalable and secure Internet services and products.",
     }
 ];
 
