@@ -56,7 +56,7 @@ const CHover = ({ items = [], className }) => {
 // Sample data for projects
 const projects = [
     {
-        year: `2024`,
+        year: `2023 - 2024`,
         title: "Web Development",
         description: "Udemy Platform",
     },

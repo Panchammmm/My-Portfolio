@@ -1,5 +1,5 @@
 .my-edu {
-    background: linear-gradient(to right, #bb5dfed7 30%, #ffffff 70%);
+    background: linear-gradient(to right, #c471ff, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -27,7 +27,7 @@
 
 .border-style {
     align-items: center;
-    background: linear-gradient(to right, #572e7f, #3f106d);
+    background: linear-gradient(to right, #371e4f, #3f106d);
     display: flex;
     margin: 1px 0;
     min-height: 1px;
