@@ -15,7 +15,7 @@ const CHover = ({ items = [], className }) => {
 
     return (
         <div className={cn("max-w-5xl mx-auto px-8", className)}>
-            <div className={cn("grid grid-cols-1 py-10")}>
+            <div className={cn("grid grid-cols-1 py-8")}>
                 {items.map((item, idx) => (
                     <div
                         key={idx}

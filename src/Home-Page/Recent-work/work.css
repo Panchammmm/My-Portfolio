@@ -29,7 +29,7 @@
 .now-tab {
     position: absolute;
     border-radius: 50px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
     background-image: linear-gradient(144deg,#af40ffd7, #3f106d 50%,#1a122a);
 }
 
@@ -40,12 +40,12 @@
 
 @keyframes moving {
     from {
-        transform: translateX(50px);
+        transform: translateY(100px);
         opacity: 0;
     }
 
     to {
-        transform: translateX(0px);
+        transform: translateY(0px);
         opacity: 1;
     }
 }
