@@ -1,30 +1,58 @@
 import React from "react";
 import './contact.css';
 
+import wapp from "../../assets/wapp.svg";
+import email from "../../assets/email.svg";
+import location from "../../assets/location.svg";
+
 export default function Contact() {
     return (
-        <div className="bg-black pt-[140px] pb-[130px] flex flex-wrap justify-around">
-
-            <div className="form-container">
+        <div className="bg-black pt-[140px] pb-[130px] flex flex-wrap justify-center gap-[9rem]">
+            <div className="form-container my-auto">
                 <h1 className="contact-text">Let’s work together!</h1>
-                <p className="tracking-[0.3px] mb-8 text-slate-200 text-base pr-3">I design and code beautifully simple things and i love what i do. Just simple like that!</p>
+                <p className="tracking-[0.3px] mb-8 text-slate-200 text-base pr-3">
+                    I design and code beautifully simple things and I love what I do. Just simple like that!
+                </p>
                 <form className="form">
                     <div className="form-group">
-                        <label for="email">Name</label>
-                        <input required="" className="email" id="email" type="text" placeholder="full name.." />
+                        <label htmlFor="name">Name</label>
+                        <input required className="email" id="name" type="text" placeholder="full name.." />
                     </div>
                     <div className="form-group">
-                        <label for="email">Email</label>
-                        <input required="" className="email" id="email" type="text" placeholder="email id.."/>
+                        <label htmlFor="email">Email</label>
+                        <input required className="email" id="email" type="email" placeholder="email id.." />
                     </div>
                     <div className="form-group">
-                        <label for="textarea">Message</label>
-                        <textarea required="" id="textarea" className="textarea" placeholder="message here.."/>
+                        <label htmlFor="message">Message</label>
+                        <textarea required id="message" className="textarea" placeholder="message here.." />
                     </div>
                     <button type="submit" className="form-submit-btn">Hire me!</button>
                 </form>
             </div>
-            
+
+            <div className="contact-info my-auto">
+                <a href="https://wa.me/918670035037" target="_blank" rel="noopener noreferrer" className="contact-item">
+                    <img src={wapp} alt="whatsapp" className="contact-icon" />
+                    <div>
+                        <h3 className="contact-label">Whatsapp</h3>
+                        <p className="contact-detail">+91 86700 35037</p>
+                    </div>
+                </a>
+                <a href="mailto:sardarpancham510510@gmail.com" target="_blank" rel="noopener noreferrer" className="contact-item">
+                    <img src={email} alt="email" className="contact-icon" />
+                    <div>
+                        <h3 className="contact-label">Email</h3>
+                        <p className="contact-detail">sardarpancham510510@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Kolkata,+India" target="_blank" rel="noopener noreferrer" className="contact-item">
+                    <img src={location} alt="location" className="contact-icon" />
+                    <div>
+                        <h3 className="contact-label">Based on</h3>
+                        <p className="contact-detail">Kolkata, India</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    )
+    );
 }

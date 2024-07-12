@@ -1,7 +1,7 @@
 import React from "react";
 import 'boxicons/css/boxicons.min.css';
-
 import './dp.css';
+
 import dp from "../../assets/dp.png";
 import HiImage from "../../assets/hi.svg";
 

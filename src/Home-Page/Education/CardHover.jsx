@@ -4,6 +4,8 @@ import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import './edu.css';
 
+import Arrow from "../../assets/arrow.svg";
+
 // Utility function to merge class names
 function cn(...inputs) {
     return twMerge(clsx(inputs));
@@ -41,9 +43,7 @@ const CHover = ({ items = [], className }) => {
                                 <p className="text-base font-semibold tracking-[0.6px] text-zinc-400">{item.description}</p>
                             </div>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="" className="arrow-icon size-8 fill-[#ffffffa7] group-hover:rotate-[70deg]">
-                                <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z" />
-                            </svg>
+                            <img src={Arrow} alt="arrow" className="arrow-icon size-8 group-hover:rotate-[70deg]"></img>
                         </div>
                         <div class="border-style"></div>
                     </div>

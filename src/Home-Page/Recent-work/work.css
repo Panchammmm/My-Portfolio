@@ -95,13 +95,13 @@
 .project-icon {
     margin: auto;
     margin-right: 40px;
-    rotate: 140deg;
+    rotate: -40deg;
     transition: all 0.5s ease;
 }
 
 .image-box:hover {
     .project-icon {
-        rotate: 505deg;
+        rotate: 320deg;
     }
 
     .project-about {

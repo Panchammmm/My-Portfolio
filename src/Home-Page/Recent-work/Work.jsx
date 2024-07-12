@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './work.css';
 import RevealBtn from "./Button/RevealBtn";
 
+import Arrow from "../../assets/arrow.svg";
 import Client from "../../assets/project-images/client.png";
 import Calculator from "../../assets/project-images/calculator.png";
 import Game from "../../assets/project-images/game.png";
@@ -161,9 +162,8 @@ const Project = ({ Imagesrc, Name, Description, URL }) => {
                     <h1 className="text-white font-[600] text-2xl tracking-[0.2px] mb-[0.4rem]">{Name}</h1>
                     <p className="text-[#ffffffc5] tracking-[0.3px]">{Description}</p>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="project-icon size-8">
-                    <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z" />
-                </svg>
+                
+                <img src={Arrow} alt="arrow" className="project-icon size-8"></img>
             </div>
         </div>
     );
