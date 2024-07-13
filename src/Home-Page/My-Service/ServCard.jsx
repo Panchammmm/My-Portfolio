@@ -36,7 +36,7 @@ const CHover = ({ items = [], className }) => {
                         <div className={cn("rounded-2xl p-5 overflow-hidden bg-black border border-[#371551] relative z-20")}>
                             <div className="relative z-50">
                                 <h4 className={cn("text-zinc-100 font-bold tracking-[0.6px] mt-4")}>{item.title}</h4>
-                                <p className={cn("mt-8 text-zinc-400 tracking-[0.6px] leading-relaxed text-sm")}>{item.description}</p>
+                                <p className={cn("mt-8 text-zinc-400 tracking-[0.6px] leading-relaxed text-base")}>{item.description}</p>
                             </div>
                         </div>
                     </div>

@@ -6,6 +6,7 @@ import Work from "../Home-Page/Recent-work/Work";
 import Education from "./Education/Education";
 import Skill from "./Skills/Skill";
 import Contact from "./Contact-section/Contact";
+import Footer from "../Components/Footer/Footer";
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
       <Education />
       <Skill />
       <Contact />
+      <Footer />
 
       <button className="button" onClick={scrollToTop}>
         <svg className="svgIcon" viewBox="0 0 384 512">

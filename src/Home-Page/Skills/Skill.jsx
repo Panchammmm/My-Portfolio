@@ -36,7 +36,7 @@ export default function Skill() {
                             </div>
                             <p className="skill-percentage">{skill.percentage}</p>
                         </div>
-                        <p className="w-full text-[#985ed6] mt-2 text-center tracking-[0.5px] font-['Sora', sans-serif]">{skill.name}</p>
+                        <p className="w-full text-[#a95bf8] mt-2 text-center tracking-[0.5px]">{skill.name}</p>
                     </div>
                 ))}
             </div>
