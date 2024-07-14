@@ -65,11 +65,12 @@
     position: relative;
     background: #1b0f26;
     border-radius: 10px;
+    margin: auto;
 }
 
 .project-image {
-    width: 620px;
-    height: 410px;
+    width: 610px;
+    height: 430px;
     object-fit: cover;
     padding: 35px 35px 3px 35px;
     filter: brightness(0.9);

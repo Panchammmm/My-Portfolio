@@ -1,0 +1,245 @@
+/* Navbar item styling */
+
+.navItem::after {
+    content: "";
+    pointer-events: none;
+    bottom: -5px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2.5px;
+    background: linear-gradient(to right, #b751ffd7, #26073bd7);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.navItem:focus::after,
+.navItem:hover::after {
+    width: 100%;
+    left: 0%;
+}
+
+/* Night mode - Light mode */
+
+.themeToggle {
+    color: #bbb;
+}
+
+.st-sunMoonThemeToggleBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.st-sunMoonThemeToggleBtn .themeToggleInput {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.st-sunMoonThemeToggleBtn svg {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.4s ease;
+    transform: rotate(0deg);
+    /* Initial rotation for the sun */
+}
+
+.st-sunMoonThemeToggleBtn svg .sunMoon {
+    transform-origin: center center;
+    transition: inherit;
+    transform: scale(0.55);
+    /* Initial scale for the sun */
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay {
+    transform-origin: center center;
+    transform: scale(1);
+    /* Sun rays visible initially */
+}
+
+.st-sunMoonThemeToggleBtn svg mask>circle {
+    transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
+    transform: translate(16px, -3px);
+    /* Initial position for the moon mask */
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay2 {
+    animation-delay: 0.05s !important;
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay3 {
+    animation-delay: 0.1s !important;
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay4 {
+    animation-delay: 0.17s !important;
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay5 {
+    animation-delay: 0.25s !important;
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay6 {
+    animation-delay: 0.29s !important;
+}
+
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg {
+    transform: rotate(60deg);
+    /* Rotating to show the moon */
+}
+
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg mask>circle {
+    transform: translate(0px, 0px);
+    /* Moving the mask to show the moon */
+}
+
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunMoon {
+    transform: scale(1);
+    /* Scaling for the moon */
+}
+
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunRay {
+    animation: hideRay1832 0.4s ease 0s 1 forwards;
+    /* Hiding the rays for the moon */
+}
+
+@keyframes showRay1832 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes hideRay1832 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* language button styling */
+
+.language-btn {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #ffffff;
+    background-size: 200%;
+    background-image: linear-gradient(to right, #b751ffd7 0%, #000000d9 51%, #bb5dfed7 100%);
+    border-radius: 30px;
+    padding: 8px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+}
+
+.language-btn:hover {
+    background-position: -100%;
+}
+
+/* back to top button */
+
+.button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 2px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: #7a5eaf;
+}
+
+.button:hover {
+    width: 120px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #522b6e, #3f106d 50%, #1a122a);
+    align-items: center;
+    transition-duration: 0.3s;
+}
+
+.button:hover .svgIcon {
+    transform: translateY(-200%);
+    transition-duration: 0.3s;
+}
+
+.button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    font-size: 0;
+    opacity: 0;
+    transition: opacity 0.3s, font-size 0.3s, bottom 0.3s;
+}
+
+.button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: 10px;
+}
+
+/* burger menu stylling */
+
+.burger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+        opacity 0.3s ease;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+#burger-checkbox:checked+.burger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#burger-checkbox:checked+.burger span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#burger-checkbox:checked+.burger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}

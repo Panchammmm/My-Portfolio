@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import 'boxicons/css/boxicons.min.css';
+import './nav.css';
 
 const menuItems = [
     {
@@ -11,11 +11,11 @@ const menuItems = [
         href: '#',
     },
     {
-        name: 'Skills',
+        name: 'Works',
         href: '#',
     },
     {
-        name: 'Works',
+        name: 'Skills',
         href: '#',
     },
     {
@@ -60,7 +60,6 @@ export default function Nav() {
                             </span>
                         ))}
                     </div>
-
                 </div>
 
                 {/* navbar */}
@@ -122,57 +121,33 @@ export default function Nav() {
 
                 {/* navMenu */}
                 <div className="xl:hidden">
-                    <i className="bx bx-menu h-6 w-6 cursor-pointer text-white" onClick={toggleMenu} />
+                    <div>
+                        <input id="burger-checkbox" type="checkbox" onClick={toggleMenu} />
+                        <label className="burger" for="burger-checkbox">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
                 </div>
                 {isMenuOpen && (
-                    <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
-                        <div className="divide-y-2 divide-gray-50 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5 border border-[#383169]">
-                            <div className="px-5 pb-6 pt-5">
-                                <div className="flex items-center justify-between">
+                    <div className="absolute inset-x-0 top-20 z-50 origin-top-right transform p-2 transition lg:hidden">
+                        <div className="divide-y-2 divide-gray-50 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5">
+                            <div className="px-5 pb-10 pt-6 bg-gradient-to-b from-[#100b18] to-[#2a1454]">
 
-                                    <div className="inline-flex items-center space-x-2">
-
-                                        <div className="flex tracking-wider items-center cursor-pointer text-[#9b8dff] text-3xl ">
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">P</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">r</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">t</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">f</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">l</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">i</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">o</span>
-                                            <span className="transition-all duration-300 ease-in-out transform hover:text-white hover:-translate-y-2">.</span>
-                                        </div>
-                                    </div>
-
-                                    <div className="-mr-2">
-                                        <button
-                                            type="button"
-                                            onClick={toggleMenu}
-                                            className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                                <nav className="grid gap-y-4">
+                                    {menuItems.map((item) => (
+                                        <a
+                                            key={item.name}
+                                            href={item.href}
+                                            className="-m-3 flex items-center rounded-md p-3 text-sm font-base"
                                         >
-                                            <span className="sr-only">Close menu</span>
-                                            <i className="bx bx-x h-6 w-6" aria-hidden="true" />
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div className="mt-6">
-                                    <nav className="grid gap-y-4">
-                                        {menuItems.map((item) => (
-                                            <a
-                                                key={item.name}
-                                                href={item.href}
-                                                className="-m-3 flex items-center rounded-md p-3 text-sm font-base"
-                                            >
-                                                <span className="ml-3 text-base font-medium text-white">
-                                                    {item.name}
-                                                </span>
-                                            </a>
-                                        ))}
-                                    </nav>
-                                </div>
+                                            <span className="ml-3 text-base font-medium text-white">
+                                                {item.name}
+                                            </span>
+                                        </a>
+                                    ))}
+                                </nav>
 
                                 <div className="grid items-center justify-start gap-4 mt-7">
                                     <button className="mx-5">

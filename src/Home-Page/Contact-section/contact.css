@@ -5,8 +5,7 @@
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 18px;
-    letter-spacing: 0.5px;
-    line-height: 1.15;
+    line-height: 1.2;
 }
 
 .form-container {
@@ -99,22 +98,22 @@
 
 .form-container .form-group input:focus {
     outline: none;
-    border-color: #743785;
+    border-color: #c679fe;
 }
 
 .form-container .form-group textarea:focus {
     outline: none;
-    border-color: #743785;
+    border-color: #c679fe;
 }
 
 .form-container .form-group input:hover {
     outline: none;
-    border-color: #743785;
+    border-color: #c679fe;
 }
 
 .form-container .form-group textarea:hover {
     outline: none;
-    border-color: #743785;
+    border-color: #c679fe;
 }
 
 .form-container .form-submit-btn {

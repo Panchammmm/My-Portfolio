@@ -7,7 +7,7 @@ import location from "../../assets/location.svg";
 
 export default function Contact() {
     return (
-        <div className="bg-black pt-[160px] pb-[130px] flex flex-wrap justify-center gap-[8rem]">
+        <div className="bg-black pt-[160px] pb-[300px] flex flex-wrap justify-center gap-[8rem]">
             <div className="form-container my-auto">
                 <h1 className="contact-text">Let's make something awesome together!</h1>
                 <p className="tracking-[0.3px] mb-8 text-slate-200 text-base pr-3">

@@ -11,13 +11,13 @@ import GitIcon from "../../assets/Skill-icons/git.svg";
 
 export default function Skill() {
     const skills = [
-        { name: 'HTML', icon: Html, percentage: '90%' },
+        { name: 'HTML', icon: Html, percentage: '95%' },
         { name: 'CSS', icon: Css, percentage: '85%' },
-        { name: 'JavaScript', icon: Js, percentage: '80%' },
-        { name: 'Tailwind', icon: Tailwind, percentage: '75%' },
-        { name: 'React', icon: ReactIcon, percentage: '85%' },
-        { name: 'Git', icon: GitIcon, percentage: '70%' },
-        { name: 'MongoDB', icon: Mongodb, percentage: '65%' }
+        { name: 'JavaScript', icon: Js, percentage: '70%' },
+        { name: 'Tailwind', icon: Tailwind, percentage: '80%' },
+        { name: 'React', icon: ReactIcon, percentage: '80%' },
+        { name: 'Git', icon: GitIcon, percentage: '90%' },
+        { name: 'MongoDB', icon: Mongodb, percentage: '70%' }
     ];
 
     return (

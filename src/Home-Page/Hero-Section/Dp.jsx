@@ -1,9 +1,11 @@
 import React from "react";
-import 'boxicons/css/boxicons.min.css';
 import './dp.css';
 
 import dp from "../../assets/dp.png";
 import HiImage from "../../assets/hi.svg";
+import linkedin from "../../assets/Social-media-icons/linkedin.svg";
+import github from "../../assets/Social-media-icons/github.svg";
+import insta from "../../assets/Social-media-icons/instagram.svg";
 
 export default function Dp() {
     return (
@@ -50,27 +52,27 @@ export default function Dp() {
                                     href="https://www.linkedin.com/in/pancham-sardar-6a466227b/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] size-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
+                                    className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] size-10 p-[0.7rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
                                 >
-                                    <i className="bx bxl-linkedin"></i>
+                                    <img src={linkedin} alt="linkedin"></img>
                                 </a>
 
                                 <a
                                     href="https://github.com/Panchammmm"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] size-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
+                                    className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] size-10 p-[0.5rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
                                 >
-                                    <i className="bx bxl-github"></i>
+                                    <img src={github} alt="github"></img>
                                 </a>
 
                                 <a
                                     href="https://www.instagram.com/pinaki_x_pancham/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] size-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
+                                    className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] size-10 p-[0.5rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
                                 >
-                                    <i className="bx bxl-instagram"></i>
+                                    <img src={insta} alt="insta"></img>
                                 </a>
                             </div>
                         </div>
