@@ -29,19 +29,19 @@ export default function Dp() {
                         </p>
 
                         <div className="flex flex-wrap my-auto mt-10">
-                            <button class="flex tracking-[0.8px] border border-[#bb5dfed7] hover:bg-[#bb5dfed7] text-[#bb5dfed7] font-bold mr-8 py-3 px-7 rounded-full hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce gradient-border">
+                            <button className="flex tracking-[0.8px] border border-[#bb5dfed7] hover:bg-[#bb5dfed7] text-[#bb5dfed7] font-bold mr-8 py-3 px-7 rounded-full hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce gradient-border">
                                 Resume
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     stroke="currentColor"
-                                    class="w-5 h-5 animate-bounce ml-1 mt-1"
+                                    className="w-5 h-5 animate-bounce ml-1 mt-1"
                                 >
                                     <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
                                         d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
                                     ></path>
                                 </svg>

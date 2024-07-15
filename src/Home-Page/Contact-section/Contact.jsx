@@ -7,7 +7,7 @@ import location from "../../assets/location.svg";
 
 export default function Contact() {
     return (
-        <div className="bg-black pt-[160px] pb-[300px] flex flex-wrap justify-center gap-[8rem]">
+        <div className="bg-black pt-[160px] pb-[350px] flex flex-wrap justify-center gap-[8rem]">
             <div className="form-container my-auto">
                 <h1 className="contact-text">Let's make something awesome together!</h1>
                 <p className="tracking-[0.3px] mb-8 text-slate-200 text-base pr-3">
@@ -31,7 +31,7 @@ export default function Contact() {
             </div>
 
             <div className="contact-info my-auto">
-                <a className="contact-item">
+                <div className="contact-item">
                     <img src={wapp} alt="whatsapp" className="contact-icon" />
                     <div>
                         <h3 className="contact-label">Whatsapp</h3>
@@ -39,7 +39,7 @@ export default function Contact() {
                             <p className="contact-detail">+91 86700 35037</p>
                         </a>
                     </div>
-                </a>
+                </div>
 
                 <div className="contact-item">
                     <img src={email} alt="email" className="contact-icon" />

@@ -1,54 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './nav.css';
 
 const menuItems = [
-    {
-        name: 'About',
-        href: '#',
-    },
-    {
-        name: 'Services',
-        href: '#',
-    },
-    {
-        name: 'Works',
-        href: '#',
-    },
-    {
-        name: 'Skills',
-        href: '#',
-    },
-    {
-        name: 'Blogs',
-        href: '#',
-    },
-    {
-        name: 'Contact',
-        href: '#',
-    },
-]
+    { name: 'About', href: '#' },
+    { name: 'Services', href: '#' },
+    { name: 'Works', href: '#' },
+    { name: 'Skills', href: '#' },
+    { name: 'Blogs', href: '#' },
+    { name: 'Contact', href: '#' },
+];
 
 export default function Nav() {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false)
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
-
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isJapanese, setIsJapanese] = useState(true);
+    const [isScrolled, setIsScrolled] = useState(false);
 
-    const toggleLanguage = () => {
-        setIsJapanese(!isJapanese);
-    }
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+    const toggleLanguage = () => setIsJapanese(!isJapanese);
 
-    // const [isLightMode, setIsLightMode] = useState(true);
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScroll = window.scrollY;
+            setIsScrolled(currentScroll > 0);
 
-    // const toggleMode = () => {
-    //     setIsLightMode(!isLightMode);
-    // }
+            if (currentScroll <= 0) {
+                document.body.classList.remove("scroll-up");
+                return;
+            }
+
+            if (currentScroll > lastScroll && !document.body.classList.contains("scroll-down")) {
+                document.body.classList.remove("scroll-up");
+                document.body.classList.add("scroll-down");
+            } else if (
+                currentScroll < lastScroll &&
+                document.body.classList.contains("scroll-down")
+            ) {
+                document.body.classList.remove("scroll-down");
+                document.body.classList.add("scroll-up");
+            }
+            lastScroll = currentScroll;
+        };
+
+        let lastScroll = 0;
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <div className="sm:w-[85%] w-[80%] mx-auto sm:mt-6 mt-9">
+        <nav id="navbar" className={`px-[7.5rem] py-4 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="mx-auto flex items-center justify-between py-3">
 
                 <div className="inline-flex items-center space-x-2">
@@ -194,6 +194,6 @@ export default function Nav() {
                     </div>
                 )}
             </div>
-        </div>
-    )
+        </nav>
+    );
 }

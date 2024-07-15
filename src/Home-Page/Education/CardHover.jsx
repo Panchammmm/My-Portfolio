@@ -45,7 +45,7 @@ const CHover = ({ items = [], className }) => {
 
                             <img src={Arrow} alt="arrow" className="arrow-icon size-8 group-hover:rotate-[70deg]"></img>
                         </div>
-                        <div class="border-style"></div>
+                        <div className="border-style"></div>
                     </div>
                 ))}
             </div>

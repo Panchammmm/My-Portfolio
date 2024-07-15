@@ -13,7 +13,7 @@ export default function Footer() {
 
     return (
         <div className="relative w-full">
-            <footer className="absolute bg-[#100b18] left-1/2 transform -translate-x-1/2 -top-[7rem] w-[80%] mx-auto border-[1px] border-[#312348] text-gray-300 pt-20 pb-14 px-[7rem] rounded-[100px_100px_0_0]">
+            <footer className="absolute bg-[#100b18] left-1/2 transform -translate-x-1/2 -top-[8rem] w-[80%] mx-auto border-[1px] border-[#312348] text-gray-300 pt-20 pb-14 px-[7rem] rounded-[100px_100px_0_0]">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div className="space-y-4">
                         <h4 className="text-[#9d71b8] text-xl font-semibold">Portfolio</h4>
