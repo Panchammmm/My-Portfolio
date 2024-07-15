@@ -14,7 +14,7 @@ const CHover = ({ items = [], className }) => {
 
     return (
         <div className={cn("max-w-5xl mx-auto px-8", className)}>
-            <div className={cn("flex flex-row justify-between py-10")}>
+            <div className={cn("flex lg:flex-row flex-col justify-between py-10")}>
                 {items.map((item, idx) => (
                     <div
                         key={idx}
@@ -64,7 +64,7 @@ const projects = [
 
 export default function ServCard() {
     return (
-        <div className="App">
+        <div className="">
             <CHover items={projects} />
         </div>
     );
