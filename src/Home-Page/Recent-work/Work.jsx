@@ -98,7 +98,7 @@ const Work = () => {
     };
 
     return (
-        <section className="w-[85%] mx-auto pt-[120px] pb-[120px]">
+        <section id="Works" className="w-[85%] mx-auto pt-[120px] pb-[120px]">
             <h1 className="my-work text-[45px] font-[700] text-center leading-[1.2]">My Recent Works</h1>
             <p className="w-[50%] mx-auto text-center tracking-[0.5px] text-white mt-[15px]">Offering expert web design and development services, specializing in both frontend and backend solutions.</p>
 

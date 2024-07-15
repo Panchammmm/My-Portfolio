@@ -10,7 +10,7 @@ import insta from "../../assets/Social-media-icons/instagram.svg";
 export default function Dp() {
     return (
         <>
-            <section className="w-[85%] mx-auto pt-8 pb-20 mb-14">
+            <section id="Home" className="lg:w-[85%] mx-auto lg:pt-8 lg:pb-20 lg:mb-14">
 
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-[100%] -translate-y-[100%] -z-20">
                     <img className="icon_say-hi" src={HiImage} alt="hi"></img>
