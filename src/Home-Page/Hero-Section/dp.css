@@ -29,12 +29,17 @@
 
 @media (max-width: 640px) {
     .images::before {
-        height: calc(100% - 85px);
+        height: calc(100% - 75px);
+    }
+    .images {
+        margin-bottom: 120px;
+    }
+    .images::after {
+        height: calc(100% - 75px);
     }
 }
 
 .images {
-    width: 60%;
     position: relative;
     opacity: 0;
     animation: imageAni 1s ease forwards;
@@ -97,7 +102,6 @@
 /* greetings style */
 
 .icon_say-hi {
-    width: 7rem;
     opacity: 0.2;
     transform-origin: 60% 90%;
     animation: say-hi 0.9s linear infinite alternate;
