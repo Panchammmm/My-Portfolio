@@ -27,18 +27,6 @@
     box-shadow: 5px 3px 15px rgba(209, 217, 230, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.4);
 }
 
-@media (max-width: 640px) {
-    .images::before {
-        height: calc(100% - 75px);
-    }
-    .images {
-        margin-bottom: 120px;
-    }
-    .images::after {
-        height: calc(100% - 75px);
-    }
-}
-
 .images {
     position: relative;
     opacity: 0;
@@ -54,10 +42,22 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: calc(100% - 125px);
+    height: calc(100% - 75px);
     border-radius: 50px;
     transition: all 0.8s ease;
     z-index: -2;
+}
+
+@media (max-width: 640px) {
+    .images::before {
+        height: calc(100% - 75px);
+    }
+}
+
+@media (min-width: 641px) {
+    .images::after {
+        height: calc(100% - 125px);
+    }
 }
 
 .images:hover::after {

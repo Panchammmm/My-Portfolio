@@ -5,7 +5,8 @@
 }
 
 .tab_box {
-    width: 520px;
+    max-width: 520px;
+    width: auto;
     border-radius: 30px;
     background: black;
     margin: auto;
@@ -19,18 +20,24 @@
     font-size: 16px;
     color: white;
     line-height: 1.2;
-    padding: 17px 30px;
-    border-radius: 50px;
+    padding: 17px 32px;
     z-index: 10;
     position: relative;
     cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .tab_btn {
+        padding: 15px 13px;
+        font-size: 15px;
+    }
 }
 
 .now-tab {
     position: absolute;
     border-radius: 50px;
     transition: all 0.3s ease;
-    background-image: linear-gradient(144deg,#af40ffd7, #3f106d 50%,#1a122a);
+    background-image: linear-gradient(144deg, #af40ffd7, #3f106d 50%, #1a122a);
 }
 
 .content {
@@ -54,11 +61,20 @@
     display: block;
 }
 
-.content-box {
-    gap: 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+@media (min-width: 641px) {
+    .content-box {
+        gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .content-box {
+        display: grid;
+        gap: 20px;
+    }
 }
 
 .image-box {
@@ -69,11 +85,19 @@
 }
 
 .project-image {
-    width: 610px;
+    width: 100%;
     height: 430px;
     object-fit: cover;
     padding: 40px 40px 3px 40px;
     filter: brightness(0.9);
+}
+
+@media (max-width: 640px) {
+    .project-image {
+        height: 300px;
+        object-fit: cover;
+        padding: 30px 30px 3px 30px;
+    }
 }
 
 .project-about {
@@ -85,7 +109,7 @@
     left: 50%;
     position: absolute;
     display: flex;
-    background-image: linear-gradient(130deg,#cf3dfb, #4f106d 50%,#1a122a);
+    background-image: linear-gradient(130deg, #cf3dfb, #4f106d 50%, #1a122a);
     border-radius: 15px;
     z-index: 9;
     opacity: 0;
@@ -98,6 +122,18 @@
     margin-right: 40px;
     rotate: -40deg;
     transition: all 0.5s ease;
+}
+
+@media (max-width: 640px) {
+    .project-about {
+        height: auto;
+        padding: 10px 5px;
+        line-height: 1.3;
+    }
+    .project-icon {
+        margin-right: 30px;
+        transform: scale(0.85);
+    }
 }
 
 .image-box:hover {

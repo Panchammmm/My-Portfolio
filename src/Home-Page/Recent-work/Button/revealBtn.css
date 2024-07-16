@@ -11,6 +11,13 @@
     border: transparent;
 }
 
+@media (max-width: 640px) {
+    .R-btn {
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+}
+
 .R-btn:hover {
     background: linear-gradient(to right, #af40ffd7 0%, #ffffff 100%);
     -webkit-background-clip: text;

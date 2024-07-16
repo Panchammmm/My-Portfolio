@@ -68,7 +68,7 @@ export default function Nav() {
     }, []);
 
     return (
-        <nav id="navbar" className={`lg:px-[7.5rem] lg:py-4 px-7 py-3 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+        <nav id="navbar" className={`lg:px-[7.5rem] lg:py-4 px-5 py-3 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="mx-auto flex items-center justify-between py-3">
                 <div className="inline-flex items-center space-x-2">
                     <div className="text-[#be62ff] flex tracking-wider my-auto cursor-pointer lg:text-3xl text-2xl font-[500]">
@@ -143,8 +143,8 @@ export default function Nav() {
                     </div>
                 </div>
                 {isMenuOpen && (
-                    <div className="absolute inset-x-0 top-20 z-50 origin-top-right transform p-2 transition lg:hidden">
-                        <div className="px-5 pb-10 pt-6 rounded-2xl bg-gradient-to-b from-[#100b18] to-[#2a1454]">
+                    <div className="absolute inset-x-0 top-[5rem] z-0 origin-top-right transform p-2 transition lg:hidden">
+                        <div className="px-6 py-10 rounded-2xl bg-gradient-to-b from-[#100b18] to-[#2a1454]">
                             <nav className="grid gap-y-4">
                                 {menuItems.map((item) => (
                                     <a
@@ -162,7 +162,7 @@ export default function Nav() {
                             </nav>
 
                             <div className="grid place-content-start gap-4 mt-7">
-                                <button className="mx-auto">
+                                <button className="mx-auto hidden">
                                     <label htmlFor="themeToggle" className="themeToggle st-sunMoonThemeToggleBtn">
                                         <input type="checkbox" id="themeToggle" className="themeToggleInput" />
                                         <svg id="themeToggle" viewBox="0 0 20 20" fill="currentColor" stroke="none">
