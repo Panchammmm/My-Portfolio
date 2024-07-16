@@ -33,7 +33,7 @@ export default function Contact() {
             <div className="contact-info my-auto">
                 <div className="contact-item">
                     <img src={wapp} alt="whatsapp" className="contact-icon" />
-                    <div>
+                    <div className="my-auto">
                         <h3 className="contact-label">Whatsapp</h3>
                         <a href="https://wa.me/918670035037" target="_blank" rel="noopener noreferrer">
                             <p className="contact-detail">+91 86700 35037</p>

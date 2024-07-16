@@ -8,6 +8,17 @@
     line-height: 1.2;
 }
 
+@media (max-width: 640px) {
+    .contact-text {
+        font-size: 30px;
+    }
+    #Contact {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: auto;
+    }
+}
+
 .form-container {
     width: 500px;
     background: linear-gradient(#25152c, #000000) padding-box,
@@ -141,7 +152,7 @@
     background-position: -100%;
 }
 
-/* contact section */
+/* contact buttons */
 
 .contact-info {
     display: flex;
@@ -175,6 +186,19 @@
     color: #E5E7EB;
     font-weight: 500;
     position: relative;
+}
+
+@media (max-width: 640px) {
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .contact-label {
+        font-size: 0.95rem;
+    }
+    .contact-detail {
+        font-size: 1.06rem;
+    }
 }
 
 .contact-detail::after {
