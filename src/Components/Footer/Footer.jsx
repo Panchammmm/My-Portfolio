@@ -13,7 +13,7 @@ export default function Footer() {
 
     return (
         <div className="relative w-full">
-            <footer className="absolute bg-[#100b18] left-1/2 transform -translate-x-1/2 -top-[8rem] w-[80%] mx-auto border-[1px] border-[#312348] text-gray-300 pt-20 pb-14 px-[7rem] rounded-[100px_100px_0_0]">
+            <footer className="absolute bg-[#100b18] left-1/2 transform -translate-x-1/2 -top-[8rem] w-[90%] sm:w-[80%] mx-auto border-[1px] border-[#312348] text-gray-300 pt-20 lg:pb-14 pb-5 px-8 lg:px-[7rem] sm:px-10 md:px-14 rounded-[100px_100px_0_0]">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div className="space-y-4">
                         <h4 className="text-[#9d71b8] text-xl font-semibold">Portfolio</h4>
@@ -48,7 +48,7 @@ export default function Footer() {
                             </a>
                         </div>
 
-                        <h5 className="text-slate-200 text-sm">© {year} Pancham Sardar</h5>
+                        <h5 className="text-slate-200 text-sm lg:flex hidden">© {year} Pancham Sardar</h5>
                     </div>
 
                     <div className="space-y-4">
@@ -63,7 +63,7 @@ export default function Footer() {
 
                         <div className="flex items-center space-x-2 hover:underline">
                             <img src={email} alt="email" className="w-6 h-6" />
-                            {/* <p onClick={() => window.location.href = 'mailto:sardarpancham510510@gmail.com'} className="cursor-pointer">sardarpancham510510@gmail.com</p> */}
+                            <p onClick={() => window.location.href = 'mailto:sardarpancham510510@gmail.com'} className="cursor-pointer">sardarpancham510510@gmail.com</p>
                         </div>
 
                         <div className="flex items-center space-x-2 hover:underline">
@@ -77,7 +77,6 @@ export default function Footer() {
 
                         <div className="flex flex-col space-y-2.5">
                             {["about", "skill", "project", "education", "blog"].map((section) => (
-
                                 <a href={`#${section}`} className="hover:underline fbutton" key={section}>
                                     {section.charAt(0).toUpperCase() + section.slice(1)}
 
@@ -95,6 +94,8 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+
+                <h5 className="text-[#888] text-sm flex lg:hidden justify-center pt-16">© {year} Pancham Sardar</h5>
             </footer>
         </div>
     );

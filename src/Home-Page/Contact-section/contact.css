@@ -2,16 +2,13 @@
     background: linear-gradient(to right, #c679fe, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 32px;
+    font-size: clamp(26px,4vw,32px);
     font-weight: 800;
     margin-bottom: 18px;
     line-height: 1.2;
 }
 
 @media (max-width: 640px) {
-    .contact-text {
-        font-size: 30px;
-    }
     #Contact {
         padding-right: 15px;
         padding-left: 15px;
@@ -197,6 +194,7 @@
         font-size: 0.95rem;
     }
     .contact-detail {
+        display: flex;
         font-size: 1.06rem;
     }
 }
