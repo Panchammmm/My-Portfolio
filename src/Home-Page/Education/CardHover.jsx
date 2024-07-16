@@ -36,14 +36,14 @@ const CHover = ({ items = [], className }) => {
                                 />
                             )}
                         </AnimatePresence>
-                        <div className={cn("rounded-2xl h-full w-full p-4 overflow-hidden bg-tranparent relative z-20 flex group")}>
+                        <div className={cn("rounded-2xl h-full w-full p-4 overflow-hidden bg-tranparent relative z-20 flex justify-between group")}>
                             <div className="relative z-50">
-                                <h3 className="text-lg font-bold text-[#a95bf8]">{item.year}</h3>
-                                <h2 className="text-white font-[700] text-[1.5rem] mt-2 mb-2">{item.title}</h2>
-                                <p className="text-base font-semibold tracking-[0.6px] text-zinc-400">{item.description}</p>
+                                <h3 className="lg:text-lg text-base font-bold text-[#a95bf8]">{item.year}</h3>
+                                <h2 className="text-white font-[700] lg:text-[1.5rem] text-xl mt-2 mb-2">{item.title}</h2>
+                                <p className="lg:text-base text-[15px] font-semibold tracking-[0.6px] text-zinc-400">{item.description}</p>
                             </div>
 
-                            <img src={Arrow} alt="arrow" className="arrow-icon size-8 group-hover:rotate-[70deg]"></img>
+                            <img src={Arrow} alt="arrow" className="arrow-icon my-auto lg:size-8 size-7 group-hover:rotate-[70deg]"></img>
                         </div>
                         <div className="border-style"></div>
                     </div>
