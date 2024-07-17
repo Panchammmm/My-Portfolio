@@ -13,9 +13,9 @@ export default function Footer() {
 
     return (
         <div className="relative w-full">
-            <footer className="absolute bg-[#100b18] left-1/2 transform -translate-x-1/2 -top-[8rem] w-[90%] sm:w-[80%] mx-auto border-[1px] border-[#312348] text-gray-300 pt-20 lg:pb-14 pb-5 px-8 lg:px-[7rem] sm:px-10 md:px-14 rounded-[100px_100px_0_0]">
-                <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <div className="space-y-4">
+            <footer className="absolute bg-[#100b18] left-1/2 transform -translate-x-1/2 -top-[8rem] w-[90%] sm:w-[80%] mx-auto border-[1px] border-[#312348] text-gray-300 pt-20 lg:pb-14 pb-5 px-8 lg:px-[4rem] sm:px-10 md:px-14 rounded-[100px_100px_0_0]">
+                <div className="lg:flex lg:justify-around lg:flex-wrap mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div className="space-y-4 lg:w-[20rem]">
                         <h4 className="text-[#9d71b8] text-xl font-semibold">Portfolio</h4>
                         <p className="text-slate-300 text-base">Passionate about crafting exceptional digital experiences. With expertise in both creative design and technical implementation.</p>
 
@@ -48,7 +48,7 @@ export default function Footer() {
                             </a>
                         </div>
 
-                        <h5 className="text-slate-200 text-sm lg:flex hidden">© {year} Pancham Sardar</h5>
+                        <h5 className="text-[#bbb] text-sm pt-[0.15rem] lg:flex hidden">© {year} Pancham Sardar</h5>
                     </div>
 
                     <div className="space-y-4">

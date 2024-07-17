@@ -21,25 +21,27 @@ export default function Skill() {
     ];
 
     return (
-        <section id="Skills" className="lg:w-[85%] w-[90%] mx-auto pt-[120px] pb-[120px]">
-            <h1 className="my-skill lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">My Skills</h1>
-            <p className="lg:w-[50%] mx-auto tracking-[0.5px] text-center text-white mt-[15px]">
-                We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
-            </p>
+        <div className="bg-black">
+            <section id="Skills" className="lg:w-[85%] w-[90%] mx-auto pt-[120px] pb-[120px]">
+                <h1 className="my-skill lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">My Skills</h1>
+                <p className="lg:w-[50%] mx-auto tracking-[0.5px] text-center text-white mt-[15px]">
+                    We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+                </p>
 
-            <div className="flex flex-wrap justify-center mt-[30px] text-white">
-                {skills.map(skill => (
-                    <div key={skill.name} className="flex flex-col items-center m-4">
-                        <div className="skill-card">
-                            <div className="skill-logo-box">
-                                <img src={skill.icon} alt={skill.name} />
+                <div className="flex flex-wrap justify-center mt-[30px] text-white">
+                    {skills.map(skill => (
+                        <div key={skill.name} className="flex flex-col items-center m-4">
+                            <div className="skill-card">
+                                <div className="skill-logo-box">
+                                    <img src={skill.icon} alt={skill.name} />
+                                </div>
+                                <p className="skill-percentage">{skill.percentage}</p>
                             </div>
-                            <p className="skill-percentage">{skill.percentage}</p>
+                            <p className="w-full text-[#a95bf8] mt-2 text-center tracking-[0.5px]">{skill.name}</p>
                         </div>
-                        <p className="w-full text-[#a95bf8] mt-2 text-center tracking-[0.5px]">{skill.name}</p>
-                    </div>
-                ))}
-            </div>
-        </section>
+                    ))}
+                </div>
+            </section>
+        </div>
     );
 }

@@ -4,7 +4,7 @@ import ServCard from "./ServCard";
 
 export default function Service() {
     return (
-        <section id="Services" className="mx-auto bg-[#050709] pt-[120px] lg:pb-[110px] pb-[90px]">
+        <section id="Services" className="mx-auto pt-[120px] lg:pb-[110px] pb-[90px]">
 
             <div className="flex justify-center">
                 <h1 className="my-service lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">My Quality Services</h1>

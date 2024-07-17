@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 import Nav from "../Components/NavBar/Nav";
 import Dp from "./Hero-Section/Dp";
@@ -10,6 +11,11 @@ import Contact from "./Contact-section/Contact";
 import Footer from "../Components/Footer/Footer";
 
 export default function Home() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -20,12 +26,19 @@ export default function Home() {
 
   return (
     <>
+      <div className="bg-white">
+        <h1>{t('welcome')}</h1>
+        <p>{t('description')}</p>
+        <button onClick={() => changeLanguage('en')}>English</button>
+        <button onClick={() => changeLanguage('ja')}>日本語</button>
+      </div>
+
       <Nav />
       <Dp />
-      <Service />
-      <Work />
       <Education />
+      <Service />
       <Skill />
+      <Work />
       <Contact />
       <Footer />
 
