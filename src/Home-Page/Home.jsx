@@ -29,8 +29,6 @@ export default function Home() {
       <div className="bg-white">
         <h1>{t('welcome')}</h1>
         <p>{t('description')}</p>
-        <button onClick={() => changeLanguage('en')}>English</button>
-        <button onClick={() => changeLanguage('ja')}>日本語</button>
       </div>
 
       <Nav />

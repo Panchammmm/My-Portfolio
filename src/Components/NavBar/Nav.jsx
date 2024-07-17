@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 import './nav.css';
 
@@ -13,15 +14,17 @@ const menuItems = [
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isJapanese, setIsJapanese] = useState(() => localStorage.getItem('language') === 'ja');
     const [isScrolled, setIsScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState('Home');
+    const { t, i18n } = useTranslation();
+    const [isJapanese, setIsJapanese] = useState(() => localStorage.getItem('language') === 'ja');
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const toggleLanguage = () => {
-        const newLang = !isJapanese;
-        setIsJapanese(newLang);
-        localStorage.setItem('language', newLang ? 'ja' : 'en');
+        const newLang = isJapanese ? 'en' : 'ja';
+        setIsJapanese(!isJapanese);
+        localStorage.setItem('language', newLang);
+        i18n.changeLanguage(newLang);
     };
 
     const handleMenuItemClick = (e, href) => {
@@ -106,7 +109,7 @@ export default function Nav() {
                                     onClick={(e) => handleMenuItemClick(e, item.href)}
                                     className={clsx('navItem tracking-[1px] relative text-gray-300 focus:outline-none font-[500] text-[15px]', { 'active': activeSection === item.href.substring(1) })}
                                 >
-                                    {item.name}
+                                    {t(item.name)}
                                 </a>
                             </li>
                         ))}
@@ -142,7 +145,7 @@ export default function Nav() {
                     </button>
 
                     <button type="button" onClick={toggleLanguage} className="language-btn">
-                        {isJapanese ? '日本語' : 'ENG'}
+                        {isJapanese ? 'ENG' : '日本語'}
                     </button>
                 </div>
 
@@ -168,7 +171,7 @@ export default function Nav() {
                                         className={clsx('-m-3 flex items-center rounded-md p-3 text-sm font-base', { 'active': activeSection === item.href.substring(1) })}
                                     >
                                         <span className="ml-3 text-base font-medium text-white">
-                                            {item.name}
+                                            {t(item.name)}
                                         </span>
                                     </a>
                                 ))}
@@ -176,7 +179,7 @@ export default function Nav() {
 
                             <div className="grid place-content-start gap-4 mt-7">
                                 <button type="button" onClick={toggleLanguage} className="language-btn">
-                                    {isJapanese ? '日本語' : 'ENG'}
+                                    {isJapanese ? 'ENG' : '日本語'}
                                 </button>
                             </div>
                         </div>
