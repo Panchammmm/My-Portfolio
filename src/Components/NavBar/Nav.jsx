@@ -117,32 +117,9 @@ export default function Nav() {
                 </div>
 
                 <div className="hidden xl:flex items-center justify-center">
-                    <button className="mx-5">
-                        <label htmlFor="themeToggle" className="themeToggle st-sunMoonThemeToggleBtn">
-                            <input type="checkbox" id="themeToggle" className="themeToggleInput" />
-                            <svg viewBox="0 0 20 20" fill="currentColor" stroke="none">
-                                <mask id="moon-mask">
-                                    <rect x="0" y="0" width="20" height="20" fill="white"></rect>
-                                    <circle cx="11" cy="3" r="8" fill="black"></circle>
-                                </mask>
-                                <circle
-                                    className="sunMoon"
-                                    cx="10"
-                                    cy="10"
-                                    r="8"
-                                    mask="url(#moon-mask)"
-                                ></circle>
-                                <g>
-                                    <circle className="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
-                                    <circle className="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
-                                    <circle className="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
-                                    <circle className="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
-                                    <circle className="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
-                                    <circle className="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
-                                </g>
-                            </svg>
-                        </label>
-                    </button>
+                    <div className="mt-2">
+                        {ThemeBtn()}
+                    </div>
 
                     <button type="button" onClick={toggleLanguage} className="language-btn">
                         {isJapanese ? 'ENG' : '日本語'}
@@ -150,14 +127,21 @@ export default function Nav() {
                 </div>
 
                 <div className="xl:hidden">
-                    <div>
-                        <input id="burger-checkbox" type="checkbox" onClick={toggleMenu} />
-                        <label className="burger" htmlFor="burger-checkbox">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </label>
+                    <div className="flex">
+                        <div className="mt-1">
+                            {ThemeBtn()}
+                        </div>
+
+                        <div>
+                            <input id="burger-checkbox" type="checkbox" onClick={toggleMenu} />
+                            <label className="burger" htmlFor="burger-checkbox">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                        </div>
                     </div>
+
                 </div>
                 {isMenuOpen && (
                     <div className={`absolute inset-x-0 top-[5rem] z-0 origin-top-right transform p-2 transition lg:hidden ${isScrolled ? handleMenuItemClick() : ''}`}>
@@ -188,4 +172,37 @@ export default function Nav() {
             </div>
         </nav>
     );
+}
+
+function ThemeBtn() {
+    return (
+        <>
+            <button className="mx-5">
+                <label htmlFor="themeToggle" className="themeToggle st-sunMoonThemeToggleBtn">
+                    <input type="checkbox" id="themeToggle" className="themeToggleInput" />
+                    <svg viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                        <mask id="moon-mask">
+                            <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                            <circle cx="11" cy="3" r="8" fill="black"></circle>
+                        </mask>
+                        <circle
+                            className="sunMoon"
+                            cx="10"
+                            cy="10"
+                            r="8"
+                            mask="url(#moon-mask)"
+                        ></circle>
+                        <g>
+                            <circle className="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                            <circle className="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                            <circle className="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                            <circle className="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                            <circle className="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                            <circle className="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                        </g>
+                    </svg>
+                </label>
+            </button>
+        </>
+    )
 }

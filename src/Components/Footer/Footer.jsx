@@ -76,9 +76,9 @@ export default function Footer() {
                         <h4 className="text-[#9d71b8] text-xl font-semibold">General</h4>
 
                         <div className="flex flex-col space-y-2.5">
-                            {["about", "skill", "project", "education", "blog"].map((section) => (
+                            {["About", "Skill", "Project", "Education", "Blog"].map((section) => (
                                 <a href={`#${section}`} className="hover:underline fbutton" key={section}>
-                                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                                    {section.charAt(0) + section.slice(1)}
 
                                     <span className="button__icon-wrapper">
                                         <svg width="10" className="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="rgba(255, 255, 255, 0.6)" viewBox="0 0 14 15">

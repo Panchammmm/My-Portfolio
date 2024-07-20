@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 
+import Preload from "../Preloader/Preload";
 import Nav from "../Components/NavBar/Nav";
 import Dp from "./Hero-Section/Dp";
 import Service from "./My-Service/Service";
@@ -11,11 +12,16 @@ import Contact from "./Contact-section/Contact";
 import Footer from "../Components/Footer/Footer";
 
 export default function Home() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const [showPreloader, setShowPreloader] = useState(true);
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPreloader(false);
+    }, 5900);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -26,10 +32,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-white">
-        <h1>{t('welcome')}</h1>
-        <p>{t('description')}</p>
-      </div>
+      {showPreloader && <Preload />}
 
       <Nav />
       <Dp />
