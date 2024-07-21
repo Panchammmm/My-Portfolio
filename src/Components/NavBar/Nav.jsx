@@ -118,7 +118,7 @@ export default function Nav() {
 
                 <div className="hidden xl:flex items-center justify-center">
                     <div className="mt-2">
-                        {ThemeBtn()}
+                        <ThemeBtn />
                     </div>
 
                     <button type="button" onClick={toggleLanguage} className="language-btn">
@@ -129,7 +129,7 @@ export default function Nav() {
                 <div className="xl:hidden">
                     <div className="flex">
                         <div className="mt-1">
-                            {ThemeBtn()}
+                            <ThemeBtn />
                         </div>
 
                         <div>
@@ -144,7 +144,7 @@ export default function Nav() {
 
                 </div>
                 {isMenuOpen && (
-                    <div className={`absolute inset-x-0 top-[5rem] z-0 origin-top-right transform p-2 transition lg:hidden ${isScrolled ? handleMenuItemClick() : ''}`}>
+                    <div className={`absolute inset-x-0 top-[5rem] z-0 origin-top-right transform p-2 transition lg:hidden ${isScrolled ? 'bg-black' : ''}`}>
                         <div className="px-6 py-10 rounded-2xl bg-gradient-to-b from-[#100b18] to-[#231341]">
                             <nav className="grid gap-y-4">
                                 {menuItems.map((item) => (
@@ -204,5 +204,5 @@ function ThemeBtn() {
                 </label>
             </button>
         </>
-    )
+    );
 }

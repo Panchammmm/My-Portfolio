@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './footer.css';
 
 import droplocation from "../../assets/pin-location.svg";
@@ -9,7 +9,17 @@ import github from "../../assets/Social-media-icons/github.svg";
 import insta from "../../assets/Social-media-icons/instagram.svg";
 
 export default function Footer() {
+    const [activeSection, setActiveSection] = useState("");
     const year = new Date().getFullYear();
+
+    const handleLocateClick = (e, section) => {
+        e.preventDefault();
+        const target = document.querySelector(`#${section}`);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        setActiveSection(section);
+    };
 
     return (
         <div className="relative w-full">
@@ -76,8 +86,9 @@ export default function Footer() {
                         <h4 className="text-[#9d71b8] text-xl font-semibold">General</h4>
 
                         <div className="flex flex-col space-y-2.5">
-                            {["About", "Skill", "Project", "Education", "Blog"].map((section) => (
-                                <a href={`#${section}`} className="hover:underline fbutton" key={section}>
+                            {["About", "Skills", "Works", "Education", "Blog"].map((section) => (
+                                <a href={`#${section}`} className="hover:underline fbutton" key={section}
+                                    onClick={(e) => handleLocateClick(e, section)}>
                                     {section.charAt(0) + section.slice(1)}
 
                                     <span className="button__icon-wrapper">

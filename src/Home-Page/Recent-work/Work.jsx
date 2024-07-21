@@ -98,58 +98,56 @@ const Work = () => {
     };
 
     return (
-        <div>
-            <section id="Works" className="lg:w-[85%] w-[90%] mx-auto pt-[120px] pb-[120px]">
-                <h1 className="my-work lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">My Recent Works</h1>
-                <p className="lg:w-[50%] mx-auto text-center tracking-[0.5px] text-white mt-[15px]">Offering expert web design and development services, specializing in both frontend and backend solutions.</p>
+        <section id="Works" className="lg:w-[85%] w-[90%] mx-auto pt-[120px] pb-[120px]">
+            <h1 className="my-work lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">My Recent Works</h1>
+            <p className="lg:w-[50%] mx-auto text-center tracking-[0.5px] text-white mt-[15px]">Offering expert web design and development services, specializing in both frontend and backend solutions.</p>
 
-                <div className="mt-14 mx-auto">
-                    <div className="px-3 lg:px-0">
-                        <div className="tab_box">
-                            <button className={`tab_btn ${activeTab === 0 ? 'active' : ''}`} onClick={() => handleTabClick(0)}>All</button>
-                            <button className={`tab_btn ${activeTab === 1 ? 'active' : ''}`} onClick={() => handleTabClick(1)}>UI</button>
-                            <button className={`tab_btn ${activeTab === 2 ? 'active' : ''}`} onClick={() => handleTabClick(2)}>Web&nbsp;App</button>
-                            <button className={`tab_btn ${activeTab === 3 ? 'active' : ''}`} onClick={() => handleTabClick(3)}>Client</button>
-                            <button className={`tab_btn ${activeTab === 4 ? 'active' : ''}`} onClick={() => handleTabClick(4)}>Backend</button>
-                            <div className="now-tab" style={lineStyle}></div>
-                        </div>
-                    </div>
-
-                    <div className="mt-10">
-                        <div className={`content ${activeTab === 0 ? 'active' : ''}`}>
-                            <div className="content-box">
-                                {getProjects('all')}
-                            </div>
-                            <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
-                        </div>
-                        <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
-                            <div className="content-box">
-                                {getProjects('ui')}
-                            </div>
-                            <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
-                        </div>
-                        <div className={`content ${activeTab === 2 ? 'active' : ''}`}>
-                            <div className="content-box">
-                                {getProjects('webApp')}
-                            </div>
-                            <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
-                        </div>
-                        <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
-                            <div className="content-box">
-                                {getProjects('client')}
-                            </div>
-                            <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
-                        </div>
-                        <div className={`content ${activeTab === 4 ? 'active' : ''}`}>
-                            <div className="content-box">
-                                {getProjects('backend')}
-                            </div>
-                            <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
-                        </div>
+            <div className="mt-14 mx-auto">
+                <div className="px-3 lg:px-0">
+                    <div className="tab_box">
+                        <button className={`tab_btn ${activeTab === 0 ? 'active' : ''}`} onClick={() => handleTabClick(0)}>All</button>
+                        <button className={`tab_btn ${activeTab === 1 ? 'active' : ''}`} onClick={() => handleTabClick(1)}>UI</button>
+                        <button className={`tab_btn ${activeTab === 2 ? 'active' : ''}`} onClick={() => handleTabClick(2)}>Web&nbsp;App</button>
+                        <button className={`tab_btn ${activeTab === 3 ? 'active' : ''}`} onClick={() => handleTabClick(3)}>Client</button>
+                        <button className={`tab_btn ${activeTab === 4 ? 'active' : ''}`} onClick={() => handleTabClick(4)}>Backend</button>
+                        <div className="now-tab" style={lineStyle}></div>
                     </div>
                 </div>
-            </section>
-        </div>
+
+                <div className="mt-10">
+                    <div className={`content ${activeTab === 0 ? 'active' : ''}`}>
+                        <div className="content-box">
+                            {getProjects('all')}
+                        </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                    </div>
+                    <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
+                        <div className="content-box">
+                            {getProjects('ui')}
+                        </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                    </div>
+                    <div className={`content ${activeTab === 2 ? 'active' : ''}`}>
+                        <div className="content-box">
+                            {getProjects('webApp')}
+                        </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                    </div>
+                    <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
+                        <div className="content-box">
+                            {getProjects('client')}
+                        </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                    </div>
+                    <div className={`content ${activeTab === 4 ? 'active' : ''}`}>
+                        <div className="content-box">
+                            {getProjects('backend')}
+                        </div>
+                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 };
 
