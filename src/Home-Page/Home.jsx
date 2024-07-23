@@ -28,7 +28,7 @@ export default function Home() {
       if (isMounted) {
         setShowPreloader(false);
       }
-    }, 5800);
+    }, 5700);
 
     return () => {
       isMounted = false;

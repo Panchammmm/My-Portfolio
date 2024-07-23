@@ -49,112 +49,38 @@
 
 /* Night mode - Light mode */
 
-.themeToggle {
-    color: #eee;
-}
-
-.st-sunMoonThemeToggleBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.toggle {
+    background-color: transparent;
+    display: grid;
+    place-items: center;
     cursor: pointer;
-    width: 100%;
-    height: 100%;
 }
 
-.st-sunMoonThemeToggleBtn .themeToggleInput {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.input {
+    display: none;
 }
 
-.st-sunMoonThemeToggleBtn svg {
-    width: 22px;
-    height: 22px;
-    transition: transform 0.4s ease;
-    transform: rotate(0deg);
-    /* Initial rotation for the sun */
+.icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
 }
 
-.st-sunMoonThemeToggleBtn svg .sunMoon {
-    transform-origin: center center;
-    transition: inherit;
-    transform: scale(0.55);
-    /* Initial scale for the sun */
+.icon--moon {
+    transition-delay: 200ms;
 }
 
-.st-sunMoonThemeToggleBtn svg .sunRay {
-    transform-origin: center center;
-    transform: scale(1);
-    /* Sun rays visible initially */
+.icon--sun {
+    transform: scale(0);
 }
 
-.st-sunMoonThemeToggleBtn svg mask>circle {
-    transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
-    transform: translate(16px, -3px);
-    /* Initial position for the moon mask */
+#switch:checked+.icon--moon {
+    transform: rotate(360deg) scale(0);
 }
 
-.st-sunMoonThemeToggleBtn svg .sunRay2 {
-    animation-delay: 0.05s !important;
-}
-
-.st-sunMoonThemeToggleBtn svg .sunRay3 {
-    animation-delay: 0.1s !important;
-}
-
-.st-sunMoonThemeToggleBtn svg .sunRay4 {
-    animation-delay: 0.17s !important;
-}
-
-.st-sunMoonThemeToggleBtn svg .sunRay5 {
-    animation-delay: 0.25s !important;
-}
-
-.st-sunMoonThemeToggleBtn svg .sunRay6 {
-    animation-delay: 0.29s !important;
-}
-
-.st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg {
-    transform: rotate(60deg);
-    /* Rotating to show the moon */
-}
-
-.st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg mask>circle {
-    transform: translate(0px, 0px);
-    /* Moving the mask to show the moon */
-}
-
-.st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunMoon {
-    transform: scale(1);
-    /* Scaling for the moon */
-}
-
-.st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunRay {
-    animation: hideRay1832 0.4s ease 0s 1 forwards;
-    /* Hiding the rays for the moon */
-}
-
-@keyframes showRay1832 {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes hideRay1832 {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(0);
-    }
+#switch:checked~.icon--sun {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
 }
 
 /* language button styling */

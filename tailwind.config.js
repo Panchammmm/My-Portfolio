@@ -5,8 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-    }
+    extend: {
+      colors: {
+        navBody: 'var(--nav_body)',
+        navItm: 'var(--nav_item)',
+      },
+    },
   },
   plugins: [],
 }
