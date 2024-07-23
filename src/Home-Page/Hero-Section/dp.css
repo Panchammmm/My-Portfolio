@@ -1,7 +1,7 @@
 /* Hero section */
 
 .gradient-text {
-    background: linear-gradient(to right, #c778ff 20%, #ffffff 70%);
+    background: linear-gradient(to right, var(--gradient_texta) 20%, var(--gradient_textb) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -24,7 +24,7 @@
     border-radius: 50px 50px 30px 30px;
     pointer-events: none;
     background: linear-gradient(to right, #1a0f2e, #c16dfdd7);
-    box-shadow: 5px 3px 15px rgba(209, 217, 230, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: 5px 3px 15px var(--dp_Shadowa), -5px -5px 15px var(--dp_Shadowb);
 }
 
 .images {

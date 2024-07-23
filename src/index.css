@@ -7,13 +7,29 @@
 :root {
   --body_background: #ffffff;
   --nav_body: #f8f2fd;
+  --nav_tittle: #8130bb;
   --nav_item: #111;
+  --name_color: #2a1454;
+  --gradient_texta: #ba5bff;
+  --gradient_textb: #2a1454;
+  --dp_Shadowa: #2e2e2eb9;
+  --dp_Shadowb: #191919b6;
+  --dev_about: #000;
+  --about_light: #00000075;
 }
 
 [data-theme="dark"] {
   --body_background: #100b18;
   --nav_body: #000;
+  --nav_tittle: #be62ff;
   --nav_item: #ccc;
+  --name_color: #fff;
+  --gradient_texta: #c778ff;
+  --gradient_textb: #fff;
+  --dp_Shadowa: #d1d9e699;
+  --dp_Shadowb: #ffffff66;
+  --dev_about: #fff;
+  --about_light: #ffffff55;
 }
 
 * {

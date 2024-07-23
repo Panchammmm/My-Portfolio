@@ -18,7 +18,7 @@ export default function Dp() {
                 <div className="grid grid-cols-[repeat(auto-fit,minmax(277px,1fr))] lg:gap-y-8 items-center">
                     <div>
                         <div>
-                            <h3 className="lg:text-[36px] text-[25px] text-white font-[700] mb-2  lg:mt-14 mt-8">I am Pancham</h3>
+                            <h3 className="lg:text-[36px] text-[25px] text-nameColor font-[700] mb-2  lg:mt-14 mt-8">I am Pancham</h3>
                             <h1 className="lg:text-[65px] text-[40px] font-[700] gradient-text leading-[1.2] mb-3">Web Developer + <br></br> UI Designer</h1>
                         </div>
 
@@ -29,8 +29,8 @@ export default function Dp() {
                         </div>
 
                         <div>
-                            <p className="text-white text-[20px] leading-7 tracking-[1px] max-w-[550px] font-[300]">
-                                Passionate about crafting <span className=" text-[#ffffff55]">exceptional</span> digital experiences. With expertise in both creative <span className=" text-[#ffffff55]">design</span> and <span className=" text-[#ffffff55]">technical</span> implementation, specialized in delivering top-notch <span className=" text-[#ffffff55]">web solutions</span> for clients worldwide.
+                            <p className="text-devAbout text-[20px] leading-7 tracking-[1px] max-w-[550px] font-[300]">
+                                Passionate about crafting <span className=" text-aboutLight">exceptional</span> digital experiences. With expertise in both creative <span className=" text-aboutLight">design</span> and <span className=" text-aboutLight">technical</span> implementation, specialized in delivering top-notch <span className=" text-aboutLight">web solutions</span> for clients worldwide.
                             </p>
 
                             <div className="flex flex-wrap my-auto lg:mt-10 mt-9">
@@ -57,7 +57,7 @@ export default function Dp() {
                                         href="https://www.linkedin.com/in/pancham-sardar-6a466227b/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] lg:size-10 size-9 p-[0.7rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
+                                        className="shadow-2xl border border-[#bb5dfed7] lg:size-10 size-9 p-[0.7rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
                                     >
                                         <img src={linkedin} alt="linkedin"></img>
                                     </a>
@@ -66,7 +66,7 @@ export default function Dp() {
                                         href="https://github.com/Panchammmm"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] lg:size-10 size-9 p-[0.5rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
+                                        className="shadow-2xl border border-[#bb5dfed7] lg:size-10 size-9 p-[0.5rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
                                     >
                                         <img src={github} alt="github"></img>
                                     </a>
@@ -75,7 +75,7 @@ export default function Dp() {
                                         href="https://www.instagram.com/pinaki_x_pancham/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-white hover:text-[#bb5dfed7] border border-[#bb5dfed7] lg:size-10 size-9 p-[0.5rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
+                                        className="shadow-2xl border border-[#bb5dfed7] lg:size-10 size-9 p-[0.5rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
                                     >
                                         <img src={insta} alt="insta"></img>
                                     </a>

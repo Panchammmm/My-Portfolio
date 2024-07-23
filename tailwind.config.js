@@ -8,7 +8,11 @@ export default {
     extend: {
       colors: {
         navBody: 'var(--nav_body)',
+        navTittle: 'var(--nav_tittle)',
         navItm: 'var(--nav_item)',
+        nameColor: 'var(--name_color)',
+        devAbout: 'var(--dev_about)',
+        aboutLight: 'var(--about_light)',
       },
     },
   },
