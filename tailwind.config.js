@@ -15,6 +15,8 @@ export default {
         devAbout: 'var(--dev_about)',
         aboutLight: 'var(--about_light)',
         eduTitle: 'var(--edu_title)',
+        des: 'var(--description)',
+        servBox: 'var(--service_box)',
       },
     },
   },

@@ -9,7 +9,7 @@ export default function Service() {
             <div className="flex justify-center">
                 <h1 className="my-service lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">My Quality Services</h1>
             </div>
-            <p className="w-[90%] lg:w-[50%] mx-auto text-center tracking-[0.5px] text-white mt-[15px] mb-4">Offering expert web design and development services, specializing in both frontend and backend solutions.</p>
+            <p className="w-[90%] lg:w-[50%] mx-auto text-center text-des tracking-[0.5px] mt-[15px] mb-4">Offering expert web design and development services, specializing in both frontend and backend solutions.</p>
 
             <ServCard />
 

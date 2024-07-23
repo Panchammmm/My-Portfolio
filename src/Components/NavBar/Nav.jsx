@@ -117,7 +117,7 @@ export default function Nav() {
                 </div>
 
                 <div className="hidden xl:flex items-center justify-center">
-                    <div className="mt-2">
+                    <div className="mt-1">
                         <ThemeBtn />
                     </div>
 

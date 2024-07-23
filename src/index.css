@@ -17,7 +17,9 @@
   --dp_Shadowb: #191919b6;
   --dev_about: #000;
   --about_light: #00000075;
-  --edu_title: #000;
+  --edu_title: #222;
+  --description: #111;
+  --service_box: #fff;
 }
 
 [data-theme="dark"] {
@@ -34,6 +36,8 @@
   --dev_about: #fff;
   --about_light: #ffffff55;
   --edu_title: #fff;
+  --description: #eee;
+  --service_box: #000;
 }
 
 * {

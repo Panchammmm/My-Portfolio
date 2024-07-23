@@ -1,5 +1,5 @@
 .my-service {
-    background: linear-gradient(to right, #c471ff, #ffffff);
+    background: linear-gradient(to right, var(--gradient_texta), var(--gradient_textb));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
