@@ -7,12 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
+        sectionBg: 'var(--section_bg)',
         navBody: 'var(--nav_body)',
         navTittle: 'var(--nav_tittle)',
         navItm: 'var(--nav_item)',
         nameColor: 'var(--name_color)',
         devAbout: 'var(--dev_about)',
         aboutLight: 'var(--about_light)',
+        eduTitle: 'var(--edu_title)',
       },
     },
   },

@@ -39,7 +39,7 @@ const CHover = ({ items = [], className }) => {
                         <div className={cn("rounded-2xl h-full w-full p-4 overflow-hidden bg-tranparent relative z-20 flex justify-between group")}>
                             <div className="relative z-50">
                                 <h3 className="lg:text-lg text-base font-bold text-[#a95bf8]">{item.year}</h3>
-                                <h2 className="text-white font-[700] lg:text-[1.5rem] text-xl mt-2 mb-2">{item.title}</h2>
+                                <h2 className="group-hover:text-white text-eduTitle ease-in-out duration-300 font-[700] lg:text-[1.5rem] text-xl mt-2 mb-2">{item.title}</h2>
                                 <p className="lg:text-base text-[15px] font-semibold tracking-[0.6px] text-zinc-400">{item.description}</p>
                             </div>
 

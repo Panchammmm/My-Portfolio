@@ -6,6 +6,7 @@
 
 :root {
   --body_background: #ffffff;
+  --section_bg: #f8f1ff;
   --nav_body: #f8f2fd;
   --nav_tittle: #8130bb;
   --nav_item: #111;
@@ -16,10 +17,12 @@
   --dp_Shadowb: #191919b6;
   --dev_about: #000;
   --about_light: #00000075;
+  --edu_title: #000;
 }
 
 [data-theme="dark"] {
   --body_background: #100b18;
+  --section_bg: #000;
   --nav_body: #000;
   --nav_tittle: #be62ff;
   --nav_item: #ccc;
@@ -30,6 +33,7 @@
   --dp_Shadowb: #ffffff66;
   --dev_about: #fff;
   --about_light: #ffffff55;
+  --edu_title: #fff;
 }
 
 * {
