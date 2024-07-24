@@ -1,5 +1,5 @@
 .my-skill {
-    background: linear-gradient(to right, #c679fe 45%, #ffffff 59%);
+    background: linear-gradient(to right, var(--gradient_texta) 45%, var(--gradient_textb) 59%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -7,7 +7,7 @@
 .skill-card {
     border-radius: 25px;
     padding: 40px 60px 40px 60px;
-    background: #140c1c;
+    background: var(--skill_box);
     border: 1px solid transparent;
     margin-bottom: 15px;
     text-align: center;

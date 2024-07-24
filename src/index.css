@@ -20,6 +20,7 @@
   --edu_title: #222;
   --description: #111;
   --service_box: #fff;
+  --skill_box: #fcf7ff;
 }
 
 [data-theme="dark"] {
@@ -38,6 +39,7 @@
   --edu_title: #fff;
   --description: #eee;
   --service_box: #000;
+  --skill_box: #140c1c;
 }
 
 * {
