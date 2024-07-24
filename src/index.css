@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* dark mode colors (default) */
 :root {
   --body_background: #ffffff;
   --section_bg: #f8f1ff;
@@ -18,11 +19,19 @@
   --dev_about: #000;
   --about_light: #00000075;
   --edu_title: #222;
+  --border_stylea: #e4baff;
+  --border_styleb: #cd77ff;
   --description: #111;
-  --service_box: #fff;
+  --service_box: #fdfaff;
+  --service_boxBorder: #eccbff;
   --skill_box: #fcf7ff;
+  --tab_box: #f4e1ff;
+  --tab_btn: #000;
+  --image-box: #3c214c;
+  --star_color: #7720b9;
 }
 
+/* light mode colors */
 [data-theme="dark"] {
   --body_background: #100b18;
   --section_bg: #000;
@@ -37,9 +46,16 @@
   --dev_about: #fff;
   --about_light: #ffffff55;
   --edu_title: #fff;
+  --border_stylea: #371e4f;
+  --border_styleb: #3f106d;
   --description: #eee;
   --service_box: #000;
+  --service_boxBorder: #462262;
   --skill_box: #140c1c;
+  --tab_box: #000;
+  --tab_btn: #fff;
+  --image-box: #1b031e;
+  --star_color: #fffdef;
 }
 
 * {

@@ -27,7 +27,7 @@
 
 .border-style {
     align-items: center;
-    background: linear-gradient(to right, #371e4f, #3f106d);
+    background: linear-gradient(to right, var(--border_stylea), var(--border_styleb));
     display: flex;
     margin: 1px 0;
     min-height: 1px;

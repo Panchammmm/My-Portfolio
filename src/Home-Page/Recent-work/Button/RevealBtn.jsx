@@ -29,7 +29,7 @@ const StarSVG = () => (
 
 const RevealBtn = ({ btnName, onClick }) => (
     <div className="flex justify-center mt-16">
-        <button className="R-btn" onClick={onClick}>
+        <button className="R-btn shadow-2xl" onClick={onClick}>
             {btnName}
             {[...Array(5)].map((_, index) => (
                 <div key={index} className={`star-${index + 1}`}>

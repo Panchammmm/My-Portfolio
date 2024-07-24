@@ -33,7 +33,7 @@ const CHover = ({ items = [], className }) => {
                                 />
                             )}
                         </AnimatePresence>
-                        <div className={cn("rounded-2xl shadow-2xl p-5 overflow-hidden bg-servBox border border-[#462262] relative z-20")}>
+                        <div className={cn("rounded-2xl shadow-2xl p-5 overflow-hidden bg-servBox border border-servBorder relative z-20")}>
                             <div className="relative z-50">
                                 <h4 className={cn("text-des font-bold tracking-[0.6px] mt-4")}>{item.title}</h4>
                                 <p className={cn("mt-8 text-zinc-500 tracking-[0.6px] leading-relaxed text-base")}>{item.description}</p>

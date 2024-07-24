@@ -1,5 +1,5 @@
 .my-work {
-    background: linear-gradient(to right, #c679fe, #ffffff);
+    background: linear-gradient(to right, var(--gradient_texta) 38%, var(--gradient_textb) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -8,7 +8,7 @@
     max-width: 520px;
     width: auto;
     border-radius: 30px;
-    background: #000;
+    background: var(--tab_box);
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -17,13 +17,18 @@
 }
 
 .tab_btn {
+    color: var(--tab_btn);
     font-size: 16px;
-    color: white;
     line-height: 1.2;
     padding: 17px 32px;
     z-index: 10;
     position: relative;
     cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.tab_btn.active {
+    color: #fff;
 }
 
 @media (max-width: 640px) {
@@ -79,7 +84,7 @@
 
 .image-box {
     position: relative;
-    background: #1b0a1e;
+    background: var(--image-box);
     border-radius: 10px;
     margin: auto;
 }
@@ -88,15 +93,15 @@
     width: 100%;
     height: 430px;
     object-fit: cover;
-    padding: 40px 40px 3px 40px;
-    filter: brightness(0.9);
+    padding: 40px 40px 0px 40px;
+    filter: brightness(0.92);
 }
 
 @media (max-width: 640px) {
     .project-image {
         height: 300px;
         object-fit: cover;
-        padding: 30px 30px 3px 30px;
+        padding: 30px 30px 0px 30px;
     }
 }
 

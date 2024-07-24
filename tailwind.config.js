@@ -17,6 +17,7 @@ export default {
         eduTitle: 'var(--edu_title)',
         des: 'var(--description)',
         servBox: 'var(--service_box)',
+        servBorder: 'var(--service_boxBorder)',
       },
     },
   },
