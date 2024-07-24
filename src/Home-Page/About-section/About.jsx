@@ -1,5 +1,5 @@
 import React from "react";
-import Education from "../Education/Education";
+import Education from "./Education/Education";
 
 export default function About() {
     return(

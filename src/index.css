@@ -27,8 +27,10 @@
   --skill_box: #fcf7ff;
   --tab_box: #f4e1ff;
   --tab_btn: #000;
-  --image-box: #3c214c;
+  --image-box: #361d44;
   --star_color: #7720b9;
+  --contact_label: #6d6d6d;
+  --contact_detail: #232323;
 }
 
 /* light mode colors */
@@ -56,6 +58,8 @@
   --tab_btn: #fff;
   --image-box: #1b031e;
   --star_color: #fffdef;
+  --contact_label: #aeaeae;
+  --contact_detail: #e5e7eb;
 }
 
 * {

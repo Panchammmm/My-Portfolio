@@ -1,5 +1,5 @@
 .contact-text {
-    background: linear-gradient(to right, #c679fe, #ffffff);
+    background: linear-gradient(to right, var(--gradient_texta)40%, var(--gradient_textb));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: clamp(26px,4vw,32px);
@@ -18,7 +18,7 @@
 
 .form-container {
     width: 500px;
-    background: linear-gradient(#25152c, #000000) padding-box,
+    background: linear-gradient(to top, #000000, #25152c) padding-box,
         linear-gradient(145deg, transparent, #34153d, transparent) border-box;
     border: 2px solid transparent;
     padding: 32px 24px;
@@ -136,11 +136,12 @@
     padding: 12px 16px;
     font-size: inherit;
     gap: 8px;
-    margin-top: 8px;
+    margin-top: 12px;
+    margin-bottom: 4px;
     cursor: pointer;
     border-radius: 10px;
     background-size: 200%;
-    box-shadow: #7426984e 0px 5px 50px, #7426984e 0px 5px 40px;
+    box-shadow: #7426985f 0px 5px 50px, #7426985e 0px 5px 40px;
     background-image: linear-gradient(to right, #c26dfe85 0%, #150c1b5e 50%, #c26dfe85 100%);
     transition: 0.5s;
 }
@@ -167,20 +168,20 @@
 .contact-icon {
     width: 50px;
     height: 50px;
-    background-image: linear-gradient(144deg, #a250dd, #0000004a);
+    background-image: linear-gradient(144deg, #a250dd, #000000);
     padding: 10px;
     border-radius: 50%;
 }
 
 .contact-label {
     font-size: 1rem;
-    color: #aeaeae;
+    color: var(--contact_label);
     margin: 0;
 }
 
 .contact-detail {
     font-size: 1.2rem;
-    color: #E5E7EB;
+    color: var(--contact_detail);
     font-weight: 500;
     position: relative;
 }
@@ -206,8 +207,8 @@
     left: 0%;
     position: absolute;
     width: 0%;
-    height: 2.5px;
-    background: linear-gradient(to right, #eed5ffb3, #26073b77);
+    height: 1.8px;
+    background: linear-gradient(to right, #f0d9ff, #1c0c26);
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, right;
