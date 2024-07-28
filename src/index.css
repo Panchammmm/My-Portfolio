@@ -6,36 +6,6 @@
 
 /* dark mode colors (default) */
 :root {
-  --body_background: #ffffff;
-  --nav_body: #f5e8ff;
-  --section_bg: #f8f1ff;
-  --nav_tittle: #8130bb;
-  --nav_item: #111;
-  --name_color: #2a1454;
-  --gradient_texta: #ba5bff;
-  --gradient_textb: #2a1454;
-  --dp_Shadowa: #2e2e2eb9;
-  --dp_Shadowb: #191919b6;
-  --dev_about: #000;
-  --about_light: #999;
-  --edu_title: #222;
-  --border_stylea: #e4baff;
-  --border_styleb: #cd77ff;
-  --description: #111;
-  --service_box: #fdfaff;
-  --service_boxBorder: #eccbff;
-  --skill_box: #fcf7ff;
-  --tab_box: #f7e8ff;
-  --tab_btn: #000;
-  --image-box: #301a3c;
-  --star_color: #7720b9;
-  --contact_label: #6d6d6d;
-  --contact_detail: #232323;
-  --footer_bg: #241631;
-}
-
-/* light mode colors */
-[data-theme="light"] {
   --body_background: #100b18;
   --nav_body: #000;
   --section_bg: #000;
@@ -62,6 +32,36 @@
   --contact_label: #aeaeae;
   --contact_detail: #e5e7eb;
   --footer_bg: #100b18;
+}
+
+/* light mode colors */
+[data-theme="light"] {
+  --body_background: #ffffff;
+  --nav_body: #f5e8ff;
+  --section_bg: #f8f1ff;
+  --nav_tittle: #8130bb;
+  --nav_item: #111;
+  --name_color: #2a1454;
+  --gradient_texta: #ba5bff;
+  --gradient_textb: #2a1454;
+  --dp_Shadowa: #2e2e2eb9;
+  --dp_Shadowb: #191919b6;
+  --dev_about: #000;
+  --about_light: #999;
+  --edu_title: #222;
+  --border_stylea: #e4baff;
+  --border_styleb: #cd77ff;
+  --description: #111;
+  --service_box: #fdfaff;
+  --service_boxBorder: #eccbff;
+  --skill_box: #fcf7ff;
+  --tab_box: #f7e8ff;
+  --tab_btn: #000;
+  --image-box: #301a3c;
+  --star_color: #7720b9;
+  --contact_label: #6d6d6d;
+  --contact_detail: #232323;
+  --footer_bg: #241631;
 }
 
 * {

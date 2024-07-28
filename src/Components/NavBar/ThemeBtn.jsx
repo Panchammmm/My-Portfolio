@@ -14,7 +14,7 @@ export default function ThemeBtn() {
     };
 
     return (
-        <div className="container duration-[10s]">
+        <div className="container">
             <label className="toggle mx-4 my-auto" htmlFor="switch">
                 <input
                     id="switch"
