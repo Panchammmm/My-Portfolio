@@ -94,7 +94,7 @@
     height: 430px;
     object-fit: cover;
     padding: 40px 40px 0px 40px;
-    filter: brightness(0.92);
+    filter: brightness(0.95);
 }
 
 @media (max-width: 640px) {

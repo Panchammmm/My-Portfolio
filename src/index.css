@@ -7,8 +7,8 @@
 /* dark mode colors (default) */
 :root {
   --body_background: #ffffff;
+  --nav_body: #f5e8ff;
   --section_bg: #f8f1ff;
-  --nav_body: #f8f2fd;
   --nav_tittle: #8130bb;
   --nav_item: #111;
   --name_color: #2a1454;
@@ -17,7 +17,7 @@
   --dp_Shadowa: #2e2e2eb9;
   --dp_Shadowb: #191919b6;
   --dev_about: #000;
-  --about_light: #00000075;
+  --about_light: #999;
   --edu_title: #222;
   --border_stylea: #e4baff;
   --border_styleb: #cd77ff;
@@ -25,19 +25,20 @@
   --service_box: #fdfaff;
   --service_boxBorder: #eccbff;
   --skill_box: #fcf7ff;
-  --tab_box: #f4e1ff;
+  --tab_box: #f7e8ff;
   --tab_btn: #000;
-  --image-box: #361d44;
+  --image-box: #301a3c;
   --star_color: #7720b9;
   --contact_label: #6d6d6d;
   --contact_detail: #232323;
+  --footer_bg: #241631;
 }
 
 /* light mode colors */
-[data-theme="dark"] {
+[data-theme="light"] {
   --body_background: #100b18;
-  --section_bg: #000;
   --nav_body: #000;
+  --section_bg: #000;
   --nav_tittle: #be62ff;
   --nav_item: #ccc;
   --name_color: #fff;
@@ -56,10 +57,11 @@
   --skill_box: #140c1c;
   --tab_box: #000;
   --tab_btn: #fff;
-  --image-box: #1b031e;
+  --image-box: #150418;
   --star_color: #fffdef;
   --contact_label: #aeaeae;
   --contact_detail: #e5e7eb;
+  --footer_bg: #100b18;
 }
 
 * {
@@ -92,4 +94,64 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* back to top button */
+
+.button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 2px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: #7a5eaf;
+}
+
+.button:hover {
+  width: 120px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #522b6e, #3f106d 50%, #1a122a);
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.button:hover .svgIcon {
+  transform: translateY(-200%);
+  transition-duration: 0.3s;
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  font-size: 0;
+  opacity: 0;
+  transition: opacity 0.3s, font-size 0.3s, bottom 0.3s;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: 10px;
 }

@@ -47,7 +47,62 @@
     font-weight: bold;
 }
 
-/* Night mode - Light mode */
+/* language button styling */
+
+.language-btn {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #ffffff;
+    background-size: 200%;
+    background-image: linear-gradient(to right, #b751ffd7 0%, #000000d9 51%, #bb5dfed7 100%);
+    border-radius: 30px;
+    padding: 8px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+}
+
+.language-btn:hover {
+    background-position: -100%;
+}
+
+/* burger menu styling */
+
+.burger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    background: #5e2e89;
+    margin: 6px 0;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s ease;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+#burger-checkbox:checked+.burger span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+#burger-checkbox:checked+.burger span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#burger-checkbox:checked+.burger span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ------------------ */
+
+/* ThemeBtn css */
 
 .toggle {
     background-color: transparent;
@@ -81,118 +136,4 @@
 #switch:checked~.icon--sun {
     transition-delay: 200ms;
     transform: scale(1) rotate(360deg);
-}
-
-/* language button styling */
-
-.language-btn {
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-size: 15px;
-    color: #ffffff;
-    background-size: 200%;
-    background-image: linear-gradient(to right, #b751ffd7 0%, #000000d9 51%, #bb5dfed7 100%);
-    border-radius: 30px;
-    padding: 8px 20px;
-    transition: 0.5s;
-    cursor: pointer;
-    border: none;
-}
-
-.language-btn:hover {
-    background-position: -100%;
-}
-
-/* back to top button */
-
-.button {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    border: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 0px 2px rgba(180, 160, 255, 0.253);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    position: fixed;
-    bottom: 30px;
-    right: 40px;
-    z-index: 1000;
-}
-
-.svgIcon {
-    width: 12px;
-    transition-duration: 0.3s;
-}
-
-.svgIcon path {
-    fill: #7a5eaf;
-}
-
-.button:hover {
-    width: 120px;
-    border-radius: 50px;
-    background-image: linear-gradient(to right, #522b6e, #3f106d 50%, #1a122a);
-    align-items: center;
-    transition-duration: 0.3s;
-}
-
-.button:hover .svgIcon {
-    transform: translateY(-200%);
-    transition-duration: 0.3s;
-}
-
-.button::before {
-    position: absolute;
-    bottom: -20px;
-    content: "Back to Top";
-    color: white;
-    font-size: 0;
-    opacity: 0;
-    transition: opacity 0.3s, font-size 0.3s, bottom 0.3s;
-}
-
-.button:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    bottom: 10px;
-}
-
-/* burger menu stylling */
-
-.burger {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.burger span {
-    display: block;
-    width: 25px;
-    height: 2.5px;
-    background: #5e2e89;
-    margin: 6px 0;
-    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-        opacity 0.3s ease;
-}
-
-#burger-checkbox {
-    display: none;
-}
-
-#burger-checkbox:checked+.burger span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-}
-
-#burger-checkbox:checked+.burger span:nth-child(2) {
-    opacity: 0;
-    transform: translateX(-20px);
-}
-
-#burger-checkbox:checked+.burger span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
 }

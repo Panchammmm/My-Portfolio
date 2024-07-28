@@ -13,13 +13,15 @@ import Gui from "../../assets/project-images/GUI.png";
 import Travel from "../../assets/project-images/travel.png";
 import Profile from "../../assets/project-images/profile.png";
 import Back from "../../assets/project-images/back.png";
+import Myport from "../../assets/project-images/myPortfolio.png";
 
 // Projects data categorized
 const uiProjects = [
     { Imagesrc: Fashion, Name: "Anistora", Description: "UI design for fast fashion website", URL: "https://anistora.netlify.app/" },
     { Imagesrc: Travel, Name: "TravelHikes", Description: "UI design for international travel website", URL: "https://travelhikes.netlify.app/" },
-    { Imagesrc: Profile, Name: "My Profile", Description: "UI design for profile card", URL: "https://panchammmm.github.io/My_Profile/" },
+    { Imagesrc: Myport, Name: "My Portfolio", Description: "Know a bit about me and my professionalism", URL: "https://Pancham_Sardar.netlify.app/" },
     { Imagesrc: Gui, Name: "COMport Duplex Data Transmitter", Description: "GUI of Visual Light Communication systems", URL: "https://github.com/Panchammmm/COMPortFull-duplexDataTransmitter" },
+    { Imagesrc: Profile, Name: "My Profile", Description: "UI design for profile card", URL: "https://panchammmm.github.io/My_Profile/" },
 ];
 
 const webAppProjects = [
@@ -29,21 +31,21 @@ const webAppProjects = [
     { Imagesrc: ToDo, Name: "To Do List", Description: "List up your to-do items", URL: "https://panchammmm.github.io/ToDoList-reactApp/" },
 ];
 
-const clientProjects = [
-    { Imagesrc: Client, Name: "YJLS Kolkata", Description: "Yume Japanese Language School official website", URL: "https://yjls-kolkata.com/" },
-];
-
 const backendProjects = [
     { Imagesrc: Back, Name: "Backend", Description: "Showcasing my backend projects", URL: "" },
 ];
 
+const clientProjects = [
+    { Imagesrc: Client, Name: "YJLS Kolkata", Description: "Yume Japanese Language School official website", URL: "https://yjls-kolkata.com/" },
+];
+
 // Combining all projects for the 'all' category
 const projectsData = {
-    all: [...uiProjects, ...webAppProjects, ...clientProjects, ...backendProjects],
+    all: [...uiProjects, ...webAppProjects, ...backendProjects, ...clientProjects],
     ui: uiProjects,
     webApp: webAppProjects,
-    client: clientProjects,
     backend: backendProjects,
+    client: clientProjects,
 };
 
 const Work = () => {
@@ -108,8 +110,8 @@ const Work = () => {
                         <button className={`tab_btn ${activeTab === 0 ? 'active' : ''}`} onClick={() => handleTabClick(0)}>All</button>
                         <button className={`tab_btn ${activeTab === 1 ? 'active' : ''}`} onClick={() => handleTabClick(1)}>UI</button>
                         <button className={`tab_btn ${activeTab === 2 ? 'active' : ''}`} onClick={() => handleTabClick(2)}>Web&nbsp;App</button>
-                        <button className={`tab_btn ${activeTab === 3 ? 'active' : ''}`} onClick={() => handleTabClick(3)}>Client</button>
-                        <button className={`tab_btn ${activeTab === 4 ? 'active' : ''}`} onClick={() => handleTabClick(4)}>Backend</button>
+                        <button className={`tab_btn ${activeTab === 3 ? 'active' : ''}`} onClick={() => handleTabClick(3)}>Backend</button>
+                        <button className={`tab_btn ${activeTab === 4 ? 'active' : ''}`} onClick={() => handleTabClick(4)}>Client</button>
                         <div className="now-tab" style={lineStyle}></div>
                     </div>
                 </div>
@@ -135,13 +137,13 @@ const Work = () => {
                     </div>
                     <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
                         <div className="content-box">
-                            {getProjects('client')}
+                            {getProjects('backend')}
                         </div>
                         <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
                     </div>
                     <div className={`content ${activeTab === 4 ? 'active' : ''}`}>
                         <div className="content-box">
-                            {getProjects('backend')}
+                            {getProjects('client')}
                         </div>
                         <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
                     </div>
@@ -157,9 +159,9 @@ const Project = ({ Imagesrc, Name, Description, URL }) => {
     };
 
     return (
-        <div className="image-box" onClick={handleClick}>
+        <div className="image-box">
             <img src={Imagesrc} alt="project" className="project-image" />
-            <div className="project-about">
+            <div className="project-about" onClick={handleClick}>
                 <div className="pl-5 my-auto">
                     <h1 className="text-white font-[600] lg:text-2xl text-base tracking-[0.2px] mb-[0.4rem]">{Name}</h1>
                     <p className="text-[#ffffffc5] tracking-[0.3px]">{Description}</p>

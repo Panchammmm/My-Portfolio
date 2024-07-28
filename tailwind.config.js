@@ -18,6 +18,7 @@ export default {
         des: 'var(--description)',
         servBox: 'var(--service_box)',
         servBorder: 'var(--service_boxBorder)',
+        footerBg: 'var(--footer_bg)',
       },
     },
   },

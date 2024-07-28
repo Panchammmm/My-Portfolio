@@ -4,7 +4,7 @@ import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import './edu.css';
 
-import Arrow from "../../assets/arrow.svg";
+import Arrow from "../../../assets/arrow.svg";
 
 // Utility function to merge class names
 function cn(...inputs) {

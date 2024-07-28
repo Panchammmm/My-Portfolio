@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 import './nav.css';
+import ThemeBtn from "./ThemeBtn";
 
 const menuItems = [
     { name: 'Home', href: '#Home' },
@@ -18,6 +19,7 @@ export default function Nav() {
     const [activeSection, setActiveSection] = useState('Home');
     const { t, i18n } = useTranslation();
     const [isJapanese, setIsJapanese] = useState(() => localStorage.getItem('language') === 'ja');
+    const menuRef = useRef(null);
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const toggleLanguage = () => {
@@ -80,15 +82,39 @@ export default function Nav() {
 
                 ticking = true;
             }
+
+            if (isMenuOpen && currentScroll > lastScroll) {
+                setIsMenuOpen(false);
+
+                const checkbox = document.getElementById('burger-checkbox');
+                if (checkbox) {
+                    checkbox.checked = false;
+                }
+            }
+        };
+
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsMenuOpen(false);
+
+                const checkbox = document.getElementById('burger-checkbox');
+                if (checkbox) {
+                    checkbox.checked = false;
+                }
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
+        document.addEventListener('mousedown', handleClickOutside);
 
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isMenuOpen]);
 
     return (
-        <nav id="navbar" className={clsx('lg:px-[7rem] lg:py-4 px-5 py-3', { 'bg-navBody': isScrolled, 'bg-transparent': !isScrolled })}>
+        <nav id="navbar" className={clsx('lg:px-[7rem] lg:py-4 px-5 py-[10px]', { 'bg-navBody': isScrolled, 'bg-transparent': !isScrolled })}>
             <div className="mx-auto flex items-center justify-between py-3">
                 <div className="inline-flex items-center space-x-2">
                     <div className="text-navTittle flex tracking-wider my-auto cursor-pointer lg:text-3xl text-2xl font-[500]">
@@ -144,7 +170,7 @@ export default function Nav() {
 
                 </div>
                 {isMenuOpen && (
-                    <div className={`absolute inset-x-0 top-[5rem] z-0 origin-top-right transform p-2 transition lg:hidden ${isScrolled ? 'bg-black' : ''}`}>
+                    <div ref={menuRef} className={`absolute inset-x-0 top-[5rem] z-0 origin-top-right transform p-2 transition lg:hidden ${isScrolled ? 'bg-black' : ''}`}>
                         <div className="px-6 py-10 rounded-2xl bg-gradient-to-b from-[#100b18] to-[#231341]">
                             <nav className="grid gap-y-4">
                                 {menuItems.map((item) => (
@@ -171,44 +197,5 @@ export default function Nav() {
                 )}
             </div>
         </nav>
-    );
-}
-
-function ThemeBtn() {
-    const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
-
-    useEffect(() => {
-        document.body.setAttribute('data-theme', theme);
-    }, [theme]);
-
-    const toggleTheme = () => {
-        const newTheme = theme === 'light' ? 'dark' : 'light';
-        setTheme(newTheme);
-        localStorage.setItem('theme', newTheme);
-    };
-
-    return (
-        <div className="container">
-            <label className="toggle mx-4 my-auto" htmlFor="switch">
-                <input
-                    id="switch"
-                    className="input"
-                    type="checkbox"
-                    checked={theme === 'dark'}
-                    onChange={toggleTheme}
-                />
-                <div className="icon icon--moon">
-                    <svg height="26" width="26" fill="#100b18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"></path>
-                    </svg>
-                </div>
-
-                <div className="icon icon--sun">
-                    <svg height="26" width="26" fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
-                    </svg>
-                </div>
-            </label>
-        </div>
     );
 }
