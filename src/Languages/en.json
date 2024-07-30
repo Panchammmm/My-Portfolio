@@ -40,5 +40,13 @@
     "Backend": "Backend",
     "UI Design Description": "Crafting intuitive, engaging interfaces that enhance user experience.",
     "Web App Description": "Building dynamic, responsive apps that perform seamlessly across devices.",
-    "Backend Description": "Developing scalable, secure backend solutions for smooth application operations."
+    "Backend Description": "Developing scalable, secure backend solutions for smooth application operations.",
+    "HTML": "HTML",
+    "CSS": "CSS",
+    "JavaScript": "JavaScript",
+    "Tailwind": "Tailwind",
+    "React": "React",
+    "Git": "Git",
+    "MongoDB": "MongoDB",
+    "Skills Description": "I bring your ideas to life by crafting unique web projects that captivate and inspire both you and your customers."
 }

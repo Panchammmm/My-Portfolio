@@ -40,5 +40,13 @@
     "Backend": "バックエンド",
     "UI Design Description": "直感的で魅力的なインターフェイスを作成し、ユーザー体験を向上させます。",
     "Web App Description": "デバイス間でシームレスに動作するダイナミックでレスポンシブなアプリを構築します。",
-    "Backend Description": "スムーズなアプリケーション操作のために、スケーラブルで安全なバックエンドソリューションを開発します。"
+    "Backend Description": "スムーズなアプリケーション操作のために、スケーラブルで安全なバックエンドソリューションを開発します。",
+    "HTML": "HTML",
+    "CSS": "CSS",
+    "JavaScript": "JavaScript",
+    "Tailwind": "Tailwind",
+    "React": "React",
+    "Git": "Git",
+    "MongoDB": "MongoDB",
+    "Skills Description": "ユニークなウェブプロジェクトを作成し、あなたとあなたの顧客の両方を魅了し、インスパイアします。"
 }

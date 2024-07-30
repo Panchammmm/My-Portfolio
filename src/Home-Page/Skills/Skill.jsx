@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './skill.css';
 
 import Html from "../../assets/Skill-icons/html5.svg";
@@ -10,22 +11,24 @@ import Mongodb from "../../assets/Skill-icons/mongoDB.svg";
 import GitIcon from "../../assets/Skill-icons/git.svg";
 
 export default function Skill() {
+    const { t } = useTranslation();
+
     const skills = [
-        { name: 'HTML', icon: Html, percentage: '95%' },
-        { name: 'CSS', icon: Css, percentage: '85%' },
-        { name: 'JavaScript', icon: Js, percentage: '70%' },
-        { name: 'Tailwind', icon: Tailwind, percentage: '80%' },
-        { name: 'React', icon: ReactIcon, percentage: '80%' },
-        { name: 'Git', icon: GitIcon, percentage: '90%' },
-        { name: 'MongoDB', icon: Mongodb, percentage: '70%' }
+        { name: t('HTML'), icon: Html, percentage: '95%' },
+        { name: t('CSS'), icon: Css, percentage: '85%' },
+        { name: t('JavaScript'), icon: Js, percentage: '70%' },
+        { name: t('Tailwind'), icon: Tailwind, percentage: '80%' },
+        { name: t('React'), icon: ReactIcon, percentage: '80%' },
+        { name: t('Git'), icon: GitIcon, percentage: '90%' },
+        { name: t('MongoDB'), icon: Mongodb, percentage: '70%' }
     ];
 
     return (
         <div className="bg-sectionBg">
             <section id="Skills" className="lg:w-[85%] w-[90%] mx-auto pt-[120px] pb-[120px]">
-                <h1 className="my-skill lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">My Skills</h1>
+                <h1 className="my-skill lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">{t('My Skills')}</h1>
                 <p className="lg:w-[50%] mx-auto tracking-[0.5px] text-center text-des mt-[15px]">
-                    I bring your ideas to life by crafting unique web projects that captivate and inspire both you and your customers.
+                    {t('Skills Description')}
                 </p>
 
                 <div className="flex flex-wrap justify-center mt-[30px] text-white">
