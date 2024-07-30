@@ -102,7 +102,7 @@ const Work = () => {
     return (
         <section id="Works" className="lg:w-[85%] w-[90%] mx-auto pt-[120px] pb-[120px]">
             <h1 className="my-work lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">My Recent Works</h1>
-            <p className="lg:w-[50%] mx-auto text-center tracking-[0.5px] text-des mt-[15px]">Offering expert web design and development services, specializing in both frontend and backend solutions.</p>
+            <p className="lg:w-[50%] mx-auto text-center tracking-[0.5px] text-des mt-[15px]">Showcasing premier web design and development projects, excelling in both frontend and backend expertise.</p>
 
             <div className="mt-14 mx-auto">
                 <div className="px-3 lg:px-0">

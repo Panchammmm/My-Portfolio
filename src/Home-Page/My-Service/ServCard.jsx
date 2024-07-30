@@ -36,7 +36,7 @@ const CHover = ({ items = [], className }) => {
                         <div className={cn("rounded-2xl shadow-2xl p-5 overflow-hidden bg-servBox border border-servBorder relative z-20")}>
                             <div className="relative z-50">
                                 <h4 className={cn("text-des font-bold tracking-[0.6px] mt-4")}>{item.title}</h4>
-                                <p className={cn("mt-8 text-zinc-500 tracking-[0.6px] leading-relaxed text-base")}>{item.description}</p>
+                                <p className={cn("mt-5 text-zinc-500 tracking-[0.6px] leading-relaxed text-base")}>{item.description}</p>
                             </div>
                         </div>
                     </div>
@@ -50,16 +50,16 @@ const CHover = ({ items = [], className }) => {
 const projects = [
     {
         title: "UI Design",
-        description: "Expert web design and development, focusing on intuitive user interfaces.",
+        description: "Crafting intuitive, engaging interfaces that enhance user experience."
     },
     {
         title: "Web App",
-        description: "Streaming service with a wide range of content for internet-connected devices.",
+        description: "Building dynamic, responsive apps that perform seamlessly across devices."
     },
     {
         title: "Backend",
-        description: "Specializes in scalable and secure Internet services and products.",
-    }
+        description: "Developing scalable, secure backend solutions for smooth application operations."
+    }      
 ];
 
 export default function ServCard() {

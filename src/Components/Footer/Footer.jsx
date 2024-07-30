@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className="lg:flex lg:justify-around lg:flex-wrap mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div className="space-y-4 lg:w-[20rem]">
                         <h4 className="text-[#9d71b8] text-xl font-semibold">Portfolio</h4>
-                        <p className="text-slate-300 text-base">Passionate about crafting exceptional digital experiences. With expertise in both creative design and technical implementation.</p>
+                        <p className="text-slate-300 text-base">Transforming ideas into exceptional digital experiences with a perfect blend of creative design and technical expertise.</p>
 
                         <div className="flex space-x-5">
                             <a

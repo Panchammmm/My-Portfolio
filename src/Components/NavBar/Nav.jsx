@@ -78,11 +78,11 @@ export default function Nav() {
     }, []);
 
     return (
-        <nav id="hide-header" className={clsx('lg:px-[7rem] lg:py-4 px-5 py-[10px]')}>
+        <nav id="hide-header" className={clsx('lg:px-[7rem] lg:py-6 px-5 py-[12px]')}>
             <div className="mx-auto flex items-center justify-between py-3">
                 <div className="inline-flex items-center space-x-2">
                     <div className="text-navTittle flex tracking-wider my-auto cursor-pointer lg:text-3xl text-2xl font-[500]">
-                        {"Portfolio.".split("").map((char, index) => (
+                        {t("Portfolio").split("").map((char, index) => (
                             <span key={index} className="transition-all duration-100 ease-in-out transform hover:text-slate-300 hover:-translate-y-2">
                                 {char}
                             </span>
@@ -134,7 +134,7 @@ export default function Nav() {
                     </div>
                 </div>
                 {isMenuOpen && (
-                    <div className={`absolute inset-x-0 top-[5rem] z-0 origin-top-right transform p-2 transition lg:hidden ${isMenuOpen ? 'transparent' : ''}`}>
+                    <div className={`absolute inset-x-0 top-[5rem] origin-top-right transform p-2 transition lg:hidden ${isMenuOpen ? 'transparent' : ''}`}>
                         <div className="px-6 py-10 rounded-2xl bg-gradient-to-b from-menuGra to-menuGrb">
                             <nav className="grid gap-y-4">
                                 {menuItems.map((item) => (
@@ -143,7 +143,7 @@ export default function Nav() {
                                         key={item.name}
                                         href={item.href}
                                         onClick={(e) => handleMenuItemClick(e, item.href)}
-                                        className={clsx('-m-3 flex items-center rounded-md p-3 text-sm font-base', { 'active': activeSection === item.href.substring(1) })}
+                                        className={clsx('menuItems -m-3 flex items-center rounded-md p-3 text-sm font-base', { 'active': activeSection === item.href.substring(1) })}
                                     >
                                         <span className="ml-3 text-base font-medium text-navItm">
                                             {t(item.name)}

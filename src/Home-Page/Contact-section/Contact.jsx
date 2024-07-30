@@ -9,9 +9,9 @@ export default function Contact() {
     return (
         <section id="Contact" className="bg-sectionBg pt-[160px] pb-[350px] flex flex-wrap justify-center gap-[8rem]">
             <div className="form-container my-auto">
-                <h1 className="contact-text">Let's make something awesome together!</h1>
+                <h1 className="contact-text">Let's Create Something Amazing together!</h1>
                 <p className="tracking-[0.3px] mb-8 text-slate-200 text-base pr-3">
-                    I design and code beautifully simple things and I love what I do. Just simple like that!
+                    I design and code beautifully simple things, and I'm passionate about what I do. It’s that simple!
                 </p>
                 <form className="form">
                     <div className="form-group">

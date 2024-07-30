@@ -1,4 +1,13 @@
 {
-    "welcome": "Welcome",
-    "description": "This is an example."
+    "Home": "Home",
+    "About": "About",
+    "Services": "Services",
+    "Skills": "Skills",
+    "Works": "Works",
+    "Contact": "Contact",
+    "Portfolio": "Portfolio",
+    "IAmPancham": "I am Pancham",
+    "WebDeveloper": "Web Developer + UI Designer",
+    "PassionateAbout": "Passionate about crafting exceptional digital experiences. With expertise in both creative design and technical implementation, specialized in delivering top-notch web solutions for clients worldwide.",
+    "Resume": "Resume"
 }
