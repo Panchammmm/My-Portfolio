@@ -2,8 +2,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { useTranslation } from 'react-i18next';
 import './edu.css';
-
 import Arrow from "../../../assets/arrow.svg";
 
 // Utility function to merge class names
@@ -54,33 +54,15 @@ const CHover = ({ items = [], className }) => {
 };
 
 // Sample data for projects
-const projects = [
-    {
-        year: `2023 - 2024`,
-        title: "Web Development",
-        description: "Udemy Platform",
-    },
-    {
-        year: `2020 - 2024`,
-        title: "Computer Science and Engineering",
-        description: "Maulana Abul Kalam Azad University of Technology",
-    },
-    {
-        year: `2017 - 2019`,
-        title: "Higher Secondary Education",
-        description: "Tangrakhali P.J.P. High School (H.S.)",
-    },
-    {
-        year: `2016 - 2017`,
-        title: "Secondary Education",
-        description: "Tangrakhali P.J.P. High School (H.S.)",
-    }
-];
+const CardHover = () => {
+    const { t } = useTranslation();
+    const projects = t('Projects', { returnObjects: true }); // Fetch translated projects
 
-export default function CardHover() {
     return (
         <div className="App">
             <CHover items={projects} />
         </div>
     );
-}
+};
+
+export default CardHover;

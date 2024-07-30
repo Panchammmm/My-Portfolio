@@ -9,5 +9,28 @@
     "IAmPancham": "I am Pancham",
     "WebDeveloper": "Web Developer + UI Designer",
     "PassionateAbout": "Passionate about crafting exceptional digital experiences. With expertise in both creative design and technical implementation, specialized in delivering top-notch web solutions for clients worldwide.",
-    "Resume": "Resume"
+    "Resume": "Resume",
+    "MyEducation": "My Education",
+    "Projects": [
+        {
+            "year": "2023 - 2024",
+            "title": "Web Development",
+            "description": "Udemy Platform"
+        },
+        {
+            "year": "2020 - 2024",
+            "title": "Computer Science and Engineering",
+            "description": "Maulana Abul Kalam Azad University of Technology"
+        },
+        {
+            "year": "2017 - 2019",
+            "title": "Higher Secondary Education",
+            "description": "Tangrakhali P.J.P. High School (H.S.)"
+        },
+        {
+            "year": "2016 - 2017",
+            "title": "Secondary Education",
+            "description": "Tangrakhali P.J.P. High School (H.S.)"
+        }
+    ]
 }
