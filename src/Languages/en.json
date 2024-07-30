@@ -32,5 +32,13 @@
             "title": "Secondary Education",
             "description": "Tangrakhali P.J.P. High School (H.S.)"
         }
-    ]
+    ],
+    "MyQualityServices": "My Quality Services",
+    "ServiceDescription": "Delivering standout web design and development, mastering both frontend and backend solutions.",
+    "UI Design": "UI Design",
+    "Web App": "Web App",
+    "Backend": "Backend",
+    "UI Design Description": "Crafting intuitive, engaging interfaces that enhance user experience.",
+    "Web App Description": "Building dynamic, responsive apps that perform seamlessly across devices.",
+    "Backend Description": "Developing scalable, secure backend solutions for smooth application operations."
 }

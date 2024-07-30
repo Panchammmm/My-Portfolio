@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { useTranslation } from 'react-i18next';
 
 // Utility function to merge class names
 function cn(...inputs) {
@@ -11,6 +12,8 @@ function cn(...inputs) {
 // Consolidated CardHover Component
 const CHover = ({ items = [], className }) => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
+
+    const { t } = useTranslation();
 
     return (
         <div className={cn("max-w-5xl mx-auto px-8", className)}>
@@ -35,8 +38,8 @@ const CHover = ({ items = [], className }) => {
                         </AnimatePresence>
                         <div className={cn("rounded-2xl shadow-2xl p-5 overflow-hidden bg-servBox border border-servBorder relative z-20")}>
                             <div className="relative z-50">
-                                <h4 className={cn("text-des font-bold tracking-[0.6px] mt-4")}>{item.title}</h4>
-                                <p className={cn("mt-5 text-zinc-500 tracking-[0.6px] leading-relaxed text-base")}>{item.description}</p>
+                                <h4 className={cn("text-des font-bold tracking-[0.6px] mt-4")}>{t(item.title)}</h4>
+                                <p className={cn("mt-5 text-zinc-500 tracking-[0.6px] leading-relaxed text-base")}>{t(item.description)}</p>
                             </div>
                         </div>
                     </div>
@@ -50,16 +53,16 @@ const CHover = ({ items = [], className }) => {
 const projects = [
     {
         title: "UI Design",
-        description: "Crafting intuitive, engaging interfaces that enhance user experience."
+        description: "UI Design Description"
     },
     {
         title: "Web App",
-        description: "Building dynamic, responsive apps that perform seamlessly across devices."
+        description: "Web App Description"
     },
     {
         title: "Backend",
-        description: "Developing scalable, secure backend solutions for smooth application operations."
-    }      
+        description: "Backend Description"
+    }
 ];
 
 export default function ServCard() {
