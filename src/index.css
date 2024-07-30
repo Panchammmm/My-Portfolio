@@ -8,6 +8,8 @@
 :root {
   --body_background: #100b18;
   --nav_body: #000;
+  --menu_gradienta: #100b18;
+  --menu_gradientb: #231341;
   --section_bg: #000;
   --nav_tittle: #be62ff;
   --nav_item: #ccc;
@@ -38,6 +40,8 @@
 [data-theme="light"] {
   --body_background: #ffffff;
   --nav_body: #f5e8ff;
+  --menu_gradienta: #f5e8ff;
+  --menu_gradientb: #e6daff;
   --section_bg: #f8f1ff;
   --nav_tittle: #8130bb;
   --nav_item: #111;

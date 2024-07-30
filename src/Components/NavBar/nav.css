@@ -1,22 +1,12 @@
 /* Navbar scroll up and down */
 
 #hide-header {
+    filter: drop-shadow(0 -10px 20px #553368);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
     transition: all 300ms ease-in-out;
-}
-
-.scroll-down #hide-header {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-}
-
-.scroll-up #hide-header {
-    filter: drop-shadow(0 -10px 20px rgb(85, 51, 104));
-    transform: translateY(0);
-    transition: transform 0.3s ease-in-out;
 }
 
 /* Navbar item styling */

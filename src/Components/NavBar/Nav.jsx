@@ -18,8 +18,7 @@ export default function Nav() {
     const [activeSection, setActiveSection] = useState('Home');
     const { t, i18n } = useTranslation();
     const [isJapanese, setIsJapanese] = useState(() => localStorage.getItem('language') === 'ja');
-    const menuRef = useRef(null);
-    const checkboxRef = useRef(null);
+    const checkBox = document.getElementById('burger-checkbox');
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -39,8 +38,8 @@ export default function Nav() {
         }
         setActiveSection(href.substring(1));
 
-        if (checkboxRef.current) {
-            checkboxRef.current.checked = false;
+        if (checkBox) {
+            checkBox.checked = false;
         }
     };
 
@@ -48,10 +47,12 @@ export default function Nav() {
         const mainHeader = document.getElementById("hide-header");
 
         const handleScroll = () => {
-            const currentScrollPos = window.pageYOffset;
+            const currentScrollPos = window.scrollY;
             if (mainHeader) {
-                mainHeader.style.top = (currentScrollPos < (window.prevScrollpos || 0)) ? "0" : "-120px";
+                mainHeader.style.top = (currentScrollPos < (window.prevScrollpos || 0)) ? "0" : "-480px";
                 mainHeader.style.background = currentScrollPos === 0 ? 'transparent' : 'var(--nav_body)';
+                mainHeader.style.filter = currentScrollPos === 0 ? 'none' : '';
+
                 window.prevScrollpos = currentScrollPos;
             }
         };
@@ -59,8 +60,12 @@ export default function Nav() {
         window.addEventListener('scroll', handleScroll);
 
         const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target) && checkboxRef.current && !checkboxRef.current.contains(event.target)) {
+            if (checkBox.current && !checkBox.current.contains(event.target)) {
                 setIsMenuOpen(false);
+
+                if (checkBox) {
+                    checkBox.checked = false;
+                }
             }
         };
 
@@ -118,7 +123,7 @@ export default function Nav() {
                         </div>
 
                         <div>
-                            <input id="burger-checkbox" ref={checkboxRef} type="checkbox" onClick={toggleMenu} />
+                            <input id="burger-checkbox" type="checkbox" onClick={toggleMenu} />
                             <label className="burger" htmlFor="burger-checkbox">
                                 <span></span>
                                 <span></span>
@@ -128,8 +133,8 @@ export default function Nav() {
                     </div>
                 </div>
                 {isMenuOpen && (
-                    <div ref={menuRef} className={`absolute inset-x-0 top-[5rem] z-0 origin-top-right transform p-2 transition lg:hidden ${isMenuOpen ? 'bg-black' : ''}`}>
-                        <div className="px-6 py-10 rounded-2xl bg-gradient-to-b from-[#100b18] to-[#231341]">
+                    <div className={`absolute inset-x-0 top-[5rem] z-0 origin-top-right transform p-2 transition lg:hidden ${isMenuOpen ? 'transparent' : ''}`}>
+                        <div className="px-6 py-10 rounded-2xl bg-gradient-to-b from-menuGra to-menuGrb">
                             <nav className="grid gap-y-4">
                                 {menuItems.map((item) => (
                                     <a
@@ -138,7 +143,7 @@ export default function Nav() {
                                         onClick={(e) => handleMenuItemClick(e, item.href)}
                                         className={clsx('-m-3 flex items-center rounded-md p-3 text-sm font-base', { 'active': activeSection === item.href.substring(1) })}
                                     >
-                                        <span className="ml-3 text-base font-medium text-white">
+                                        <span className="ml-3 text-base font-medium text-navItm">
                                             {t(item.name)}
                                         </span>
                                     </a>
