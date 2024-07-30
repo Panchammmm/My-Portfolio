@@ -11,12 +11,7 @@
 
 /* Navbar item styling */
 
-.menuItems {
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.menuItems::after {
+#navItems::after {
     content: "";
     pointer-events: none;
     bottom: -5px;
@@ -30,18 +25,16 @@
     transition-property: width, left;
 }
 
-.menuItems:focus::after,
-.menuItems:hover::after,
-.menuItems.active::after {
+#navItems:hover::after,
+#navItems.active::after {
     width: 100%;
     left: 0%;
 }
 
-.menuItems.active {
+#navItems.active {
     color: #be62ff;
     font-weight: bold;
 }
-
 
 /* Language button styling */
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 import './nav.css';
@@ -95,9 +95,10 @@ export default function Nav() {
                         {menuItems.map((item) => (
                             <li key={item.name}>
                                 <a
+                                    id="navItems"
                                     href={item.href}
                                     onClick={(e) => handleMenuItemClick(e, item.href)}
-                                    className={clsx('menuItems tracking-[1px] relative text-navItm focus:outline-none font-[500] text-[15px]', { 'active': activeSection === item.href.substring(1) })}
+                                    className={`menuItems tracking-[1px] relative text-navItm font-[500] text-[15px] ${activeSection === item.href.substring(1) ? 'active' : ''}`}
                                 >
                                     {t(item.name)}
                                 </a>
@@ -138,6 +139,7 @@ export default function Nav() {
                             <nav className="grid gap-y-4">
                                 {menuItems.map((item) => (
                                     <a
+                                        id="navItems"
                                         key={item.name}
                                         href={item.href}
                                         onClick={(e) => handleMenuItemClick(e, item.href)}
