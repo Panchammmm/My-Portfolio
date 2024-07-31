@@ -5,8 +5,8 @@
 }
 
 .tab_box {
-    max-width: 520px;
-    width: auto;
+    /* max-width: 520px; */
+    width: fit-content;
     border-radius: 30px;
     background: var(--tab_box);
     margin: auto;

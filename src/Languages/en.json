@@ -6,10 +6,12 @@
     "Works": "Works",
     "Contact": "Contact",
     "Portfolio": "Portfolio",
+
     "IAmPancham": "I am Pancham",
     "WebDeveloper": "Web Developer + UI Designer",
     "PassionateAbout": "Passionate about crafting exceptional digital experiences. With expertise in both creative design and technical implementation, specialized in delivering top-notch web solutions for clients worldwide.",
     "Resume": "Resume",
+
     "MyEducation": "My Education",
     "Projects": [
         {
@@ -33,6 +35,7 @@
             "description": "Tangrakhali P.J.P. High School (H.S.)"
         }
     ],
+
     "MyQualityServices": "My Quality Services",
     "ServiceDescription": "Delivering standout web design and development, mastering both frontend and backend solutions.",
     "UI Design": "UI Design",
@@ -41,6 +44,9 @@
     "UI Design Description": "Crafting intuitive, engaging interfaces that enhance user experience.",
     "Web App Description": "Building dynamic, responsive apps that perform seamlessly across devices.",
     "Backend Description": "Developing scalable, secure backend solutions for smooth application operations.",
+
+    "My Skills": "My Skills",
+    "Skills Description": "I bring your ideas to life by crafting unique web projects that captivate and inspire both you and your customers.",
     "HTML": "HTML",
     "CSS": "CSS",
     "JavaScript": "JavaScript",
@@ -48,5 +54,34 @@
     "React": "React",
     "Git": "Git",
     "MongoDB": "MongoDB",
-    "Skills Description": "I bring your ideas to life by crafting unique web projects that captivate and inspire both you and your customers."
+    
+    "My Recent Works": "My Recent Works",
+    "work des": "Showcasing premier web design and development projects, excelling in both frontend and backend expertise.",
+    "All": "All",
+    "UI": "UI",
+    "web app": "WebApp",
+    "backend": "Backend",
+    "Client": "Client",
+    "Anistora": "Anistora",
+    "TravelHikes": "TravelHikes",
+    "My Portfolio": "My Portfolio",
+    "COMport Duplex Data Transmitter": "COMport Duplex Data Transmitter",
+    "My Profile": "My Profile",
+    "Calculator": "Calculator",
+    "Connect 4": "Connect 4",
+    "Note Keeper": "Note Keeper",
+    "To Do List": "To Do List",
+    "YJLS Kolkata": "YJLS Kolkata",
+    "UI design for fast fashion website": "UI design for fast fashion website",
+    "UI design for international travel website": "UI design for international travel website",
+    "Know a bit about me and my professionalism": "Know a bit about me and my professionalism",
+    "GUI of Visual Light Communication systems": "GUI of Visual Light Communication systems",
+    "UI design for profile card": "UI design for profile card",
+    "A Web Calculator using javascript": "A Web Calculator using javascript",
+    "Play Connect 4 with friends and family": "Play Connect 4 with friends and family",
+    "Use Note Keeper in your daily life": "Use Note Keeper in your daily life",
+    "List up your to-do items": "List up your to-do items",
+    "Yume Japanese Language School official website": "Yume Japanese Language School official website",
+    "See More": "See More",
+    "See Less": "See Less"
 }

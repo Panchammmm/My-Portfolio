@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import './work.css';
 import RevealBtn from "./Button/RevealBtn";
 
@@ -49,6 +50,8 @@ const projectsData = {
 };
 
 const Work = () => {
+    const { t } = useTranslation();
+
     const [activeTab, setActiveTab] = useState(0);
     const [lineStyle, setLineStyle] = useState({});
     const [visibleProjects, setVisibleProjects] = useState(4); // Initialize to 4
@@ -101,17 +104,17 @@ const Work = () => {
 
     return (
         <section id="Works" className="lg:w-[85%] w-[90%] mx-auto pt-[120px] pb-[120px]">
-            <h1 className="my-work lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">My Recent Works</h1>
-            <p className="lg:w-[50%] mx-auto text-center tracking-[0.5px] text-des mt-[15px]">Showcasing premier web design and development projects, excelling in both frontend and backend expertise.</p>
+            <h1 className="my-work lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">{t('My Recent Works')}</h1>
+            <p className="lg:w-[50%] mx-auto text-center tracking-[0.5px] text-des mt-[15px]">{t('work des')}</p>
 
             <div className="mt-14 mx-auto">
                 <div className="px-3 lg:px-0">
                     <div className="tab_box">
-                        <button className={`tab_btn ${activeTab === 0 ? 'active' : ''}`} onClick={() => handleTabClick(0)}>All</button>
-                        <button className={`tab_btn ${activeTab === 1 ? 'active' : ''}`} onClick={() => handleTabClick(1)}>UI</button>
-                        <button className={`tab_btn ${activeTab === 2 ? 'active' : ''}`} onClick={() => handleTabClick(2)}>Web&nbsp;App</button>
-                        <button className={`tab_btn ${activeTab === 3 ? 'active' : ''}`} onClick={() => handleTabClick(3)}>Backend</button>
-                        <button className={`tab_btn ${activeTab === 4 ? 'active' : ''}`} onClick={() => handleTabClick(4)}>Client</button>
+                        <button className={`tab_btn ${activeTab === 0 ? 'active' : ''}`} onClick={() => handleTabClick(0)}>{t("All")}</button>
+                        <button className={`tab_btn ${activeTab === 1 ? 'active' : ''}`} onClick={() => handleTabClick(1)}>{t("UI")}</button>
+                        <button className={`tab_btn ${activeTab === 2 ? 'active' : ''}`} onClick={() => handleTabClick(2)}>{t("web app")}</button>
+                        <button className={`tab_btn ${activeTab === 3 ? 'active' : ''}`} onClick={() => handleTabClick(3)}>{t("backend")}</button>
+                        <button className={`tab_btn ${activeTab === 4 ? 'active' : ''}`} onClick={() => handleTabClick(4)}>{t("Client")}</button>
                         <div className="now-tab" style={lineStyle}></div>
                     </div>
                 </div>
@@ -121,31 +124,31 @@ const Work = () => {
                         <div className="content-box">
                             {getProjects('all')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
                     </div>
                     <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('ui')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
                     </div>
                     <div className={`content ${activeTab === 2 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('webApp')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
                     </div>
                     <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('backend')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
                     </div>
                     <div className={`content ${activeTab === 4 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('client')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? "See Less" : "See More"} onClick={handleSeeMoreClick} />
+                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
                     </div>
                 </div>
             </div>
@@ -154,6 +157,8 @@ const Work = () => {
 };
 
 const Project = ({ Imagesrc, Name, Description, URL }) => {
+    const { t } = useTranslation();
+
     const handleClick = () => {
         window.open(URL, '_blank');
     };
@@ -163,8 +168,8 @@ const Project = ({ Imagesrc, Name, Description, URL }) => {
             <img src={Imagesrc} alt="project" className="project-image" />
             <div className="project-about" onClick={handleClick}>
                 <div className="pl-5 my-auto">
-                    <h1 className="text-white font-[600] lg:text-2xl text-base tracking-[0.2px] mb-[0.4rem]">{Name}</h1>
-                    <p className="text-[#ffffffc5] tracking-[0.3px]">{Description}</p>
+                    <h1 className="text-white font-[600] lg:text-2xl text-base tracking-[0.2px] mb-[0.4rem]">{t(Name)}</h1>
+                    <p className="text-[#ffffffc5] tracking-[0.3px]">{t(Description)}</p>
                 </div>
 
                 <img src={Arrow} alt="arrow" className="project-icon size-8"></img>
