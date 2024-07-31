@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import './footer.css';
 
 import droplocation from "../../assets/pin-location.svg";
@@ -10,6 +11,7 @@ import insta from "../../assets/Social-media-icons/instagram.svg";
 
 export default function Footer() {
     const [activeSection, setActiveSection] = useState("");
+    const { t } = useTranslation();
     const year = new Date().getFullYear();
 
     const handleLocateClick = (e, section) => {
@@ -26,8 +28,8 @@ export default function Footer() {
             <footer className="absolute bg-footerBg left-1/2 transform -translate-x-1/2 -top-[8rem] w-[90%] sm:w-[80%] mx-auto border-[1px] border-[#312348] text-gray-300 pt-20 lg:pb-14 pb-5 px-8 lg:px-[4rem] sm:px-10 md:px-14 rounded-[100px_100px_0_0]">
                 <div className="lg:flex lg:justify-around lg:flex-wrap mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div className="space-y-4 lg:w-[20rem]">
-                        <h4 className="text-[#9d71b8] text-xl font-semibold">Portfolio</h4>
-                        <p className="text-slate-300 text-base">Transforming ideas into exceptional digital experiences with a perfect blend of creative design and technical expertise.</p>
+                        <h4 className="text-[#9d71b8] text-xl font-semibold">{t('Portfolio')}</h4>
+                        <p className="text-slate-300 text-base">{t('footer des')}</p>
 
                         <div className="flex space-x-5">
                             <a
@@ -63,7 +65,7 @@ export default function Footer() {
 
                     <div className="space-y-4">
                         <h4 className="text-[#9d71b8] text-xl font-semibold flex items-center space-x-2">
-                            Get in Touch
+                            {t('Get in Touch')}
                         </h4>
 
                         <div className="flex items-center space-x-2 hover:underline">
@@ -78,18 +80,18 @@ export default function Footer() {
 
                         <div className="flex items-center space-x-2 hover:underline">
                             <img src={droplocation} alt="location" className="w-6 h-6" />
-                            <p onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Kolkata,+India", "_blank")} className="cursor-pointer">Kolkata, India</p>
+                            <p onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Kolkata,+India", "_blank")} className="cursor-pointer">{t('Kolkata, India')}</p>
                         </div>
                     </div>
 
                     <div className="space-y-4">
-                        <h4 className="text-[#9d71b8] text-xl font-semibold">General</h4>
+                        <h4 className="text-[#9d71b8] text-xl font-semibold">{t('General')}</h4>
 
                         <div className="flex flex-col space-y-2.5">
                             {["About", "Skills", "Works", "Education", "Blog"].map((section) => (
                                 <a href={`#${section}`} className="hover:underline fbutton" key={section}
                                     onClick={(e) => handleLocateClick(e, section)}>
-                                    {section.charAt(0) + section.slice(1)}
+                                    {t(section)}
 
                                     <span className="button__icon-wrapper">
                                         <svg width="10" className="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="rgba(255, 255, 255, 0.6)" viewBox="0 0 14 15">
