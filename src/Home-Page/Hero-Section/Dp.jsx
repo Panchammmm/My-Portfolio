@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import './dp.css';
 
 import dp from "../../assets/dp.png";
@@ -22,7 +22,11 @@ export default function Dp() {
                 <div>
                     <div>
                         <h3 className="lg:text-[36px] text-[25px] text-nameColor font-[700] mb-2 lg:mt-14 mt-8">{t('IAmPancham')}</h3>
-                        <h1 className="lg:text-[65px] text-[40px] font-[700] gradient-text leading-[1.2] mb-3">{t('WebDeveloper')}</h1>
+                        <h1 className="lg:text-[65px] text-[40px] font-[700] gradient-text leading-[1.2] mb-3">
+                            <Trans i18nKey="WebDeveloper">
+                                Web Developer + <br></br> UI Designer
+                            </Trans>
+                        </h1>
                     </div>
 
                     <div className="lg:hidden flex mb-12 justify-start">
@@ -33,8 +37,10 @@ export default function Dp() {
 
                     <div>
                         <p className="text-devAbout text-[20px] leading-7 tracking-[1px] max-w-[550px] font-[300]">
-                            {t('PassionateAbout')}
-                            {/* Passionate about crafting <span className=" text-aboutLight">exceptional</span> digital experiences. With expertise in both creative <span className=" text-aboutLight">design</span> and <span className=" text-aboutLight">technical</span> implementation, specialized in delivering top-notch <span className=" text-aboutLight">web solutions</span> for clients worldwide. */}
+                            <Trans i18nKey="PassionateAbout">
+                                {/* デジタル体験を<span className="text-aboutLight">優れた</span>ものにするために情熱を注いでいます。 創造的な<span className="text-aboutLight">デザイン</span>と<span className="text-aboutLight">技術的</span>な実装の両方において専門知識を持ち、世界中のクライアントに一流の<span className="text-aboutLight">ウェブソリューション</span>を提供することを専門としています。 */}
+                                Passionate about crafting <span className=" text-aboutLight">exceptional</span> digital experiences. With expertise in both creative <span className=" text-aboutLight">design</span> and <span className=" text-aboutLight">technical</span> implementation, specialized in delivering top-notch <span className=" text-aboutLight">web solutions</span> for clients worldwide.
+                            </Trans>
                         </p>
 
                         <div className="flex flex-wrap my-auto lg:mt-10 mt-9">

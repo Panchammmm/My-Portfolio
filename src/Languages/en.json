@@ -6,12 +6,8 @@
     "Works": "Works",
     "Contact": "Contact",
     "Portfolio": "Portfolio",
-
     "IAmPancham": "I am Pancham",
-    "WebDeveloper": "Web Developer + UI Designer",
-    "PassionateAbout": "Passionate about crafting exceptional digital experiences. With expertise in both creative design and technical implementation, specialized in delivering top-notch web solutions for clients worldwide.",
     "Resume": "Resume",
-
     "MyEducation": "My Education",
     "Projects": [
         {
@@ -35,7 +31,6 @@
             "description": "Tangrakhali P.J.P. High School (H.S.)"
         }
     ],
-
     "MyQualityServices": "My Quality Services",
     "ServiceDescription": "Delivering standout web design and development, mastering both frontend and backend solutions.",
     "UI Design": "UI Design",
@@ -44,7 +39,6 @@
     "UI Design Description": "Crafting intuitive, engaging interfaces that enhance user experience.",
     "Web App Description": "Building dynamic, responsive apps that perform seamlessly across devices.",
     "Backend Description": "Developing scalable, secure backend solutions for smooth application operations.",
-
     "My Skills": "My Skills",
     "Skills Description": "I bring your ideas to life by crafting unique web projects that captivate and inspire both you and your customers.",
     "HTML": "HTML",
@@ -54,7 +48,6 @@
     "React": "React",
     "Git": "Git",
     "MongoDB": "MongoDB",
-    
     "My Recent Works": "My Recent Works",
     "work des": "Showcasing premier web design and development projects, excelling in both frontend and backend expertise.",
     "All": "All",
@@ -83,5 +76,17 @@
     "List up your to-do items": "List up your to-do items",
     "Yume Japanese Language School official website": "Yume Japanese Language School official website",
     "See More": "See More",
-    "See Less": "See Less"
+    "See Less": "See Less",
+    "Let's Create Something Amazing together!": "Let's Create Something Amazing together!",
+    "contact des": "I design and code beautifully simple things, and I'm passionate about what I do. It’s that simple!",
+    "Name": "Name",
+    "Email": "Email",
+    "Message": "Message",
+    "Hire me!": "Hire me!",
+    "Whatsapp": "Whatsapp",
+    "Based on": "Based on",
+    "Kolkata, India": "Kolkata, India",
+    "full name..": "full name..",
+    "email id..": "email id..",
+    "message here..": "message here.."
 }

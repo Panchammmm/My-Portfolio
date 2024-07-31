@@ -1,32 +1,35 @@
 import React from "react";
 import './contact.css';
+import { useTranslation } from 'react-i18next';
 
 import wapp from "../../assets/wapp.svg";
 import email from "../../assets/email.svg";
 import location from "../../assets/location.svg";
 
 export default function Contact() {
+    const { t } = useTranslation();
+
     return (
         <section id="Contact" className="bg-sectionBg pt-[160px] pb-[350px] flex flex-wrap justify-center gap-[8rem]">
             <div className="form-container my-auto">
-                <h1 className="contact-text">Let's Create Something Amazing together!</h1>
+                <h1 className="contact-text">{t("Let's Create Something Amazing together!")}</h1>
                 <p className="tracking-[0.3px] mb-8 text-slate-200 text-base pr-3">
-                    I design and code beautifully simple things, and I'm passionate about what I do. It’s that simple!
+                    {t("contact des")}
                 </p>
                 <form className="form">
                     <div className="form-group">
-                        <label htmlFor="name">Name</label>
-                        <input required className="email" id="name" type="text" placeholder="full name.." />
+                        <label htmlFor="name">{t("Name")}</label>
+                        <input required className="email" id="name" type="text" placeholder={t("full name..")} />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="email">Email</label>
-                        <input required className="email" id="email" type="email" placeholder="email id.." />
+                        <label htmlFor="email">{t("Email")}</label>
+                        <input required className="email" id="email" type="email" placeholder={t("email id..")} />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="message">Message</label>
-                        <textarea required id="message" className="textarea" placeholder="message here.." />
+                        <label htmlFor="message">{t("Message")}</label>
+                        <textarea required id="message" className="textarea" placeholder={t("message here..")} />
                     </div>
-                    <button type="submit" className="form-submit-btn">Hire me!</button>
+                    <button type="submit" className="form-submit-btn">{t("Hire me!")}</button>
                 </form>
             </div>
 
@@ -34,7 +37,7 @@ export default function Contact() {
                 <div className="contact-item">
                     <img src={wapp} alt="whatsapp" className="contact-icon" />
                     <div className="my-auto">
-                        <h3 className="contact-label">Whatsapp</h3>
+                        <h3 className="contact-label">{t("Whatsapp")}</h3>
                         <a href="https://wa.me/918670035037" target="_blank" rel="noopener noreferrer">
                             <p className="contact-detail">+91 86700 35037</p>
                         </a>
@@ -44,7 +47,7 @@ export default function Contact() {
                 <div className="contact-item">
                     <img src={email} alt="email" className="contact-icon" />
                     <div>
-                        <h3 className="contact-label">Email</h3>
+                        <h3 className="contact-label">{t("Email")}</h3>
                         <a href="mailto:sardarpancham510510@gmail.com" target="_blank" rel="noopener noreferrer">
                             <p className="contact-detail">sardarpancham510510@gmail.com</p>
                         </a>
@@ -54,9 +57,9 @@ export default function Contact() {
                 <div className="contact-item">
                     <img src={location} alt="location" className="contact-icon" />
                     <div>
-                        <h3 className="contact-label">Based on</h3>
+                        <h3 className="contact-label">{t("Based on")}</h3>
                         <a href="https://www.google.com/maps/search/?api=1&query=Kolkata,+India" target="_blank" rel="noopener noreferrer">
-                            <p className="contact-detail">Kolkata, India</p>
+                            <p className="contact-detail">{t("Kolkata, India")}</p>
                         </a>
                     </div>
                 </div>
