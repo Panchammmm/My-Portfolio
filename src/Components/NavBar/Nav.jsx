@@ -24,14 +24,14 @@ export default function Nav() {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const toggleLanguage = () => {
-        setOpacity(0); // Start fading out
+        setOpacity(0);
         setTimeout(() => {
             const newLang = isJapanese ? 'en' : 'ja';
             setIsJapanese(!isJapanese);
             localStorage.setItem('language', newLang);
             i18n.changeLanguage(newLang);
-            setOpacity(1); // Fade back in
-        }, 300); // Duration of the fade-out effect
+            setOpacity(1);
+        }, 400); // duration
     };
 
     const handleMenuItemClick = (e, href) => {
@@ -50,6 +50,8 @@ export default function Nav() {
 
     useEffect(() => {
         const mainHeader = document.getElementById("hide-header");
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
 
         const handleScroll = () => {
             const currentScrollPos = window.scrollY;
@@ -60,12 +62,29 @@ export default function Nav() {
 
                 window.prevScrollpos = currentScrollPos;
             }
+
+            sections.forEach((sec) => {
+                const top = window.scrollY;
+                const offset = sec.offsetTop - 600;
+                const height = sec.offsetHeight;
+                const id = sec.getAttribute('id');
+
+                if (top >= offset && top < offset + height) {
+                    navLinks.forEach((link) => {
+                        link.classList.remove('active');
+                        const activeLink = document.querySelector(`nav a[href*=${id}]`);
+                        if (activeLink) {
+                            activeLink.classList.add('active');
+                        }
+                    });
+                }
+            });
         };
 
         window.addEventListener('scroll', handleScroll);
 
         const handleClickOutside = (event) => {
-            if (checkBox.current && !checkBox.current.contains(event.target)) {
+            if (checkBox && !checkBox.contains(event.target)) {
                 setIsMenuOpen(false);
 
                 if (checkBox) {
@@ -83,7 +102,7 @@ export default function Nav() {
     }, []);
 
     return (
-        <nav id="hide-header" className={clsx('lg:px-[7rem] lg:py-6 px-5 py-[12px]')}>
+        <nav id="hide-header" className={clsx('lg:px-[7rem] lg:py-5 px-5 py-[10px]')}>
             <div className="mx-auto flex items-center justify-between py-3" style={{ opacity, transition: 'opacity 0.3s ease' }}>
                 <div className="inline-flex items-center space-x-2">
                     <div className="text-navTittle flex tracking-wider my-auto cursor-pointer lg:text-3xl text-2xl font-[500]">
@@ -103,7 +122,7 @@ export default function Nav() {
                                     id="navItems"
                                     href={item.href}
                                     onClick={(e) => handleMenuItemClick(e, item.href)}
-                                    className={`menuItems tracking-[1px] relative text-navItm font-[500] text-[15px] ${activeSection === item.href.substring(1) ? 'active' : ''}`}
+                                    className="menuItems tracking-[1px] relative text-navItm font-[500] text-[15px]"
                                 >
                                     {t(item.name)}
                                 </a>
@@ -148,9 +167,9 @@ export default function Nav() {
                                         key={item.name}
                                         href={item.href}
                                         onClick={(e) => handleMenuItemClick(e, item.href)}
-                                        className={clsx('menuItems -m-3 flex items-center rounded-md p-3 text-sm font-base', { 'active': activeSection === item.href.substring(1) })}
+                                        className="-m-3 flex items-center rounded-md p-3 text-sm font-base"
                                     >
-                                        <span className="ml-3 text-base font-medium text-navItm">
+                                        <span className="menuItems ml-3 text-base font-medium text-navItm">
                                             {t(item.name)}
                                         </span>
                                     </a>

@@ -12,7 +12,7 @@ export default function Service() {
             <div className="flex justify-center">
                 <h1 className="my-service lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">{t('MyQualityServices')}</h1>
             </div>
-            <p className="w-[90%] lg:w-[50%] mx-auto text-center text-des tracking-[0.5px] mt-[15px] mb-4">{t('ServiceDescription')}</p>
+            <p className="w-[90%] lg:w-[45%] mx-auto text-center text-des tracking-[0.5px] mt-[15px] mb-4">{t('ServiceDescription')}</p>
 
             <ServCard />
 

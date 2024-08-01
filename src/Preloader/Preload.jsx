@@ -4,31 +4,16 @@ import './preload.css';
 export default function Preload() {
     return (
         <div id="preloader">
-            <div id="div1" className="lg:scale-[0.8] scale-[0.7]">
-                <div id="l" className="preload-element rotate-[6deg]">
-                    <div className="lg:scale-[0.75] scale-[0.7]">
-                        <div className="sharingon">
-                            <div className="ring">
-                                <div className="to"></div>
-                                <div className="to"></div>
-                                <div className="to"></div>
-                                <div className="circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="m" className="preload-element rotate-[-6deg]">
-                    <div className="lg:scale-[0.75] scale-[0.7]">
-                        <div className="sharingon">
-                            <div className="ring">
-                                <div className="to"></div>
-                                <div className="to"></div>
-                                <div className="to"></div>
-                                <div className="circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="lg:scale-[1.3]">
+                <span className="l">L</span>
+                <span className="o">o</span>
+                <span className="a">a</span>
+                <span className="d">d</span>
+                <span className="i">i</span>
+                <span className="n">n</span>
+                <span className="g">g</span>
+                <span className="d1">.</span>
+                <span className="d2">.</span>
             </div>
         </div>
     );
