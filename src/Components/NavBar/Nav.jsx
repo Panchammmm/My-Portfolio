@@ -65,7 +65,7 @@ export default function Nav() {
 
             sections.forEach((sec) => {
                 const top = window.scrollY;
-                const offset = sec.offsetTop - 600;
+                const offset = sec.offsetTop - 500;
                 const height = sec.offsetHeight;
                 const id = sec.getAttribute('id');
 

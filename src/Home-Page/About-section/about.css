@@ -1,0 +1,46 @@
+.title-gradi {
+    background: linear-gradient(to right, var(--gradient_texta), var(--gradient_textb));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Achievement section */
+
+.achi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.achi-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.achi-content {
+    background-color: #160d1e;
+    color: #aaa;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.achi-hidden-section {
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    color: #aaa;
+    padding: 0 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.achi-box:hover .achi-hidden-section {
+    height: 50px;
+    padding: 10px 20px;
+}
