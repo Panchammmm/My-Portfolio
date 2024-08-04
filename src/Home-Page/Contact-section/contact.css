@@ -2,7 +2,7 @@
     background: linear-gradient(to right, var(--gradient_texta)40%, var(--gradient_textb));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(26px,4vw,32px);
+    font-size: clamp(26px, 4vw, 32px);
     font-weight: 800;
     margin-bottom: 18px;
     line-height: 1.2;
@@ -191,9 +191,11 @@
         width: 45px;
         height: 45px;
     }
+
     .contact-label {
         font-size: 0.95rem;
     }
+
     .contact-detail {
         display: flex;
         font-size: 1.06rem;
