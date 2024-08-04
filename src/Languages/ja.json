@@ -33,6 +33,17 @@
             "description": "タンガラカリP.J.P.高校（H.S.）"
         }
     ],
+    "achievement": {
+        "title": "成果",
+        "JLPTN5": {
+            "title": "JLPT N5",
+            "description": "日本語能力試験N5"
+        },
+        "HackerRank5Stars": {
+            "title": "ハッカーランク 5 スター",
+            "description": "ハッカーランクで5スターを獲得"
+        }
+    },
     "MyQualityServices": "私の質の高いサービス",
     "ServiceDescription": "卓越したウェブデザインと開発を提供し、フロントエンドとバックエンドの両方のソリューションを習得しています。",
     "UI Design": "UIデザイン",

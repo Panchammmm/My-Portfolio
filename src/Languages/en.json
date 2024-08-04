@@ -31,6 +31,17 @@
             "description": "Tangrakhali P.J.P. High School (H.S.)"
         }
     ],
+    "achievement": {
+        "title": "Achievements",
+        "JLPTN5": {
+            "title": "JLPT N5",
+            "description": "Japanese Language Proficiency Level N5"
+        },
+        "HackerRank5Stars": {
+            "title": "HackerRank 5 Stars",
+            "description": "Achieving 5 stars in HackerRank"
+        }
+    },
     "MyQualityServices": "My Quality Services",
     "ServiceDescription": "Offering tailored web design and development, delivering standout frontend and backend solutions for your needs.",
     "UI Design": "UI Design",
