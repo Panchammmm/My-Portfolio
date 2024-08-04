@@ -72,9 +72,9 @@
 
 .plus-minus-container span {
     position: absolute;
-    width: 13px;
+    width: 12px;
     height: 1.6px;
-    background-color: var(--plus_minus);
+    background-color: #999;
     transition: transform 0.3s ease;
 }
 

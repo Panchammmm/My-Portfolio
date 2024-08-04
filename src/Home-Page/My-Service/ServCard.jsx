@@ -67,7 +67,7 @@ const projects = [
 
 export default function ServCard() {
     return (
-        <div className="">
+        <div>
             <CHover items={projects} />
         </div>
     );

@@ -44,6 +44,17 @@
             "description": "ハッカーランクで5スターを獲得"
         }
     },
+    "experience": {
+        "title": "経験",
+        "Freelance": {
+            "title": "フリーランス",
+            "description": "クライアントのための学術ウェブサイト - YJLS-kolkata.com"
+        },
+        "InterPeIntern": {
+            "title": "インターンペ インターン [2024]",
+            "description": "Internpe - IT & トレーニング会社でのインターンシップ"
+        }
+    },
     "MyQualityServices": "私の質の高いサービス",
     "ServiceDescription": "卓越したウェブデザインと開発を提供し、フロントエンドとバックエンドの両方のソリューションを習得しています。",
     "UI Design": "UIデザイン",

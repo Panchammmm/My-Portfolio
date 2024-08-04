@@ -9,6 +9,7 @@ import Tailwind from "../../assets/Skill-icons/tailwind.svg";
 import ReactIcon from "../../assets/Skill-icons/react.svg";
 import Mongodb from "../../assets/Skill-icons/mongoDB.svg";
 import GitIcon from "../../assets/Skill-icons/git.svg";
+import LightRoom from "../../assets/Skill-icons/lightroom.svg";
 
 export default function Skill() {
     const { t } = useTranslation();
@@ -20,7 +21,8 @@ export default function Skill() {
         { name: t('Tailwind'), icon: Tailwind, percentage: '80%' },
         { name: t('React'), icon: ReactIcon, percentage: '80%' },
         { name: t('Git'), icon: GitIcon, percentage: '90%' },
-        { name: t('MongoDB'), icon: Mongodb, percentage: '70%' }
+        { name: t('MongoDB'), icon: Mongodb, percentage: '70%' },
+        { name: t('Lightroom'), icon: LightRoom, percentage: '85%' }
     ];
 
     return (

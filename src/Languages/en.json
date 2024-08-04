@@ -42,6 +42,17 @@
             "description": "Achieving 5 stars in HackerRank"
         }
     },
+    "experience": {
+        "title": "Experience",
+        "Freelance": {
+            "title": "Freelance",
+            "description": "Academic Website for Client - YJLS-kolkata.com"
+        },
+        "InterPeIntern": {
+            "title": "InterPe Intern [2024]",
+            "description": "Internship under Internpe - IT & Training Company"
+        }
+    },
     "MyQualityServices": "My Quality Services",
     "ServiceDescription": "Offering tailored web design and development, delivering standout frontend and backend solutions for your needs.",
     "UI Design": "UI Design",
