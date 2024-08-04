@@ -81,7 +81,7 @@ export default function Contact() {
                         role="alert"
                         aria-live="polite"
                     >
-                        {result || (isSuccess ? "Success. Message sent successfully" : "Something went wrong. Please try later.")}
+                        {result || (isSuccess ? t('form.successMessage') : t('form.errorMessage'))}
                     </div>
                 )}
             </div>

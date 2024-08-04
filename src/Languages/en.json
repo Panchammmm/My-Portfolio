@@ -105,6 +105,10 @@
     "Email": "Email",
     "Message": "Message",
     "Hire me!": "Hire me!",
+    "form": {
+        "successMessage": "Success. Message sent successfully",
+        "errorMessage": "Something went wrong. Please try later."
+    },
     "Whatsapp": "Whatsapp",
     "Based on": "Based on",
     "Kolkata, India": "Kolkata, India",

@@ -107,6 +107,10 @@
     "Email": "メール",
     "Message": "メッセージ",
     "Hire me!": "雇ってください！",
+    "form": {
+        "successMessage": "成功しました。メッセージは正常に送信されました。",
+        "errorMessage": "問題が発生しました。後で再試行してください。"
+    },
     "Whatsapp": "ワッツアップ",
     "Based on": "拠点",
     "Kolkata, India": "インド、コルカタ",
