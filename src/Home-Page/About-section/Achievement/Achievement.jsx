@@ -1,8 +1,18 @@
 import React from 'react';
 import '../about.css';
 
-const Achievement = () => {
+const achievements = [
+    {
+        title: "JLPT N5",
+        description: "Japanese Language Proficiency Level N5"
+    },
+    {
+        title: "HackerRank 5 Stars",
+        description: "Achieving 5 stars in HackerRank"
+    }
+];
 
+const Achievement = () => {
     return (
         <div className="mb-14 lg:mb-0">
             <div className="flex justify-center mb-12">
@@ -13,29 +23,18 @@ const Achievement = () => {
             </div>
 
             <div className="achi-container">
-
-                <div className="achi-box group">
-                    <div className="achi-content">
-                        JLPT N5
-                        <div className="plus-minus-container">
-                            <span className="horizontal"></span>
-                            <span className="vertical group-hover:rotate-0"></span>
+                {achievements.map((achievement, index) => (
+                    <div key={index} className="achi-box group">
+                        <div className="achi-content">
+                            {achievement.title}
+                            <div className="plus-minus-container">
+                                <span className="horizontal"></span>
+                                <span className="vertical group-hover:rotate-0"></span>
+                            </div>
                         </div>
+                        <div className="achi-hidden-section">{achievement.description}</div>
                     </div>
-                    <div className="achi-hidden-section">Japanese Language Profficency Level N5</div>
-                </div>
-
-                <div className="achi-box group">
-                    <div className="achi-content">
-                        HackerRank 5 Stars
-                        <div className="plus-minus-container">
-                            <span className="horizontal"></span>
-                            <span className="vertical group-hover:rotate-0"></span>
-                        </div>
-                    </div>
-                    <div className="achi-hidden-section">Achieving 5 stars in hackerRank</div>
-                </div>
-
+                ))}
             </div>
         </div>
     );

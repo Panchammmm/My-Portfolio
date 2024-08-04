@@ -22,7 +22,7 @@
 
 .achi-content {
     align-items: center;
-    color: #aaa;
+    color: var(--abt_text);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@
     height: 0px;
     overflow: hidden;
     color: #ddd;
-    background-image: linear-gradient(to right, #522b6e, #482070 50%, #1a122a);
+    background-image: linear-gradient(to right, #522b6e, #381c53 50%, #211836);
     border-radius: 5px;
     margin-top: 5px;
     padding: 0 20px;
@@ -74,7 +74,7 @@
     position: absolute;
     width: 13px;
     height: 1.6px;
-    background-color: #ccc;
+    background-color: var(--plus_minus);
     transition: transform 0.3s ease;
 }
 

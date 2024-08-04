@@ -1,6 +1,17 @@
 import React from 'react';
 import '../about.css';
 
+const experiences = [
+    {
+        title: "Freelance",
+        description: "Academic Website for Client - YJLS-kolkata.com"
+    },
+    {
+        title: "InterPe Intern [2024]",
+        description: "Internship under Internpe - IT & Training Company"
+    }
+];
+
 const Experience = () => {
 
     return (
@@ -13,29 +24,18 @@ const Experience = () => {
             </div>
 
             <div className="achi-container">
-
-                <div className="achi-box group">
-                    <div className="achi-content">
-                        Freelance
-                        <div className="plus-minus-container">
-                            <span className="horizontal"></span>
-                            <span className="vertical group-hover:rotate-0"></span>
+                {experiences.map((experience, index) => (
+                    <div key={index} className="achi-box group">
+                        <div className="achi-content">
+                            {experience.title}
+                            <div className="plus-minus-container">
+                                <span className="horizontal"></span>
+                                <span className="vertical group-hover:rotate-0"></span>
+                            </div>
                         </div>
+                        <div className="achi-hidden-section">{experience.description}</div>
                     </div>
-                    <div className="achi-hidden-section">Academic Website for Client - YJLS-kolkata.com</div>
-                </div>
-
-                <div className="achi-box group">
-                    <div className="achi-content">
-                        InterPe Intern [2024]
-                        <div className="plus-minus-container">
-                            <span className="horizontal"></span>
-                            <span className="vertical group-hover:rotate-0"></span>
-                        </div>
-                    </div>
-                    <div className="achi-hidden-section">Internship under Internpe - IT & Training Company</div>
-                </div>
-
+                ))}
             </div>
         </div>
     );
