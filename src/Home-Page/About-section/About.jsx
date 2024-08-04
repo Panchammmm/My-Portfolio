@@ -6,9 +6,11 @@ import Experience from "./Experience/Experience";
 export default function About() {
     return (
         <section id="About" className="bg-sectionBg">
-            <Education />
+            <div className="mx-auto pt-[120px] pb-[80px]">
+                <Education />
+            </div>
 
-            <div className="flex justify-around flex-wrap pt-[50px] pb-[100px]">
+            <div className="lg:flex grid justify-around flex-wrap pt-[50px] pb-[100px]">
                 <Achievement />
                 <Experience />
             </div>

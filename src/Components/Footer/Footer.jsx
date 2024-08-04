@@ -75,7 +75,7 @@ export default function Footer() {
 
                         <div className="flex items-center space-x-2 hover:underline">
                             <img src={email} alt="email" className="w-6 h-6" />
-                            <p onClick={() => window.location.href = 'mailto:sardarpancham510510@gmail.com'} className="cursor-pointer">sardarpancham510510@gmail.com</p>
+                            <p onClick={() => window.location.href = 'mailto:sardarpancham510510@gmail.com'} className="cursor-pointer break-all">sardarpancham510510@gmail.com</p>
                         </div>
 
                         <div className="flex items-center space-x-2 hover:underline">

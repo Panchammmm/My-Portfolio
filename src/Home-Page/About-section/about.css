@@ -16,31 +16,68 @@
 
 .achi-box {
     width: 100%;
-    max-width: 600px;
-    padding: 20px;
+    padding-bottom: 20px;
     overflow: hidden;
 }
 
 .achi-content {
-    background-color: #160d1e;
+    align-items: center;
     color: #aaa;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #3a2151;
 }
 
 .achi-hidden-section {
-    position: relative;
+    text-transform: capitalize;
+    text-align: start;
     height: 0px;
     overflow: hidden;
-    transition: height 0.3s ease;
-    color: #aaa;
+    color: #ddd;
+    background-image: linear-gradient(to right, #522b6e, #482070 50%, #1a122a);
+    border-radius: 5px;
+    margin-top: 5px;
     padding: 0 20px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease;
 }
 
 .achi-box:hover .achi-hidden-section {
-    height: 50px;
+    height: auto;
     padding: 10px 20px;
+}
+
+@media (min-width: 640px) {
+    .achi-hidden-section {
+        transition: all 0.4s ease-in-out;
+        padding: 0 80px 0 20px;
+    }
+
+    .achi-box:hover .achi-hidden-section {
+        height: 50px;
+        padding: 12px 80px 0 20px;
+    }
+}
+
+/* plus - minus */
+
+.plus-minus-container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus-minus-container span {
+    position: absolute;
+    width: 13px;
+    height: 1.6px;
+    background-color: #ccc;
+    transition: transform 0.3s ease;
+}
+
+.plus-minus-container .vertical {
+    transform: rotate(90deg);
 }

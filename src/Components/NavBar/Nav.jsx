@@ -18,20 +18,17 @@ export default function Nav() {
     const [activeSection, setActiveSection] = useState('Home');
     const { t, i18n } = useTranslation();
     const [isJapanese, setIsJapanese] = useState(() => localStorage.getItem('language') === 'ja');
-    const [opacity, setOpacity] = useState(1);
     const checkBox = document.getElementById('burger-checkbox');
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const toggleLanguage = () => {
-        setOpacity(0);
         setTimeout(() => {
             const newLang = isJapanese ? 'en' : 'ja';
             setIsJapanese(!isJapanese);
             localStorage.setItem('language', newLang);
             i18n.changeLanguage(newLang);
-            setOpacity(1);
-        }, 400); // duration
+        });
     };
 
     const handleMenuItemClick = (e, href) => {
@@ -103,7 +100,7 @@ export default function Nav() {
 
     return (
         <nav id="hide-header" className={clsx('lg:px-[7rem] lg:py-5 px-5 py-[10px]')}>
-            <div className="mx-auto flex items-center justify-between py-3" style={{ opacity, transition: 'opacity 0.3s ease' }}>
+            <div className="mx-auto flex items-center justify-between py-3">
                 <div className="inline-flex items-center space-x-2">
                     <div className="text-navTittle flex tracking-wider my-auto cursor-pointer lg:text-3xl text-2xl font-[500]">
                         {t("Portfolio").split("").map((char, index) => (
