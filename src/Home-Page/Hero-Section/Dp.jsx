@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation, Trans } from 'react-i18next';
 import './dp.css';
 
-import dp from "../../assets/dp.png";
 import HiImage from "../../assets/hi.svg";
 import linkedin from "../../assets/Social-media-icons/linkedin.svg";
 import github from "../../assets/Social-media-icons/github.svg";
@@ -31,14 +30,13 @@ export default function Dp() {
 
                     <div className="lg:hidden flex mb-12 justify-start">
                         <div className="images lg:w-[60%] w-[80%] mt-1 lg:mt-0">
-                            <img src={dp} alt="dp" className="dp-img" />
+                            <img src="https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/dp.png?raw=true" alt="dp" className="dp-img" />
                         </div>
                     </div>
 
                     <div>
                         <p className="text-devAbout text-[20px] leading-7 tracking-[1px] max-w-[550px] font-[300]">
                             <Trans i18nKey="PassionateAbout">
-                                {/* デジタル体験を<span className="text-aboutLight">優れた</span>ものにするために情熱を注いでいます。 創造的な<span className="text-aboutLight">デザイン</span>と<span className="text-aboutLight">技術的</span>な実装の両方において専門知識を持ち、世界中のクライアントに一流の<span className="text-aboutLight">ウェブソリューション</span>を提供することを専門としています。 */}
                                 Passionate about crafting <span className=" text-aboutLight">exceptional</span> digital experiences. With expertise in both creative <span className=" text-aboutLight">design</span> and <span className=" text-aboutLight">technical</span> implementation, specialized in delivering top-notch <span className=" text-aboutLight">web solutions</span> for clients worldwide.
                             </Trans>
                         </p>
@@ -100,7 +98,7 @@ export default function Dp() {
 
                 <div className="hidden lg:flex mb-5">
                     <div className="images mx-auto w-[60%]">
-                        <img src={dp} alt="dp" className="dp-img" />
+                        <img src="https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/dp.png?raw=true" alt="dp" className="dp-img" />
                     </div>
                 </div>
             </div>

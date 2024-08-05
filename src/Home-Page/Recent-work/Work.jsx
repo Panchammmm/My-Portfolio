@@ -2,42 +2,30 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import './work.css';
 import RevealBtn from "./Button/RevealBtn";
-
 import Arrow from "../../assets/arrow.svg";
-import Client from "../../assets/project-images/client.png";
-import Calculator from "../../assets/project-images/calculator.png";
-import Game from "../../assets/project-images/game.png";
-import Keeper from "../../assets/project-images/KeeperApp.png";
-import ToDo from "../../assets/project-images/ToDo.png";
-import Fashion from "../../assets/project-images/fashion.png";
-import Gui from "../../assets/project-images/GUI.png";
-import Travel from "../../assets/project-images/travel.png";
-import Profile from "../../assets/project-images/profile.png";
-import Back from "../../assets/project-images/back.png";
-import Myport from "../../assets/project-images/myPortfolio.png";
 
 // Projects data categorized
 const uiProjects = [
-    { Imagesrc: Fashion, Name: "Anistora", Description: "UI design for fast fashion website", URL: "https://anistora.netlify.app/" },
-    { Imagesrc: Travel, Name: "TravelHikes", Description: "UI design for international travel website", URL: "https://travelhikes.netlify.app/" },
-    { Imagesrc: Myport, Name: "My Portfolio", Description: "Know a bit about me and my professionalism", URL: "https://Pancham_Sardar.netlify.app/" },
-    { Imagesrc: Gui, Name: "COMport Duplex Data Transmitter", Description: "GUI of Visual Light Communication systems", URL: "https://github.com/Panchammmm/COMPortFull-duplexDataTransmitter" },
-    { Imagesrc: Profile, Name: "My Profile", Description: "UI design for profile card", URL: "https://panchammmm.github.io/My_Profile/" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/fashion.png?raw=true", Name: "Anistora", Description: "UI design for fast fashion website", URL: "https://anistora.netlify.app/" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/travel.png?raw=true", Name: "TravelHikes", Description: "UI design for international travel website", URL: "https://travelhikes.netlify.app/" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/myPortfolio.png?raw=true", Name: "My Portfolio", Description: "Know a bit about me and my professionalism", URL: "https://Pancham_Sardar.netlify.app/" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/GUI.png?raw=true", Name: "COMport Duplex Data Transmitter", Description: "GUI of Visual Light Communication systems", URL: "https://github.com/Panchammmm/COMPortFull-duplexDataTransmitter" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/profile.png?raw=true", Name: "My Profile", Description: "UI design for profile card", URL: "https://panchammmm.github.io/My_Profile/" },
 ];
 
 const webAppProjects = [
-    { Imagesrc: Calculator, Name: "Calculator", Description: "A Web Calculator using javascript", URL: "https://panchammmm.github.io/calculation5/" },
-    { Imagesrc: Game, Name: "Connect 4", Description: "Play Connect 4 with friends and family", URL: "https://playconnect4.netlify.app/" },
-    { Imagesrc: Keeper, Name: "Note Keeper", Description: "Use Note Keeper in your daily life", URL: "https://panchammmm.github.io/Note-Keeper-WebApp-usingReact/" },
-    { Imagesrc: ToDo, Name: "To Do List", Description: "List up your to-do items", URL: "https://panchammmm.github.io/ToDoList-reactApp/" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/calculator.png?raw=true", Name: "Calculator", Description: "A Web Calculator using javascript", URL: "https://panchammmm.github.io/calculation5/" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/game.png?raw=true", Name: "Connect 4", Description: "Play Connect 4 with friends and family", URL: "https://playconnect4.netlify.app/" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/KeeperApp.png?raw=true", Name: "Note Keeper", Description: "Use Note Keeper in your daily life", URL: "https://panchammmm.github.io/Note-Keeper-WebApp-usingReact/" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/ToDo.png?raw=true", Name: "To Do List", Description: "List up your to-do items", URL: "https://panchammmm.github.io/ToDoList-reactApp/" },
 ];
 
 const backendProjects = [
-    { Imagesrc: Back, Name: "Backend", Description: "Showcasing my backend projects", URL: "" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/back.png?raw=true", Name: "Backend", Description: "Showcasing my backend projects", URL: "" },
 ];
 
 const clientProjects = [
-    { Imagesrc: Client, Name: "YJLS Kolkata", Description: "Yume Japanese Language School official website", URL: "https://yjls-kolkata.com/" },
+    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/client.png?raw=true", Name: "YJLS Kolkata", Description: "Yume Japanese Language School official website", URL: "https://yjls-kolkata.com/" },
 ];
 
 // Combining all projects for the 'all' category

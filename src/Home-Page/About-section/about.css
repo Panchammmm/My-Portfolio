@@ -21,6 +21,8 @@
 }
 
 .achi-content {
+    font-size: 17px;
+    font-weight: 400;
     align-items: center;
     color: var(--abt_text);
     padding: 10px;
@@ -30,6 +32,7 @@
 }
 
 .achi-hidden-section {
+    font-size: 17px;
     text-transform: capitalize;
     text-align: start;
     height: 0px;
@@ -40,6 +43,15 @@
     margin-top: 5px;
     padding: 0 20px;
     transition: all 0.4s ease;
+}
+
+@media (max-width: 640px) {
+    .achi-content {
+        font-size: 16px;
+    }
+    .achi-hidden-section {
+        font-size: 16px;
+    }
 }
 
 .achi-box:hover .achi-hidden-section {
