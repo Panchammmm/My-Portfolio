@@ -10,7 +10,7 @@
 
 .images .dp-img {
     position: relative;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .images::before {
@@ -19,9 +19,9 @@
     left: 50%;
     bottom: 0;
     width: 100%;
-    height: calc(100% - 125px);
+    height: calc(100% - 120px);
     transform: translateX(-50%);
-    border-radius: 50px 50px 30px 30px;
+    border-radius: 50px;
     pointer-events: none;
     background: linear-gradient(to right, #1a0f2e, #c16dfdd7);
     box-shadow: 5px 3px 15px var(--dp_Shadowa), -5px -5px 15px var(--dp_Shadowb);
@@ -42,7 +42,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: calc(100% - 75px);
+    height: calc(100% - 85px);
     border-radius: 50px;
     transition: all 0.8s ease;
     z-index: -2;
@@ -50,13 +50,13 @@
 
 @media (max-width: 640px) {
     .images::before {
-        height: calc(100% - 75px);
+        height: calc(100% - 85px);
     }
 }
 
 @media (min-width: 641px) {
     .images::after {
-        height: calc(100% - 125px);
+        height: calc(100% - 120px);
     }
 }
 
@@ -67,6 +67,7 @@
 }
 
 .dp-img:hover {
+    border-radius: 60px;
     transform: scale(1.02);
     transition-duration: 0.8s;
 }
