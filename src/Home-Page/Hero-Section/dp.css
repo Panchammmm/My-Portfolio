@@ -35,6 +35,7 @@
 
 .dp-img {
     transition: all 0.8s ease;
+    filter: brightness(85%) contrast(95%);
 }
 
 .images::after {
