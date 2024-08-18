@@ -6,31 +6,31 @@ import Arrow from "../../assets/arrow.svg";
 
 // Projects data categorized
 const uiProjects = [
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/fashion.png?raw=true", Name: "Anistora", Description: "UI design for fast fashion website", URL: "https://anistora.netlify.app/" },
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/travel.png?raw=true", Name: "TravelHikes", Description: "UI design for international travel website", URL: "https://travelhikes.netlify.app/" },
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/myPortfolio.png?raw=true", Name: "My Portfolio", Description: "Know a bit about me and my professionalism", URL: "https://Pancham_Sardar.netlify.app/" },
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/GUI.png?raw=true", Name: "COMport Duplex Data Transmitter", Description: "GUI of Visual Light Communication systems", URL: "https://github.com/Panchammmm/COMPortFull-duplexDataTransmitter" },
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/profile.png?raw=true", Name: "My Profile", Description: "UI design for profile card", URL: "https://panchammmm.github.io/My_Profile/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/fashion.png?raw=true", Name: "Anistora", Description: "UI design for fast fashion website", URL: "https://anistora.netlify.app/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/travel.png?raw=true", Name: "TravelHikes", Description: "UI design for international travel website", URL: "https://travelhikes.netlify.app/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/myPortfolio.png?raw=true", Name: "My Portfolio", Description: "Know a bit about me and my professionalism", URL: "https://Pancham_Sardar.netlify.app/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/GUI.png?raw=true", Name: "COMport Duplex Data Transmitter", Description: "GUI of Visual Light Communication systems", URL: "https://github.com/Panchammmm/COMPortFull-duplexDataTransmitter" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/profile.png?raw=true", Name: "My Profile", Description: "UI design for profile card", URL: "https://panchammmm.github.io/My_Profile/" },
 ];
 
 const webAppProjects = [
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/calculator.png?raw=true", Name: "Calculator", Description: "A Web Calculator using javascript", URL: "https://panchammmm.github.io/calculation5/" },
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/game.png?raw=true", Name: "Connect 4", Description: "Play Connect 4 with friends and family", URL: "https://playconnect4.netlify.app/" },
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/KeeperApp.png?raw=true", Name: "Note Keeper", Description: "Use Note Keeper in your daily life", URL: "https://panchammmm.github.io/Note-Keeper-WebApp-usingReact/" },
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/ToDo.png?raw=true", Name: "To Do List", Description: "List up your to-do items", URL: "https://panchammmm.github.io/ToDoList-reactApp/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/KeeperApp.png?raw=true", Name: "Note Keeper", Description: "Use Note Keeper in your daily life", URL: "https://panchammmm.github.io/Note-Keeper-WebApp-usingReact/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/game.png?raw=true", Name: "Connect 4", Description: "Play Connect 4 with friends and family", URL: "https://playconnect4.netlify.app/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/ToDo.png?raw=true", Name: "To Do List", Description: "List up your to-do items", URL: "https://panchammmm.github.io/ToDoList-reactApp/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/calculator.png?raw=true", Name: "Calculator", Description: "A Web Calculator using javascript", URL: "https://panchammmm.github.io/calculation5/" },
 ];
 
 const backendProjects = [
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/back.png?raw=true", Name: "Backend", Description: "Showcasing my backend projects", URL: "" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/back.png?raw=true", Name: "Backend", Description: "Showcasing my backend projects", URL: "" },
 ];
 
 const clientProjects = [
-    { Imagesrc: "https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/client.png?raw=true", Name: "YJLS Kolkata", Description: "Yume Japanese Language School official website", URL: "https://yjls-kolkata.com/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/client.png?raw=true", Name: "YJLS Kolkata", Description: "Yume Japanese Language School official website", URL: "https://yjls-kolkata.com/" },
 ];
 
 // Combining all projects for the 'all' category
 const projectsData = {
-    all: [...uiProjects, ...webAppProjects, ...backendProjects, ...clientProjects],
+    all: [...clientProjects, ...uiProjects, ...webAppProjects, ...backendProjects],
     ui: uiProjects,
     webApp: webAppProjects,
     backend: backendProjects,
@@ -42,8 +42,8 @@ const Work = () => {
 
     const [activeTab, setActiveTab] = useState(0);
     const [lineStyle, setLineStyle] = useState({});
-    const [visibleProjects, setVisibleProjects] = useState(4); // Initialize to 4
-    const [showAllProjects, setShowAllProjects] = useState(false); // State to toggle between see more and see less
+    const [visibleProjects, setVisibleProjects] = useState(4);
+    const [showAllProjects, setShowAllProjects] = useState(false);
 
     useEffect(() => {
         const activeButton = document.querySelector('.tab_btn.active');
@@ -58,8 +58,8 @@ const Work = () => {
 
     const handleTabClick = (index) => {
         setActiveTab(index);
-        // setVisibleProjects(4); // Reset visible projects to 4 when tab changes
-        // setShowAllProjects(false); // Reset to 'See More' state when tab changes
+        setVisibleProjects(4); // Reset visible projects to 4 when tab changes
+        setShowAllProjects(false); // Reset to 'See More' state when tab changes
     };
 
     const handleSeeMoreClick = () => {
@@ -112,31 +112,41 @@ const Work = () => {
                         <div className="content-box">
                             {getProjects('all')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        {projectsData.all.length > 4 && (
+                            <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        )}
                     </div>
                     <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('ui')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        {projectsData.ui.length > 4 && (
+                            <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        )}
                     </div>
                     <div className={`content ${activeTab === 2 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('webApp')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        {projectsData.webApp.length > 4 && (
+                            <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        )}
                     </div>
                     <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('backend')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        {projectsData.backend.length > 4 && (
+                            <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        )}
                     </div>
                     <div className={`content ${activeTab === 4 ? 'active' : ''}`}>
                         <div className="content-box">
                             {getProjects('client')}
                         </div>
-                        <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        {projectsData.client.length > 4 && (
+                            <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
+                        )}
                     </div>
                 </div>
             </div>

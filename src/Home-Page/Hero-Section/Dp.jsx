@@ -30,7 +30,7 @@ export default function Dp() {
 
                     <div className="lg:hidden flex mb-12 justify-start">
                         <div className="images lg:w-[60%] w-[80%] mt-1 lg:mt-0">
-                            <img src="https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/portfolio-dp4.png?raw=true" alt="dp" className="dp-img" />
+                            <img src="https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/profile-pic2.png?raw=true" alt="dp" className="dp-img" />
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@ export default function Dp() {
 
                 <div className="hidden lg:flex mb-5">
                     <div className="images mx-auto w-[60%]">
-                        <img src="https://github.com/Panchammmm/my_portfolio_images/blob/main/Portfolio_images/portfolio-dp4.png?raw=true" alt="dp" className="dp-img" />
+                        <img src="https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/profile-pic2.png?raw=true" alt="dp" className="dp-img" />
                     </div>
                 </div>
             </div>
