@@ -12,7 +12,7 @@ export default function Dp() {
     const { t } = useTranslation();
 
     return (
-        <section id="Home" className="lg:w-[85%] w-[90%] mx-auto lg:pt-[120px] pt-[100px] lg:pb-[130px] pb-[100px]">
+        <section id="Home" className="lg:w-[85%] w-[90%] mx-auto lg:pt-[135px] pt-[100px] lg:pb-[130px] pb-[100px]">
             <div className="absolute lg:top-1/2 lg:left-1/2 left-[52%] top-[21%] transform lg:-translate-x-[80%] lg:-translate-y-[50%] -translate-x-[0%] -translate-y-[100%] -z-20">
                 <img className="icon_say-hi lg:w-[7rem] w-[5rem]" src={HiImage} alt="hi"></img>
             </div>

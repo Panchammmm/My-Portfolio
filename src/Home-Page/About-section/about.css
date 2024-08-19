@@ -45,15 +45,6 @@
     transition: all 0.4s ease;
 }
 
-@media (max-width: 640px) {
-    .achi-content {
-        font-size: 16px;
-    }
-    .achi-hidden-section {
-        font-size: 16px;
-    }
-}
-
 .achi-box:hover .achi-hidden-section {
     height: auto;
     padding: 10px 20px;

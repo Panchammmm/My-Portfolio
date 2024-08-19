@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './skill.css';
 
+import C from "../../assets/Skill-icons/C.svg";
+import CPP from "../../assets/Skill-icons/C++.svg";
 import Html from "../../assets/Skill-icons/html5.svg";
 import Css from "../../assets/Skill-icons/css3.svg";
 import Js from "../../assets/Skill-icons/javascript.svg";
@@ -16,6 +18,8 @@ export default function Skill() {
     const { t } = useTranslation();
 
     const skills = [
+        { name: t('C'), icon: C, percentage: '95%' },
+        { name: t('CPP'), icon: CPP, percentage: '95%' },
         { name: t('HTML'), icon: Html, percentage: '95%' },
         { name: t('CSS'), icon: Css, percentage: '85%' },
         { name: t('JavaScript'), icon: Js, percentage: '70%' },
@@ -31,7 +35,7 @@ export default function Skill() {
         <div className="bg-sectionBg">
             <section id="Skills" className="lg:w-[85%] w-[90%] mx-auto pt-[120px] pb-[120px]">
                 <h1 className="my-skill lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">{t('My Skills')}</h1>
-                <p className="lg:w-[50%] mx-auto tracking-[0.5px] text-center text-des mt-[15px]">
+                <p className="sm:px-[8vw] px-[3vw] tracking-[0.5px] text-center text-des mt-[15px]">
                     {t('Skills Description')}
                 </p>
 

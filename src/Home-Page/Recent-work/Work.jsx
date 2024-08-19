@@ -93,7 +93,7 @@ const Work = () => {
     return (
         <section id="Works" className="lg:w-[85%] w-[90%] mx-auto pt-[120px] pb-[120px]">
             <h1 className="my-work lg:text-[45px] text-[35px] font-[700] text-center leading-[1.2]">{t('My Recent Works')}</h1>
-            <p className="lg:w-[50%] mx-auto text-center tracking-[0.5px] text-des mt-[15px]">{t('work des')}</p>
+            <p className="sm:px-[8vw] px-[3vw] text-center tracking-[0.5px] text-des mt-[15px]">{t('work des')}</p>
 
             <div className="mt-14 mx-auto">
                 <div className="px-3 lg:px-0">

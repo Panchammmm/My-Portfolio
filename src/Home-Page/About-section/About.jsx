@@ -10,7 +10,7 @@ export default function About() {
                 <Education />
             </div>
 
-            <div className="lg:flex grid justify-around flex-wrap pt-[50px] pb-[100px]">
+            <div className="flex justify-around flex-wrap pt-[50px] pb-[100px] md:px-5 px-2">
                 <Achievement />
                 <Experience />
             </div>

@@ -16,12 +16,12 @@ const CHover = ({ items = [], className }) => {
     const { t } = useTranslation();
 
     return (
-        <div className={cn("max-w-5xl mx-auto px-8", className)}>
-            <div className={cn("flex lg:flex-row flex-col justify-between py-10")}>
+        <div className={cn("mx-auto px-10", className)}>
+            <div className={cn("flex flex-wrap justify-center py-10")}>
                 {items.map((item, idx) => (
                     <div
                         key={idx}
-                        className={cn("relative flex justify-between p-2")}
+                        className={cn("relative w-[320px] p-2")}
                         onMouseEnter={() => setHoveredIndex(idx)}
                         onMouseLeave={() => setHoveredIndex(null)}
                     >

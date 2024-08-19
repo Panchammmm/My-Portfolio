@@ -16,7 +16,7 @@ const CHover = ({ items = [], className }) => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <div className={cn("max-w-5xl mx-auto px-8", className)}>
+        <div className={cn("max-w-5xl mx-auto sm:px-16 px-4", className)}>
             <div className={cn("grid grid-cols-1 py-8")}>
                 {items.map((item, idx) => (
                     <div
