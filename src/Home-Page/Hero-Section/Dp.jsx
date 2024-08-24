@@ -6,7 +6,7 @@ import HiImage from "../../assets/hi.svg";
 import linkedin from "../../assets/Social-media-icons/linkedin.svg";
 import github from "../../assets/Social-media-icons/github.svg";
 import insta from "../../assets/Social-media-icons/instagram.svg";
-import Resume from "../../assets/pancham_resume.pdf";
+import Resume from "../../assets/Pancham_Sardar_Resume.pdf";
 
 export default function Dp() {
     const { t } = useTranslation();

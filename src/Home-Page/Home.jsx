@@ -9,6 +9,7 @@ import About from "./About-section/About";
 import Skill from "./Skills/Skill";
 import Contact from "./Contact-section/Contact";
 import Footer from "../Components/Footer/Footer";
+import Blog from "./Blog-section/Blog";
 
 const ScrollToTopButton = ({ onClick }) => (
   <button className="toTopButton" onClick={onClick}>
@@ -49,8 +50,9 @@ export default function Home() {
       <Dp />
       <About />
       <Service />
-      <Skill />
       <Work />
+      <Skill />
+      <Blog />
       <Contact />
       <Footer />
       <ScrollToTopButton onClick={scrollToTop} />
