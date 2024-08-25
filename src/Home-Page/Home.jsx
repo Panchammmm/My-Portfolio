@@ -5,7 +5,6 @@ import Nav from "../Components/NavBar/Nav";
 import Dp from "./Hero-Section/Dp";
 import Service from "./My-Service/Service";
 import Work from "../Home-Page/Recent-work/Work";
-import About from "./About-section/About";
 import Skill from "./Skills/Skill";
 import Contact from "./Contact-section/Contact";
 import Footer from "../Components/Footer/Footer";
@@ -48,7 +47,6 @@ export default function Home() {
       {showPreloader && <Preload />}
       <Nav />
       <Dp />
-      <About />
       <Service />
       <Work />
       <Skill />

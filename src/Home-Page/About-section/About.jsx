@@ -5,7 +5,7 @@ import Experience from "./Experience/Experience";
 
 export default function About() {
     return (
-        <section id="About">
+        <div>
             <div className="bg-sectionBg mx-auto pt-[120px] pb-[80px]">
                 <Education />
             </div>
@@ -14,6 +14,6 @@ export default function About() {
                 <Achievement />
                 <Experience />
             </div>
-        </section>
+        </div>
     )
 }

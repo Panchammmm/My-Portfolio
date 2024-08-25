@@ -6,10 +6,10 @@ import ThemeBtn from "./ThemeBtn";
 
 const menuItems = [
     { name: 'Home', href: '#Home' },
-    { name: 'About', href: '#About' },
     { name: 'Services', href: '#Services' },
-    { name: 'Skills', href: '#Skills' },
     { name: 'Works', href: '#Works' },
+    { name: 'Skills', href: '#Skills' },
+    { name: 'Blogs', href: '#Blog' },
     { name: 'Contact', href: '#Contact' },
 ];
 
