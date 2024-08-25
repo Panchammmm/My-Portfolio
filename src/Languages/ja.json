@@ -121,5 +121,17 @@
     "Get in Touch": "お問い合わせ",
     "General": "一般",
     "Education": "教育",
-    "Blog": "ブログ"
+    "Blog": "ブログ",
+    "Recent Blogs": "最近のブログ",
+    "Explore my latest articles on advanced web design and development techniques, showcasing expertise in both frontend and backend technologies.": "フロントエンドとバックエンド技術の専門知識を示す、最新の高度なウェブデザインと開発技術に関する記事を探してみてください。",
+    "GUIDE": "ガイド",
+    "TUTORIAL": "チュートリアル",
+    "TIPS": "ヒント",
+    "Mastering React Hooks": "React Hooks の習得",
+    "Responsive Design with Tailwind": "Tailwind を使ったレスポンシブデザイン",
+    "Mastering CSS Filter Properties": "CSS フィルターのプロパティをマスターする",
+    "More Blogs": "さらにブログを見る",
+    "Aug 25, 2024": "2024年8月25日",
+    "Aug 18, 2024": "2024年8月18日",
+    "Aug 8, 2024": "2024年8月8日"
 }
