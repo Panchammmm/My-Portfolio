@@ -20,8 +20,8 @@ const webAppProjects = [
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/calculator.png?raw=true", Name: "Calculator", Description: "A Web Calculator using javascript", URL: "https://panchammmm.github.io/calculation5/" },
 ];
 
-const backendProjects = [
-    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/back.png?raw=true", Name: "Backend", Description: "Showcasing my backend projects", URL: "" },
+const wordpressProjects = [
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/back.png?raw=true", Name: "wordpress", Description: "wordpress-des", URL: "" },
 ];
 
 const clientProjects = [
@@ -30,11 +30,11 @@ const clientProjects = [
 
 // Combining all projects for the 'all' category
 const projectsData = {
-    all: [...clientProjects, ...uiProjects, ...webAppProjects, ...backendProjects],
+    all: [...clientProjects, ...uiProjects, ...webAppProjects, ...wordpressProjects],
     ui: uiProjects,
     webApp: webAppProjects,
-    backend: backendProjects,
-    client: clientProjects,
+    wordpress: wordpressProjects,
+    client: [...clientProjects, ...wordpressProjects]
 };
 
 const Work = () => {
@@ -85,7 +85,7 @@ const Work = () => {
             case 1: return 'ui';
             case 2: return 'webApp';
             case 3: return 'client';
-            case 4: return 'backend';
+            case 4: return 'wordpress';
             default: return 'all';
         }
     };
@@ -101,7 +101,7 @@ const Work = () => {
                         <button className={`tab_btn ${activeTab === 0 ? 'active' : ''}`} onClick={() => handleTabClick(0)}>{t("All")}</button>
                         <button className={`tab_btn ${activeTab === 1 ? 'active' : ''}`} onClick={() => handleTabClick(1)}>{t("UI")}</button>
                         <button className={`tab_btn ${activeTab === 2 ? 'active' : ''}`} onClick={() => handleTabClick(2)}>{t("web app")}</button>
-                        <button className={`tab_btn ${activeTab === 3 ? 'active' : ''}`} onClick={() => handleTabClick(3)}>{t("backend")}</button>
+                        <button className={`tab_btn ${activeTab === 3 ? 'active' : ''}`} onClick={() => handleTabClick(3)}>{t("wordpress")}</button>
                         <button className={`tab_btn ${activeTab === 4 ? 'active' : ''}`} onClick={() => handleTabClick(4)}>{t("Client")}</button>
                         <div className="now-tab" style={lineStyle}></div>
                     </div>
@@ -134,9 +134,9 @@ const Work = () => {
                     </div>
                     <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
                         <div className="content-box">
-                            {getProjects('backend')}
+                            {getProjects('wordpress')}
                         </div>
-                        {projectsData.backend.length > 4 && (
+                        {projectsData.wordpress.length > 4 && (
                             <RevealBtn btnName={showAllProjects ? t("See Less") : t("See More")} onClick={handleSeeMoreClick} />
                         )}
                     </div>

@@ -6,26 +6,26 @@
 
 .skill-card {
     border-radius: 25px;
-    padding: 40px 60px 40px 60px;
+    padding: 25px 38px;
     background: var(--skill_box);
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     margin-bottom: 15px;
     text-align: center;
     transition: 0.6s;
 }
 
 .skill-logo-box {
-    max-width: 60px;
+    max-width: 50px;
     width: 100%;
     margin: 0 auto 30px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
     .skill-card {
-        padding: 25px 38px 25px 38px;
+        padding: 40px 60px;
     }
     .skill-logo-box {
-        max-width: 50px;
+        max-width: 60px;
     }
 }
 

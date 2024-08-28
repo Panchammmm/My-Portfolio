@@ -11,21 +11,21 @@ const Blog = () => {
             label: t("GUIDE"),
             date: t("Aug 25, 2024"),
             title: t("Mastering React Hooks"),
-            imageUrl: "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=600",
+            imageUrl: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*vLVeqzC-pljpyjgP",
         },
         {
             href: "https://medium.com/@sardarpancham510510/introduction-to-responsive-design-with-tailwind-css-1277359b8901",
             label: t("TUTORIAL"),
             date: t("Aug 18, 2024"),
             title: t("Responsive Design with Tailwind"),
-            imageUrl: "https://images.pexels.com/photos/4048774/pexels-photo-4048774.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+            imageUrl: "https://miro.medium.com/v2/resize:fit:750/format:webp/0*lmuzEvA7IvjvjukA",
         },
         {
             href: "https://medium.com/@sardarpancham510510/mastering-css-filter-properties-elevate-your-image-design-c654a0a0c7e5",
             label: t("TIPS"),
             date: t("Aug 8, 2024"),
             title: t("Mastering CSS Filter Properties"),
-            imageUrl: "https://images.pexels.com/photos/4134784/pexels-photo-4134784.jpeg?auto=compress&cs=tinysrgb&w=600",
+            imageUrl: "https://miro.medium.com/v2/resize:fit:750/format:webp/0*vlrTojKN8pdQFgae",
         }
     ];
 

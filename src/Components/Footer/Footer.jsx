@@ -88,7 +88,7 @@ export default function Footer() {
                         <h4 className="text-[#9d71b8] text-xl font-semibold">{t('General')}</h4>
 
                         <div className="flex flex-col space-y-2.5">
-                            {["About", "Skills", "Works", "Education", "Blog"].map((section) => (
+                            {["Home", "Skills", "Works", "Blog", "Contact"].map((section) => (
                                 <a href={`#${section}`} className="hover:underline fbutton" key={section}
                                     onClick={(e) => handleLocateClick(e, section)}>
                                     {t(section)}

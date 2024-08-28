@@ -13,6 +13,7 @@ import Mongodb from "../../assets/Skill-icons/mongoDB.svg";
 import GitIcon from "../../assets/Skill-icons/git.svg";
 import LightRoom from "../../assets/Skill-icons/lightroom.svg";
 import Canva from "../../assets/Skill-icons/canva.svg";
+import WordPress from "../../assets/Skill-icons/wordpress.svg";
 
 export default function Skill() {
     const { t } = useTranslation();
@@ -26,7 +27,8 @@ export default function Skill() {
         { name: t('Tailwind'), icon: Tailwind, percentage: '80%' },
         { name: t('React'), icon: ReactIcon, percentage: '80%' },
         { name: t('Git'), icon: GitIcon, percentage: '90%' },
-        { name: t('MongoDB'), icon: Mongodb, percentage: '70%' },
+        { name: t('WordPress'), icon: WordPress, percentage: '70%' },
+        // { name: t('MongoDB'), icon: Mongodb, percentage: '70%' },
         { name: t('Canva'), icon: Canva, percentage: '80%' },
         { name: t('Lightroom'), icon: LightRoom, percentage: '85%' }
     ];
@@ -48,7 +50,7 @@ export default function Skill() {
                                 </div>
                                 <p className="skill-percentage">{skill.percentage}</p>
                             </div>
-                            <p className="w-full text-[#a95bf8] mt-2 text-center tracking-[0.5px]">{skill.name}</p>
+                            <p className="w-full text-[#a95bf8] mt-2 text-center tracking-wide">{skill.name}</p>
                         </div>
                     ))}
                 </div>
