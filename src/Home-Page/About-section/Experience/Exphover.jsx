@@ -3,7 +3,7 @@ import { useState } from "react";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { useTranslation } from 'react-i18next';
-import './edu.css';
+import '../Education/edu.css';
 import Arrow from "../../../assets/arrow.svg";
 
 // Utility function to merge class names
@@ -43,7 +43,7 @@ const CHover = ({ items = [], className }) => {
                                 <p className="lg:text-base text-[15px] font-semibold tracking-[0.6px] text-zinc-400">{item.description}</p>
                             </div>
 
-                            <img src={Arrow} alt="arrow" className="arrow-icon my-auto lg:size-8 size-7 group-hover:rotate-[70deg] ml-10"></img>
+                            <img src={Arrow} alt="arrow" className="arrow-icon my-auto lg:size-8 size-7 group-hover:rotate-[70deg] ml-16"></img>
                         </div>
                         <div className="border-style"></div>
                     </div>
@@ -54,15 +54,15 @@ const CHover = ({ items = [], className }) => {
 };
 
 // Sample data for projects
-const CardHover = () => {
+const Exphover = () => {
     const { t } = useTranslation();
-    const Educations = t('Educations', { returnObjects: true }); // Fetch translated projects
+    const Exp = t('Exp', { returnObjects: true }); // Fetch translated projects
 
     return (
-        <div>
-            <CHover items={Educations} />
+        <div className="App">
+            <CHover items={Exp} />
         </div>
     );
 };
 
-export default CardHover;
+export default Exphover;

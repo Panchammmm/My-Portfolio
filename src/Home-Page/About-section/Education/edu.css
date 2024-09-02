@@ -34,13 +34,6 @@
 }
 
 .arrow-icon {
-    margin-right: 40px;
     rotate: -40deg;
     transition: all 0.5s ease;
-}
-
-@media (max-width: 640px) {
-    .arrow-icon {
-        margin-right: 0px;
-    }
 }

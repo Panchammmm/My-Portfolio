@@ -11,8 +11,13 @@
     "WebDeveloper": "ウェブデベロッパー + <1></1> ユーアイ デザイナー",
     "PassionateAbout": "デジタル体験を <1> 優れた </1> ものにするために情熱を注いでいます。 創造的な <1> デザイン </1> と <1> 技術的 </1> な実装の両方において専門知識を持ち、世界中のクライアントに一流の <1> ウェブソリューション </1> を提供することを専門としています。",
     "Resume": "履歴書",
-    "MyEducation": "私の教育",
-    "Projects": [
+    "MyEducation": "教育",
+    "Educations": [
+        {
+            "year": "2024 - 現在",
+            "title": "日本語能力",
+            "description": "ゆめ日本語学校"
+        },
         {
             "year": "2023 - 2024",
             "title": "ウェブ開発",
@@ -34,28 +39,19 @@
             "description": "タンガラカリP.J.P.高校（H.S.）"
         }
     ],
-    "achievement": {
-        "title": "成果",
-        "JLPTN5": {
-            "title": "JLPT N5",
-            "description": "日本語能力試験N5"
+    "myExp": "経験",
+    "Exp": [
+        {
+            "year": "2024 - 現在",
+            "title": "ウェブ開発者（フリーランサー）",
+            "description": "フリーランス"
         },
-        "HackerRank5Stars": {
-            "title": "ハッカーランク 5 スター",
-            "description": "ハッカーランクで5スターを獲得"
+        {
+            "year": "2024 4月 - 2024 5月",
+            "title": "フロントエンド開発インターン",
+            "description": "InternPe"
         }
-    },
-    "experience": {
-        "title": "経験",
-        "Freelance": {
-            "title": "フリーランス",
-            "description": "クライアントのための学術ウェブサイト - YJLS-kolkata.com"
-        },
-        "InterPeIntern": {
-            "title": "インターンペ インターン [2024]",
-            "description": "Internpe - IT & トレーニング会社でのインターンシップ"
-        }
-    },
+    ],
     "MyQualityServices": "私の質の高いサービス",
     "ServiceDescription": "卓越したウェブデザインと開発を提供し、フロントエンドとバックエンドの両方のソリューションを習得しています。",
     "UI Design": "UIデザイン",
