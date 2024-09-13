@@ -14,7 +14,7 @@ const uiProjects = [
 ];
 
 const webAppProjects = [
-    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/KeeperApp.png?raw=true", Name: "Note Keeper", Description: "Use Note Keeper in your daily life", URL: "https://panchammmm.github.io/Note-Keeper-WebApp-usingReact/" },
+    { Imagesrc: "https://github.com/Panchammmm/Note-Keeper/raw/main/app-pic.png", Name: "Note Keeper", Description: "Use Note Keeper in your daily life", URL: "https://noteeskeeper.netlify.app/" },
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/game.png?raw=true", Name: "Connect 4", Description: "Play Connect 4 with friends and family", URL: "https://playconnect4.netlify.app/" },
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/ToDo.png?raw=true", Name: "To Do List", Description: "List up your to-do items", URL: "https://panchammmm.github.io/ToDoList-reactApp/" },
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/calculator.png?raw=true", Name: "Calculator", Description: "A Web Calculator using javascript", URL: "https://panchammmm.github.io/calculation5/" },
