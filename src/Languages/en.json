@@ -40,24 +40,29 @@
     "myExp": "Experience",
     "Exp": [
         {
-            "year": "2024 - Present",
+            "year": "2024 Oct - Present",
+            "title": "Web Developer",
+            "description": "At Matrix Integrated"
+        },
+        {
+            "year": "2024",
             "title": "Web Developer Freelancer",
             "description": "Freelance"
         },
         {
             "year": "2024 April - May",
             "title": "Frontend Developer Intern",
-            "description": "InternPe"
+            "description": "At InternPe"
         }
     ],
     "MyQualityServices": "My Quality Services",
     "ServiceDescription": "Offering tailored web design and development, delivering standout frontend and backend solutions for your needs.",
     "UI Design": "UI Design",
     "Web App": "Web App",
-    "Backend": "Backend",
-    "UI Design Description": "Crafting intuitive, engaging interfaces that enhance user experience.",
-    "Web App Description": "Building dynamic, responsive apps that perform seamlessly across devices.",
-    "Backend Description": "Developing scalable, secure backend solutions for smooth application operations.",
+    "Website": "Website",
+    "UI Design Description": "Crafting intuitive, engaging interfaces to enhance user experience and ensure seamless interaction.",
+    "Web App Description": "Building dynamic, responsive apps that deliver seamless performance across all devices and platforms.",
+    "Website Description": "Building secure, scalable websites that ensure smooth operations and optimal user experience.",
     "My Skills": "My Skills",
     "Skills Description": "I bring your ideas to life by crafting unique web projects that captivate and inspire both you and your customers.",
     "HTML": "HTML",

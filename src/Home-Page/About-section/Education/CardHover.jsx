@@ -4,7 +4,7 @@ import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { useTranslation } from 'react-i18next';
 import './edu.css';
-import Arrow from "../../../assets/arrow.svg";
+import Righticon from "../../../assets/rightIcon.svg";
 
 // Utility function to merge class names
 function cn(...inputs) {
@@ -43,7 +43,7 @@ const CHover = ({ items = [], className }) => {
                                 <p className="lg:text-base text-[15px] font-semibold tracking-[0.6px] text-zinc-400">{item.description}</p>
                             </div>
 
-                            <img src={Arrow} alt="arrow" className="arrow-icon my-auto lg:size-8 size-7 group-hover:rotate-[70deg] ml-10"></img>
+                            <img src={Righticon} alt="rightIcon" className="arrow-icon my-auto lg:size-7 size-6 group-hover:rotate-[70deg] ml-10"></img>
                         </div>
                         <div className="border-style"></div>
                     </div>

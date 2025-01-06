@@ -42,7 +42,12 @@
     "myExp": "経験",
     "Exp": [
         {
-            "year": "2024 - 現在",
+            "year": "2024 10月 - 現在",
+            "title": "ウェブ開発者",
+            "description": "Matrix Integrated"
+        },
+        {
+            "year": "2024",
             "title": "ウェブ開発者（フリーランサー）",
             "description": "フリーランス"
         },
@@ -56,8 +61,10 @@
     "ServiceDescription": "卓越したウェブデザインと開発を提供し、フロントエンドとバックエンドの両方のソリューションを習得しています。",
     "UI Design": "UIデザイン",
     "Web App": "ウェブアプリ",
+    "Website": "ウェブサイト",
     "UI Design Description": "直感的で魅力的なインターフェイスを作成し、ユーザー体験を向上させます。",
     "Web App Description": "デバイス間でシームレスに動作するダイナミックでレスポンシブなアプリを構築します。",
+    "Website Description": "シームレスな運用を実現する安全でスケーラブルなウェブサイトを構築します。",
     "My Skills": "私のスキル",
     "Skills Description": "ユニークなウェブプロジェクトを作成し、あなたとあなたの顧客の両方を魅了し、インスパイアします。",
     "HTML": "HTML",

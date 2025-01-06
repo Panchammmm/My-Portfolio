@@ -60,8 +60,8 @@ const projects = [
         description: "Web App Description"
     },
     {
-        title: "Backend",
-        description: "Backend Description"
+        title: "Website",
+        description: "Website Description"
     }
 ];
 

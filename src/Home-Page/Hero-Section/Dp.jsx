@@ -68,7 +68,7 @@ export default function Dp() {
 
                                 <div className="flex lg:ml-3 lg:gap-5 gap-3 my-auto">
                                     <a
-                                        href="https://www.linkedin.com/in/pancham-sardar-6a466227b/"
+                                        href="https://www.linkedin.com/in/pancham-sardar/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="shadow-2xl border border-[#bb5dfed7] lg:size-10 size-9 p-[0.7rem] flex items-center justify-center rounded-full bg-gradient-to-r from-[#bb5dfed7] hover:from-transparent to-[#2a1454] transition hover:duration-700"
