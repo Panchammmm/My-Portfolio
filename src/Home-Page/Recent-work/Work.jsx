@@ -8,7 +8,7 @@ import Arrow from "../../assets/arrow.svg";
 const uiProjects = [
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/fashion.png?raw=true", Name: "Anistora", Description: "UI design for fast fashion website", URL: "https://anistora.netlify.app/" },
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/travel.png?raw=true", Name: "TravelHikes", Description: "UI design for international travel website", URL: "https://travelhikes.netlify.app/" },
-    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/myPortfolio.png?raw=true", Name: "My Portfolio", Description: "Know a bit about me and my professionalism", URL: "https://Pancham_Sardar.netlify.app/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/myPortfolio.png?raw=true", Name: "My Portfolio", Description: "Know a bit about me and my professionalism", URL: "https://pancham-portfolio.netlify.app/" },
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/GUI.png?raw=true", Name: "COMport Duplex Data Transmitter", Description: "GUI of Visual Light Communication systems", URL: "https://github.com/Panchammmm/COMPortFull-duplexDataTransmitter" },
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/profile.png?raw=true", Name: "My Profile", Description: "UI design for profile card", URL: "https://panchammmm.github.io/My_Profile/" },
 ];
@@ -21,8 +21,8 @@ const webAppProjects = [
 ];
 
 const wordpressProjects = [
-    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/Sci-Tech%20Creation%20site.png?raw=true", Name: "Sci-Tech_Creation", Description: "Sci-Tech_des", URL: "https://scitechcreation.com/" },
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/matrix_integrated.png?raw=true", Name: "Matrix-Integrated", Description: "matrix-des", URL: "https://matrixdirect.in/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/Sci-Tech%20Creation%20site.png?raw=true", Name: "Sci-Tech_Creation", Description: "Sci-Tech_des", URL: "https://scitechcreation.com/" },
 ];
 
 const clientProjects = [

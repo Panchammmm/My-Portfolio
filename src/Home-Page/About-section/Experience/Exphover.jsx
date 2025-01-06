@@ -36,7 +36,7 @@ const CHover = ({ items = [], className }) => {
                                 />
                             )}
                         </AnimatePresence>
-                        <div className={cn("rounded-2xl h-full w-full p-4 overflow-hidden bg-tranparent relative z-20 flex justify-between group")}>
+                        <div className={cn("rounded-2xl h-full w-full p-4 sm:gap-[130px] overflow-hidden bg-tranparent relative z-20 flex justify-between group")}>
                             <div className="relative z-50">
                                 <h3 className="lg:text-lg text-base font-bold text-[#a95bf8]">{item.year}</h3>
                                 <h2 className="group-hover:text-white text-eduTitle ease-in-out duration-300 font-[600] lg:text-[22px] text-xl mt-2 mb-2">{item.title}</h2>
