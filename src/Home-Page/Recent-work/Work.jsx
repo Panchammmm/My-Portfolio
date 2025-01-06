@@ -22,6 +22,7 @@ const webAppProjects = [
 
 const wordpressProjects = [
     { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/back.png?raw=true", Name: "wordpress", Description: "wordpress-des", URL: "" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/back.png?raw=true", Name: "Matrix Integrated", Description: "matrix-des", URL: "https://matrixdirect.in/" },
 ];
 
 const clientProjects = [
