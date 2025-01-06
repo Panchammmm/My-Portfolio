@@ -21,8 +21,8 @@ const webAppProjects = [
 ];
 
 const wordpressProjects = [
-    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/back.png?raw=true", Name: "wordpress", Description: "wordpress-des", URL: "" },
-    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/back.png?raw=true", Name: "Matrix Integrated", Description: "matrix-des", URL: "https://matrixdirect.in/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/back.png?raw=true", Name: "Sci-Tech_Creation", Description: "Sci-Tech_des", URL: "https://scitechcreation.com/" },
+    { Imagesrc: "https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/matrix_integrated.png?raw=true", Name: "Matrix-Integrated", Description: "matrix-des", URL: "https://matrixdirect.in/" },
 ];
 
 const clientProjects = [

@@ -31,8 +31,8 @@ export default function Skill() {
         { name: t('WordPress'), icon: WordPress, percentage: '98%' },
         // { name: t('MongoDB'), icon: Mongodb, percentage: '70%' },
         { name: t('Canva'), icon: Canva, percentage: '90%' },
-        { name: t('Adobe Lightroom'), icon: LightRoom, percentage: '85%' },
-        { name: t('Adobe Premiere Pro'), icon: premierePro, percentage: '70%' }
+        { name: t('Lightroom'), icon: LightRoom, percentage: '85%' },
+        { name: t('Premiere Pro'), icon: premierePro, percentage: '70%' }
     ];
 
     return (
