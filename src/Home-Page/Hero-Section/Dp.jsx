@@ -8,6 +8,7 @@ import linkedin from "../../assets/Social-media-icons/linkedin.svg";
 import github from "../../assets/Social-media-icons/github.svg";
 import insta from "../../assets/Social-media-icons/instagram.svg";
 import Resume from "../../assets/Pancham_Sardar_Resume.pdf";
+import myPic from "../../assets/Portfolio_images/profile-pic3.png";
 
 export default function Dp() {
     const { t } = useTranslation();
@@ -32,7 +33,7 @@ export default function Dp() {
 
                         <div className="lg:hidden flex mb-12 justify-start">
                             <div className="images lg:w-[60%] w-[80%] mt-1 lg:mt-0">
-                                <img src="https://github.com/Panchammmm/My-Portfolio/blob/main/src/assets/Portfolio_images/profile-pic3.png?raw=true" alt="dp" className="dp-img" />
+                                <img src={myPic} alt="display profile" className="dp-img" />
                             </div>
                         </div>
 
