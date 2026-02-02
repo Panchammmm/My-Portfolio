@@ -6,7 +6,7 @@ import Arrow from "../../assets/arrow.svg";
 import Fashion from "../../assets/Portfolio_images/fashion.png";
 import Travel from "../../assets/Portfolio_images/travel.png";
 import MyPortfolio from "../../assets/Portfolio_images/myPortfolio.png";
-import GUI from "../../assets/Portfolio_images/gui.png";
+import GUI from "../../assets/Portfolio_images/GUI.png";
 import Keeper from "../../assets/Portfolio_images/KeeperApp.png";
 import Connect4 from "../../assets/Portfolio_images/connect4.png";
 import Todo from "../../assets/Portfolio_images/ToDo.png";
