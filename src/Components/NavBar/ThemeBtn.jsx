@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ThemeBtn() {
     const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');

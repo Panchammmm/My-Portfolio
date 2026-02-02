@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import './footer.css';
 
@@ -10,7 +9,6 @@ import github from "../../assets/Social-media-icons/github.svg";
 import insta from "../../assets/Social-media-icons/instagram.svg";
 
 export default function Footer() {
-    const [activeSection, setActiveSection] = useState("");
     const { t } = useTranslation();
     const year = new Date().getFullYear();
 
@@ -20,7 +18,6 @@ export default function Footer() {
         if (target) {
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-        setActiveSection(section);
     };
 
     return (

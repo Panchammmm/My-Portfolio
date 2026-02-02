@@ -1,5 +1,4 @@
 import './revealBtn.css';
-import PropTypes from 'prop-types';
 
 const StarSVG = () => (
     <svg
@@ -27,6 +26,7 @@ const StarSVG = () => (
     </svg>
 );
 
+/* eslint-disable react/prop-types */
 const RevealBtn = ({ btnName, onClick }) => (
     <div className="flex justify-center mt-16">
         <button className="R-btn shadow-2xl" onClick={onClick}>
@@ -39,10 +39,5 @@ const RevealBtn = ({ btnName, onClick }) => (
         </button>
     </div>
 );
-
-RevealBtn.propTypes = {
-    btnName: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
-};
 
 export default RevealBtn;

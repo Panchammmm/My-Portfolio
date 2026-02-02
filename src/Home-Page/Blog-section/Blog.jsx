@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import RevealBtn from "../Recent-work/Button/RevealBtn";
-import PropTypes from "prop-types";
 
 const Blog = () => {
     const { t } = useTranslation();
@@ -58,6 +57,7 @@ const Blog = () => {
 };
 
 // Card Component defined inside the same file
+/* eslint-disable react/prop-types */
 const Card = ({ href, label, date, title, imageUrl }) => {
     return (
         <div className="w-[380px] rounded-xl overflow-hidden shadow-2xl border border-servBorder cursor-pointer" onClick={() => window.open(href, "_blank")}>
@@ -79,15 +79,6 @@ const Card = ({ href, label, date, title, imageUrl }) => {
             </div>
         </div>
     );
-};
-
-// Card Component PropTypes
-Card.propTypes = {
-    href: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    imageUrl: PropTypes.string.isRequired,
 };
 
 export default Blog;

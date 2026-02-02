@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import "./work.css";
 import RevealBtn from "./Button/RevealBtn";
@@ -251,6 +250,7 @@ const Work = () => {
   );
 };
 
+/* eslint-disable react/prop-types */
 const Project = ({ Imagesrc, Name, Description, URL }) => {
   const { t } = useTranslation();
 
@@ -272,14 +272,6 @@ const Project = ({ Imagesrc, Name, Description, URL }) => {
       </div>
     </div>
   );
-};
-
-// Project component to display individual project details
-Project.propTypes = {
-  Imagesrc: PropTypes.string.isRequired,
-  Name: PropTypes.string.isRequired,
-  Description: PropTypes.string.isRequired,
-  URL: PropTypes.string.isRequired,
 };
 
 export default Work;

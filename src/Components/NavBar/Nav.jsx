@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 import './nav.css';
@@ -15,7 +15,6 @@ const menuItems = [
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState('Home');
     const { t, i18n } = useTranslation();
     const [isJapanese, setIsJapanese] = useState(() => localStorage.getItem('language') === 'ja');
     const checkBox = document.getElementById('burger-checkbox');
@@ -38,7 +37,6 @@ export default function Nav() {
         if (target) {
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-        setActiveSection(href.substring(1));
 
         if (checkBox) {
             checkBox.checked = false;

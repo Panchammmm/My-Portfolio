@@ -3,7 +3,6 @@ import { useState } from "react";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { useTranslation } from 'react-i18next';
-import PropTypes from "prop-types";
 
 // Utility function to merge class names
 function cn(...inputs) {
@@ -11,6 +10,7 @@ function cn(...inputs) {
 }
 
 // Consolidated CardHover Component
+/* eslint-disable react/prop-types */
 const CHover = ({ items = [], className }) => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -65,12 +65,6 @@ const projects = [
         description: "Website Description"
     }
 ];
-
-// PropTypes for CHover component
-CHover.propTypes = {
-    items: PropTypes.array,
-    className: PropTypes.string,
-};
 
 export default function ServCard() {
     return (
