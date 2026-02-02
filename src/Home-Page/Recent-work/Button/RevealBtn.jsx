@@ -1,5 +1,5 @@
-import React from 'react';
 import './revealBtn.css';
+import PropTypes from 'prop-types';
 
 const StarSVG = () => (
     <svg
@@ -39,5 +39,10 @@ const RevealBtn = ({ btnName, onClick }) => (
         </button>
     </div>
 );
+
+RevealBtn.propTypes = {
+    btnName: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+};
 
 export default RevealBtn;

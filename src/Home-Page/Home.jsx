@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 import Preload from "../Preloader/Preload";
 import Nav from "../Components/NavBar/Nav";
@@ -18,6 +19,10 @@ const ScrollToTopButton = ({ onClick }) => (
   </button>
 );
 
+ScrollToTopButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
+
 export default function Home() {
   const [showPreloader, setShowPreloader] = useState(true);
 
@@ -32,6 +37,7 @@ export default function Home() {
 
     return () => {
       isMounted = false;
+      clearTimeout(timer);
     };
   }, []);
 

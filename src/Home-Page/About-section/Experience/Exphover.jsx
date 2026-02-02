@@ -5,6 +5,7 @@ import { twMerge } from "tailwind-merge";
 import { useTranslation } from 'react-i18next';
 import '../Education/edu.css';
 import Righticon from "../../../assets/rightIcon.svg";
+import PropTypes from "prop-types";
 
 // Utility function to merge class names
 function cn(...inputs) {
@@ -63,6 +64,12 @@ const Exphover = () => {
             <CHover items={Exp} />
         </div>
     );
+};
+
+// PropTypes for CHover component
+CHover.propTypes = {
+    items: PropTypes.array,
+    className: PropTypes.string,
 };
 
 export default Exphover;

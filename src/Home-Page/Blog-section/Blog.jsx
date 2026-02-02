@@ -1,6 +1,6 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import RevealBtn from "../Recent-work/Button/RevealBtn";
+import PropTypes from "prop-types";
 
 const Blog = () => {
     const { t } = useTranslation();
@@ -79,6 +79,15 @@ const Card = ({ href, label, date, title, imageUrl }) => {
             </div>
         </div>
     );
+};
+
+// Card Component PropTypes
+Card.propTypes = {
+    href: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
 };
 
 export default Blog;

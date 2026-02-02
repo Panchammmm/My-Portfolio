@@ -1,4 +1,3 @@
-import React from "react";
 import Education from "./Education/Education";
 import Exp from "./Experience/Exp";
 

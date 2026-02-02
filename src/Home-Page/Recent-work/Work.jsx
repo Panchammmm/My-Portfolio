@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import "./work.css";
 import RevealBtn from "./Button/RevealBtn";
@@ -15,14 +16,22 @@ import Matrix from "../../assets/Portfolio_images/matrix_integrated.png";
 import NeoSci from "../../assets/Portfolio_images/neoscitech.png";
 import YJLS from "../../assets/Portfolio_images/yjls.png";
 import Profile from "../../assets/Portfolio_images/profile.png";
+import Lawyer from "../../assets/Portfolio_images/lawer.png";
+import SHA from "../../assets/Portfolio_images/shacademia.png";
 
 // Projects data categorized
 const uiProjects = [
   {
-    Imagesrc: Fashion,
-    Name: "Anistora",
-    Description: "UI design for fast fashion website",
-    URL: "https://anistora.netlify.app/",
+    Imagesrc: Lawyer,
+    Name: "Lawyer Website",
+    Description: "Frontend & design for Lawyer Website",
+    URL: "https://indian-lawyer.netlify.app/",
+  },
+  {
+    Imagesrc: MyPortfolio,
+    Name: "My Portfolio",
+    Description: "Know a bit about me and my professionalism",
+    URL: "https://pancham-portfolio.netlify.app/",
   },
   {
     Imagesrc: Travel,
@@ -31,10 +40,10 @@ const uiProjects = [
     URL: "https://travelhikes.netlify.app/",
   },
   {
-    Imagesrc: MyPortfolio,
-    Name: "My Portfolio",
-    Description: "Know a bit about me and my professionalism",
-    URL: "https://pancham-portfolio.netlify.app/",
+    Imagesrc: Fashion,
+    Name: "Anistora",
+    Description: "UI design for fast fashion website",
+    URL: "https://anistora.netlify.app/",
   },
   {
     Imagesrc: GUI,
@@ -98,6 +107,12 @@ const clientProjects = [
     Name: "YJLS Kolkata",
     Description: "Yume Japanese Language School official website",
     URL: "https://yjls-kolkata.in/",
+  },
+  {
+    Imagesrc: SHA,
+    Name: "S.H. Academia",
+    Description: "A Examination Platform for S.H. Academia",
+    URL: "https://shacademiaclasses.live/",
   },
 ];
 
@@ -257,6 +272,14 @@ const Project = ({ Imagesrc, Name, Description, URL }) => {
       </div>
     </div>
   );
+};
+
+// Project component to display individual project details
+Project.propTypes = {
+  Imagesrc: PropTypes.string.isRequired,
+  Name: PropTypes.string.isRequired,
+  Description: PropTypes.string.isRequired,
+  URL: PropTypes.string.isRequired,
 };
 
 export default Work;

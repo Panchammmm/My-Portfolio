@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation, Trans } from 'react-i18next';
 import './dp.css';
 import About from "../About-section/About";

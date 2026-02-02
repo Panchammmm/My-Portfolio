@@ -3,6 +3,7 @@ import { useState } from "react";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { useTranslation } from 'react-i18next';
+import PropTypes from "prop-types";
 
 // Utility function to merge class names
 function cn(...inputs) {
@@ -64,6 +65,12 @@ const projects = [
         description: "Website Description"
     }
 ];
+
+// PropTypes for CHover component
+CHover.propTypes = {
+    items: PropTypes.array,
+    className: PropTypes.string,
+};
 
 export default function ServCard() {
     return (

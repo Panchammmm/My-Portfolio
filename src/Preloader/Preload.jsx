@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import './preload.css';
 
 export default function Preload() {

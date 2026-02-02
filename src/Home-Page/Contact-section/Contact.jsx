@@ -1,7 +1,7 @@
-import React, { useState } from "react";
 import './contact.css';
 import { useTranslation } from 'react-i18next';
 import { useForm } from 'react-hook-form';
+import { useState } from 'react';
 import useWeb3Forms from "@web3forms/react";
 import wapp from "../../assets/wapp.svg";
 import email from "../../assets/email.svg";
@@ -21,12 +21,12 @@ export default function Contact() {
             from_name: "My Portfolio",
             subject: "Portfolio Enquiry",
         },
-        onSuccess: (msg, data) => {
+        onSuccess: (msg) => {
             setIsSuccess(true);
             setResult(msg);
             reset();
         },
-        onError: (msg, data) => {
+        onError: (msg) => {
             setIsSuccess(false);
             setResult(msg);
         },
